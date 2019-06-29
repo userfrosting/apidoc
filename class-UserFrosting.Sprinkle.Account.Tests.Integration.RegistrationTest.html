@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class UserFrosting\Sprinkle\Account\Tests\Integration\RegistrationTest</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Overview</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Tests.Integration.html" title="Summary of UserFrosting\Sprinkle\Account\Tests\Integration"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-UserFrosting.html">
+							UserFrosting<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Assets.html">
+							Assets<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Assets.AssetBundles.html">
+							AssetBundles						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Assets.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Assets.ServeAsset.html">
+							ServeAsset						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Assets.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Cache.html">
+							Cache<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Cache.Driver.html">
+							Driver						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Config.html">
+							Config						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Fortress.html">
+							Fortress<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Fortress.Adapter.html">
+							Adapter						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Fortress.RequestSchema.html">
+							RequestSchema						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.I18n.html">
+							I18n<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.I18n.PluralRules.html">
+							PluralRules						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Session.html">
+							Session						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-UserFrosting.Sprinkle.html">
+							Sprinkle<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-UserFrosting.Sprinkle.Account.html">
+							Account<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Account.html">
+							Account						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Authenticate.html">
+							Authenticate<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Authenticate.Exception.html">
+							Exception						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Authorize.html">
+							Authorize						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Bakery.html">
+							Bakery						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Controller.html">
+							Controller<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Controller.Exception.html">
+							Exception						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.html">
+							Database<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Migrations.html">
+							Migrations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Migrations.v400.html">
+							v400						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Migrations.v420.html">
+							v420						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Models.html">
+							Models<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Models.Events.html">
+							Events						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Models.Interfaces.html">
+							Interfaces						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Seeds.html">
+							Seeds						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Error.html">
+							Error<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Error.Handler.html">
+							Handler						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Facades.html">
+							Facades						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Log.html">
+							Log						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Rememberme.html">
+							Rememberme						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Repository.html">
+							Repository						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.ServicesProvider.html">
+							ServicesProvider						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-UserFrosting.Sprinkle.Account.Tests.html">
+							Tests<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-UserFrosting.Sprinkle.Account.Tests.Integration.html">
+							Integration<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Tests.Integration.Controller.html">
+							Controller						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Tests.Integration.Database.html">
+							Database<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Tests.Integration.Database.Models.html">
+							Models						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Tests.Integration.ServicesProvider.html">
+							ServicesProvider						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Tests.Unit.html">
+							Unit<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Tests.Unit.Authenticate.html">
+							Authenticate						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Twig.html">
+							Twig						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.html">
+							Admin<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.Controller.html">
+							Controller						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.ServicesProvider.html">
+							ServicesProvider						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.Sprunje.html">
+							Sprunje						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.Tests.html">
+							Tests<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.Tests.Integration.html">
+							Integration<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.Tests.Integration.Controller.html">
+							Controller						</a>
+							</li>
+								</ul></li></ul></li></ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Alert.html">
+							Alert						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Bakery.html">
+							Bakery<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Bakery.Helper.html">
+							Helper						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Controller.html">
+							Controller						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Csrf.html">
+							Csrf						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.html">
+							Database<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Migrations.html">
+							Migrations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Migrations.v400.html">
+							v400						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Migrator.html">
+							Migrator						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Models.html">
+							Models<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Models.Concerns.html">
+							Concerns						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Relations.html">
+							Relations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Relations.Concerns.html">
+							Concerns						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Seeder.html">
+							Seeder						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Seeds.html">
+							Seeds						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Error.html">
+							Error<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Error.Handler.html">
+							Handler						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Error.Renderer.html">
+							Renderer						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Facades.html">
+							Facades						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Filesystem.html">
+							Filesystem						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Http.html">
+							Http<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Http.Concerns.html">
+							Concerns						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Log.html">
+							Log						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Mail.html">
+							Mail						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Model.html">
+							Model						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.ServicesProvider.html">
+							ServicesProvider						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Session.html">
+							Session						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Sprunje.html">
+							Sprunje						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.html">
+							Tests<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Integration.html">
+							Integration<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Integration.Bakery.html">
+							Bakery						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Integration.Database.html">
+							Database<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Integration.Database.Migrator.html">
+							Migrator						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Integration.Filesystem.html">
+							Filesystem						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Integration.ServicesProvider.html">
+							ServicesProvider						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Integration.Session.html">
+							Session						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Integration.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Unit.html">
+							Unit<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Unit.Alert.html">
+							Alert						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Unit.Database.html">
+							Database<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Unit.Database.Relations.html">
+							Relations						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Tests.Unit.Sprunje.html">
+							Sprunje						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Throttle.html">
+							Throttle						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Twig.html">
+							Twig						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Support.html">
+							Support<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Support.DotenvEditor.html">
+							DotenvEditor						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Message.html">
+							Message						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Repository.html">
+							Repository<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Support.Repository.Loader.html">
+							Loader						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Repository.PathBuilder.html">
+							PathBuilder						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.System.html">
+							System<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.System.Bakery.html">
+							Bakery						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.System.Sprinkle.html">
+							Sprinkle						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Tests.html">
+							Tests<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Integration.html">
+							Integration<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Integration.Error.html">
+							Error<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Integration.Error.Handler.html">
+							Handler						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Integration.Error.Renderer.html">
+							Renderer						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Integration.Migrations.html">
+							Migrations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Integration.Migrations.one.html">
+							one						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Integration.Migrations.two.html">
+							two						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Integration.Seeder.html">
+							Seeder						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Unit.html">
+							Unit						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.UniformResourceLocator.html">
+							UniformResourceLocator<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.UniformResourceLocator.Exception.html">
+							Exception						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-UserFrosting.Sprinkle.Account.Tests.Integration.AuthenticatorTest.html">AuthenticatorTest</a></li>
+				<li><a href="class-UserFrosting.Sprinkle.Account.Tests.Integration.AuthorizationManagerTest.html">AuthorizationManagerTest</a></li>
+				<li><a href="class-UserFrosting.Sprinkle.Account.Tests.Integration.FactoriesTest.html">FactoriesTest</a></li>
+				<li><a href="class-UserFrosting.Sprinkle.Account.Tests.Integration.PDOStorageTest.html">PDOStorageTest</a></li>
+				<li class="active"><a href="class-UserFrosting.Sprinkle.Account.Tests.Integration.RegistrationTest.html">RegistrationTest</a></li>
+				<li><a href="class-UserFrosting.Sprinkle.Account.Tests.Integration.UserModelTest.html">UserModelTest</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class RegistrationTest</h1>
+
+
+	<div class="description">
+	<p>RegistrationTest Class
+Tests the Registration class.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+PHPUnit\Framework\TestCase
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-UserFrosting.Tests.TestCase.html"><span>UserFrosting\Tests\TestCase</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>UserFrosting\Sprinkle\Account\Tests\Integration\RegistrationTest</span></b>			
+			
+			 uses 
+					<a href="class-UserFrosting.Sprinkle.Core.Tests.TestDatabase.html"><span>UserFrosting\Sprinkle\Core\Tests\TestDatabase</span></a>, 
+			
+					<a href="class-UserFrosting.Sprinkle.Core.Tests.RefreshDatabase.html"><span>UserFrosting\Sprinkle\Core\Tests\RefreshDatabase</span></a>
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-UserFrosting.html">UserFrosting</a>\<a href="namespace-UserFrosting.Sprinkle.html">Sprinkle</a>\<a href="namespace-UserFrosting.Sprinkle.Account.html">Account</a>\<a href="namespace-UserFrosting.Sprinkle.Account.Tests.html">Tests</a>\<a href="namespace-UserFrosting.Sprinkle.Account.Tests.Integration.html">Integration</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-UserFrosting.Sprinkle.Account.Tests.Integration.RegistrationTest.html#21-156" title="Go to source code">sprinkles/account/tests/Integration/RegistrationTest.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="tearDown" id="_tearDown">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_tearDown">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Account.Tests.Integration.RegistrationTest.html#41-45" title="Go to source code">tearDown</a>( )</code>
+
+			<div class="description short">
+				<p>Clean up the testing environment before the next test.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Clean up the testing environment before the next test.</p>
+
+
+
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-UserFrosting.Tests.TestCase.html#_tearDown">UserFrosting\Tests\TestCase::tearDown</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setUp" id="_setUp">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setUp">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Account.Tests.Integration.RegistrationTest.html#47-57" title="Go to source code">setUp</a>( )</code>
+
+			<div class="description short">
+				<p>Setup the database schema.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Setup the database schema.</p>
+
+
+
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-UserFrosting.Tests.TestCase.html#_setUp">UserFrosting\Tests\TestCase::setUp</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="testValidation" id="_testValidation">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_testValidation">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Account.Tests.Integration.RegistrationTest.html#59-74" title="Go to source code">testValidation</a>( )</code>
+
+			<div class="description short">
+				<p>Test validation works</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Test validation works</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="testMissingFields" id="_testMissingFields">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_testMissingFields">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Account.Tests.Integration.RegistrationTest.html#76-93" title="Go to source code">testMissingFields</a>( )</code>
+
+			<div class="description short">
+				<p>Test the $requiredProperties property</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Test the $requiredProperties property</p>
+
+
+
+
+
+					<h4>Depends</h4>
+					<div class="list">
+							testValidation<br>
+					</div>
+					<h4>Expectedexception</h4>
+					<div class="list">
+							UserFrosting\Support\Exception\HttpException<br>
+					</div>
+					<h4>Expectedexceptionmessage</h4>
+					<div class="list">
+							Account can't be registrated as 'first_name' is required to create a new user.<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="testNormalRegistration" id="_testNormalRegistration">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_testNormalRegistration">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Account.Tests.Integration.RegistrationTest.html#95-123" title="Go to source code">testNormalRegistration</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+					<h4>Depends</h4>
+					<div class="list">
+							testValidation<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="testValidationWithDuplicateUsername" id="_testValidationWithDuplicateUsername">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_testValidationWithDuplicateUsername">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Account.Tests.Integration.RegistrationTest.html#125-138" title="Go to source code">testValidationWithDuplicateUsername</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+					<h4>Depends</h4>
+					<div class="list">
+							testNormalRegistration<br>
+					</div>
+					<h4>Expectedexception</h4>
+					<div class="list">
+							UserFrosting\Support\Exception\HttpException<br>
+					</div>
+					<h4>Expectedexceptionmessage</h4>
+					<div class="list">
+							Username is already in use.<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="testValidationWithDuplicateEmail" id="_testValidationWithDuplicateEmail">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_testValidationWithDuplicateEmail">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Account.Tests.Integration.RegistrationTest.html#140-155" title="Go to source code">testValidationWithDuplicateEmail</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+					<h4>Depends</h4>
+					<div class="list">
+							testNormalRegistration<br>
+					</div>
+					<h4>Expectedexception</h4>
+					<div class="list">
+							UserFrosting\Support\Exception\HttpException<br>
+					</div>
+					<h4>Expectedexceptionmessage</h4>
+					<div class="list">
+							Email is already in use.<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-UserFrosting.Tests.TestCase.html#methods">UserFrosting\Tests\TestCase</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-UserFrosting.Tests.TestCase.html#_afterApplicationCreated">afterApplicationCreated()</a></code>, 
+				<code><a href="class-UserFrosting.Tests.TestCase.html#_assertCollectionsSame">assertCollectionsSame()</a></code>, 
+				<code><a href="class-UserFrosting.Tests.TestCase.html#_beforeApplicationDestroyed">beforeApplicationDestroyed()</a></code>, 
+				<code><a href="class-UserFrosting.Tests.TestCase.html#_castToComparable">castToComparable()</a></code>, 
+				<code><a href="class-UserFrosting.Tests.TestCase.html#_cloneObjectArray">cloneObjectArray()</a></code>, 
+				<code><a href="class-UserFrosting.Tests.TestCase.html#_ignoreRelations">ignoreRelations()</a></code>, 
+				<code><a href="class-UserFrosting.Tests.TestCase.html#_invokeMethod">invokeMethod()</a></code>, 
+				<code><a href="class-UserFrosting.Tests.TestCase.html#_refreshApplication">refreshApplication()</a></code>, 
+				<code><a href="class-UserFrosting.Tests.TestCase.html#_setUpTraits"><span class="deprecated">setUpTraits()</span></a></code>
+			</p>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods used from <a href="class-UserFrosting.Sprinkle.Core.Tests.TestDatabase.html#methods">UserFrosting\Sprinkle\Core\Tests\TestDatabase</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-UserFrosting.Sprinkle.Core.Tests.TestDatabase.html#_setupTestDatabase">setupTestDatabase()</a></code>
+			</p>
+		</div>
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods used from <a href="class-UserFrosting.Sprinkle.Core.Tests.RefreshDatabase.html#methods">UserFrosting\Sprinkle\Core\Tests\RefreshDatabase</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-UserFrosting.Sprinkle.Core.Tests.RefreshDatabase.html#_beginDatabaseTransaction">beginDatabaseTransaction()</a></code>, 
+				<code><a href="class-UserFrosting.Sprinkle.Core.Tests.RefreshDatabase.html#_connectionsToTransact">connectionsToTransact()</a></code>, 
+				<code><a href="class-UserFrosting.Sprinkle.Core.Tests.RefreshDatabase.html#_refreshDatabase">refreshDatabase()</a></code>, 
+				<code><a href="class-UserFrosting.Sprinkle.Core.Tests.RefreshDatabase.html#_refreshInMemoryDatabase">refreshInMemoryDatabase()</a></code>, 
+				<code><a href="class-UserFrosting.Sprinkle.Core.Tests.RefreshDatabase.html#_refreshTestDatabase">refreshTestDatabase()</a></code>, 
+				<code><a href="class-UserFrosting.Sprinkle.Core.Tests.RefreshDatabase.html#_usingInMemoryDatabase">usingInMemoryDatabase()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="fakeUserData" id="$fakeUserData">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-UserFrosting.Sprinkle.Account.Tests.Integration.RegistrationTest.html#30-39" title="Go to source code"><var>$fakeUserData</var></a>
+
+				<div class="description short">
+					<p>Test user data</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Test user data</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$fakeUserData" class="anchor">#</a>
+					<code>[
+    <span class="php-quote">'user_name'</span>     =&gt; <span class="php-quote">'FooBar'</span>,
+    <span class="php-quote">'first_name'</span>    =&gt; <span class="php-quote">'Foo'</span>,
+    <span class="php-quote">'last_name'</span>     =&gt; <span class="php-quote">'Bar'</span>,
+    <span class="php-quote">'email'</span>         =&gt; <span class="php-quote">'Foo@Bar.com'</span>,
+    <span class="php-quote">'password'</span>      =&gt; <span class="php-quote">'FooBarFooBar123'</span>,
+]</code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from <a href="class-UserFrosting.Tests.TestCase.html#properties">UserFrosting\Tests\TestCase</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-UserFrosting.Tests.TestCase.html#$afterApplicationCreatedCallbacks"><var>$afterApplicationCreatedCallbacks</var></a></code>, 
+				<code><a href="class-UserFrosting.Tests.TestCase.html#$beforeApplicationDestroyedCallbacks"><var>$beforeApplicationDestroyedCallbacks</var></a></code>, 
+				<code><a href="class-UserFrosting.Tests.TestCase.html#$ci"><var>$ci</var></a></code>, 
+				<code><a href="class-UserFrosting.Tests.TestCase.html#$setUpHasRun"><var>$setUpHasRun</var></a></code>
+			</p>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties used from <a href="class-UserFrosting.Sprinkle.Core.Tests.RefreshDatabase.html#properties">UserFrosting\Sprinkle\Core\Tests\RefreshDatabase</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-UserFrosting.Sprinkle.Core.Tests.RefreshDatabase.html#$migrated"><var>$migrated</var></a></code>
+			</p>
+		</div>
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js?a4dae1e616b5907000aee0fd0b79fc847f8ec29f"></script>
+<script src="elementlist.js?29f5b838971fbb61bb92106e048084980dfd067d"></script>
+</body>
+</html>
