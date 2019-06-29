@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class UserFrosting\Fortress\ServerSideValidator</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Overview</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-UserFrosting.Fortress.html" title="Summary of UserFrosting\Fortress"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-UserFrosting.html">
+							UserFrosting<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Assets.html">
+							Assets<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Assets.UrlBuilder.html">
+							UrlBuilder						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Assets.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Cache.html">
+							Cache<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Cache.Driver.html">
+							Driver						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Config.html">
+							Config						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-UserFrosting.Fortress.html">
+							Fortress<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Fortress.Adapter.html">
+							Adapter						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Fortress.RequestSchema.html">
+							RequestSchema						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.I18n.html">
+							I18n						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Session.html">
+							Session						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.html">
+							Sprinkle<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.html">
+							Account<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Authenticate.html">
+							Authenticate<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Authenticate.Exception.html">
+							Exception						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Authorize.html">
+							Authorize						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Controller.html">
+							Controller<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Controller.Exception.html">
+							Exception						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.html">
+							Database<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Migrations.html">
+							Migrations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Migrations.v400.html">
+							v400						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Models.html">
+							Models						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Error.html">
+							Error<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Error.Handler.html">
+							Handler						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Log.html">
+							Log						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Repository.html">
+							Repository						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.ServicesProvider.html">
+							ServicesProvider						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Twig.html">
+							Twig						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.html">
+							Admin<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.Controller.html">
+							Controller						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.ServicesProvider.html">
+							ServicesProvider						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.Sprunje.html">
+							Sprunje						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Alert.html">
+							Alert						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Controller.html">
+							Controller						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.html">
+							Database<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Migrations.html">
+							Migrations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Migrations.v400.html">
+							v400						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Models.html">
+							Models<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Models.Concerns.html">
+							Concerns						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Relations.html">
+							Relations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Relations.Concerns.html">
+							Concerns						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Error.html">
+							Error<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Error.Handler.html">
+							Handler						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Error.Renderer.html">
+							Renderer						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Facades.html">
+							Facades						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Http.html">
+							Http<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Http.Concerns.html">
+							Concerns						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Log.html">
+							Log						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Mail.html">
+							Mail						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Model.html">
+							Model						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.ServicesProvider.html">
+							ServicesProvider						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Sprunje.html">
+							Sprunje						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Throttle.html">
+							Throttle						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Twig.html">
+							Twig						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Support.html">
+							Support<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Support.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Message.html">
+							Message						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Repository.html">
+							Repository<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Support.Repository.Loader.html">
+							Loader						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Repository.PathBuilder.html">
+							PathBuilder						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.System.html">
+							System<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.System.Bakery.html">
+							Bakery<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.System.Bakery.Command.html">
+							Command						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.System.Database.html">
+							Database<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.System.Database.Migrations.html">
+							Migrations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.System.Database.Migrations.v410.html">
+							v410						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.System.Database.Model.html">
+							Model						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.System.Sprinkle.html">
+							Sprinkle						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Tests.html">
+							Tests<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Integration.html">
+							Integration						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Unit.html">
+							Unit						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-UserFrosting.Fortress.RequestDataTransformer.html">RequestDataTransformer</a></li>
+				<li><a href="class-UserFrosting.Fortress.RequestSchema.html">RequestSchema</a></li>
+				<li class="active"><a href="class-UserFrosting.Fortress.ServerSideValidator.html">ServerSideValidator</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-UserFrosting.Fortress.RequestDataTransformerInterface.html">RequestDataTransformerInterface</a></li>
+				<li><a href="class-UserFrosting.Fortress.ServerSideValidatorInterface.html">ServerSideValidatorInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class ServerSideValidator</h1>
+
+
+	<div class="description">
+	<p>ServerSideValidator Class</p>
+
+<p>Loads validation rules from a schema and validates a target array of data.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+Valitron\Validator
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>UserFrosting\Fortress\ServerSideValidator</span></b>			
+			 implements 
+				<a href="class-UserFrosting.Fortress.ServerSideValidatorInterface.html"><span>UserFrosting\Fortress\ServerSideValidatorInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-UserFrosting.html">UserFrosting</a>\<a href="namespace-UserFrosting.Fortress.html">Fortress</a><br>
+		
+
+				<b>Author:</b>
+				Alexander Weissman (https://alexanderweissman.com)<br>
+			<b>Located at</b> <a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#14-300" title="Go to source code">ServerSideValidator.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#33-49" title="Go to source code">__construct</a>( <span><code><a href="class-UserFrosting.Fortress.RequestSchema.RequestSchemaInterface.html">UserFrosting\Fortress\RequestSchema\RequestSchemaInterface</a></code> <var>$schema</var></span>, <span><code><a href="class-UserFrosting.I18n.MessageTranslator.html">UserFrosting\I18n\MessageTranslator</a></code> <var>$translator</var></span> )</code>
+
+			<div class="description short">
+				<p>Create a new server-side validator.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Create a new server-side validator.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$schema</var></dt>
+						<dd>A RequestSchemaInterface object, containing the validation rules.</dd>
+						<dt><var>$translator</var></dt>
+						<dd>A MessageTranslator to be used to translate message ids found in the schema.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setSchema" id="_setSchema">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setSchema">#</a>
+			<code><a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#51-57" title="Go to source code">setSchema</a>( <span><code><a href="class-UserFrosting.Fortress.RequestSchema.RequestSchemaInterface.html">UserFrosting\Fortress\RequestSchema\RequestSchemaInterface</a></code> <var>$schema</var></span> )</code>
+
+			<div class="description short">
+				<p>Set the schema for this validator, as a valid RequestSchemaInterface object.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set the schema for this validator, as a valid RequestSchemaInterface object.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$schema</var></dt>
+						<dd>A RequestSchemaInterface object, containing the validation rules.</dd>
+					</dl></div>
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code><a href="class-UserFrosting.Fortress.ServerSideValidatorInterface.html#_setSchema">UserFrosting\Fortress\ServerSideValidatorInterface::setSchema()</a></code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setTranslator" id="_setTranslator">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setTranslator">#</a>
+			<code><a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#59-65" title="Go to source code">setTranslator</a>( <span><code><a href="class-UserFrosting.I18n.MessageTranslator.html">UserFrosting\I18n\MessageTranslator</a></code> <var>$translator</var></span> )</code>
+
+			<div class="description short">
+				<p>Set the translator for this validator, as a valid MessageTranslator object.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set the translator for this validator, as a valid MessageTranslator object.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$translator</var></dt>
+						<dd>A MessageTranslator to be used to translate message ids found in the schema.</dd>
+					</dl></div>
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code><a href="class-UserFrosting.Fortress.ServerSideValidatorInterface.html#_setTranslator">UserFrosting\Fortress\ServerSideValidatorInterface::setTranslator()</a></code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="validate" id="_validate">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_validate">#</a>
+			<code><a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#67-75" title="Go to source code">validate</a>( <span>array <var>$data</var> = []</span> )</code>
+
+			<div class="description short">
+				<p>Validate the specified data against the schema rules.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Validate the specified data against the schema rules.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd>An array of data, mapping field names to field values.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean<br>True if the data was successfully validated, false otherwise.
+					</div>
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code><a href="class-UserFrosting.Fortress.ServerSideValidatorInterface.html#_validate">UserFrosting\Fortress\ServerSideValidatorInterface::validate()</a></code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="hasRule" id="_hasRule">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_hasRule">#</a>
+			<code><a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#77-85" title="Go to source code">hasRule</a>( <span> <var>$name</var></span>, <span> <var>$field</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				<p>We expose this method to the public interface for testing purposes.</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="validateEqualsValue" id="_validateEqualsValue">
+
+			<td class="attributes"><code>
+				 protected 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_validateEqualsValue">#</a>
+			<code><a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#87-107" title="Go to source code">validateEqualsValue</a>( <span>string <var>$field</var></span>, <span>mixed <var>$value</var></span>, <span>string <var>$params</var></span>, <span>boolean <var>$caseSensitive</var>,…</span> )</code>
+
+			<div class="description short">
+				<p>Validate that a field has a particular value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Validate that a field has a particular value.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+						<dt><var>$params</var></dt>
+						<dd>$targetValue</dd>
+						<dt><var>$caseSensitive</var>,…</dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="validateNotEqualsValue" id="_validateNotEqualsValue">
+
+			<td class="attributes"><code>
+				 protected 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_validateNotEqualsValue">#</a>
+			<code><a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#109-121" title="Go to source code">validateNotEqualsValue</a>( <span>string <var>$field</var></span>, <span>mixed <var>$value</var></span>, <span>string <var>$params</var></span>, <span>boolean <var>$caseSensitive</var>,…</span> )</code>
+
+			<div class="description short">
+				<p>Validate that a field does NOT have a particular value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Validate that a field does NOT have a particular value.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+						<dt><var>$params</var></dt>
+						<dd>$targetValue</dd>
+						<dt><var>$caseSensitive</var>,…</dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="validatePhoneUS" id="_validatePhoneUS">
+
+			<td class="attributes"><code>
+				 protected 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_validatePhoneUS">#</a>
+			<code><a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#123-149" title="Go to source code">validatePhoneUS</a>( <span>string <var>$field</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+			<div class="description short">
+				<p>Matches US phone number format
+Ported from jqueryValidation rules</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Matches US phone number format
+Ported from jqueryValidation rules</p>
+
+<p>where the area code may not start with 1 and the prefix may not start with 1
+allows '-' or ' ' as a separator and allows parens around area code
+some people may want to put a '1' in front of their number</p>
+
+<p>1(212)-999-2345 or
+212 999 2344 or
+212-999-0983</p>
+
+<p>but not
+111-123-5434
+and not
+212 123 4567</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="validateUsername" id="_validateUsername">
+
+			<td class="attributes"><code>
+				 protected 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_validateUsername">#</a>
+			<code><a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#151-161" title="Go to source code">validateUsername</a>( <span>string <var>$field</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+			<div class="description short">
+				<p>Validate that a field contains only valid username characters: alpha-numeric characters, dots, dashes, and underscores</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Validate that a field contains only valid username characters: alpha-numeric characters, dots, dashes, and underscores</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-UserFrosting.Fortress.ServerSideValidatorInterface.html#methods">UserFrosting\Fortress\ServerSideValidatorInterface</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-UserFrosting.Fortress.ServerSideValidatorInterface.html#_data">data()</a></code>, 
+				<code><a href="class-UserFrosting.Fortress.ServerSideValidatorInterface.html#_errors">errors()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="schema" id="$schema">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-UserFrosting.Fortress.RequestSchema.RequestSchemaInterface.html">UserFrosting\Fortress\RequestSchema\RequestSchemaInterface</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#23-26" title="Go to source code"><var>$schema</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$schema" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="translator" id="$translator">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-UserFrosting.I18n.MessageTranslator.html">UserFrosting\I18n\MessageTranslator</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-UserFrosting.Fortress.ServerSideValidator.html#28-31" title="Go to source code"><var>$translator</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$translator" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

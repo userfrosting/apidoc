@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class UserFrosting\Sprinkle\Core\Util\ShutdownHandler</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Overview</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Util.html" title="Summary of UserFrosting\Sprinkle\Core\Util"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-UserFrosting.html">
+							UserFrosting<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Assets.html">
+							Assets<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Assets.UrlBuilder.html">
+							UrlBuilder						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Assets.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Cache.html">
+							Cache<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Cache.Driver.html">
+							Driver						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Config.html">
+							Config						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Fortress.html">
+							Fortress<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Fortress.Adapter.html">
+							Adapter						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Fortress.RequestSchema.html">
+							RequestSchema						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.I18n.html">
+							I18n						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Session.html">
+							Session						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-UserFrosting.Sprinkle.html">
+							Sprinkle<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.html">
+							Account<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Authenticate.html">
+							Authenticate<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Authenticate.Exception.html">
+							Exception						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Authorize.html">
+							Authorize						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Controller.html">
+							Controller<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Controller.Exception.html">
+							Exception						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.html">
+							Database<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Migrations.html">
+							Migrations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Migrations.v400.html">
+							v400						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Database.Models.html">
+							Models						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Error.html">
+							Error<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Error.Handler.html">
+							Handler						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Log.html">
+							Log						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Repository.html">
+							Repository						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.ServicesProvider.html">
+							ServicesProvider						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Twig.html">
+							Twig						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Account.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.html">
+							Admin<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.Controller.html">
+							Controller						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.ServicesProvider.html">
+							ServicesProvider						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Admin.Sprunje.html">
+							Sprunje						</a>
+							</li>
+								</ul></li>
+					<li class="active">
+						<a href="namespace-UserFrosting.Sprinkle.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Alert.html">
+							Alert						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Controller.html">
+							Controller						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.html">
+							Database<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Migrations.html">
+							Migrations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Migrations.v400.html">
+							v400						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Models.html">
+							Models<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Models.Concerns.html">
+							Concerns						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Relations.html">
+							Relations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Database.Relations.Concerns.html">
+							Concerns						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Error.html">
+							Error<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Error.Handler.html">
+							Handler						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Error.Renderer.html">
+							Renderer						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Facades.html">
+							Facades						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Http.html">
+							Http<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Http.Concerns.html">
+							Concerns						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Log.html">
+							Log						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Mail.html">
+							Mail						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Model.html">
+							Model						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.ServicesProvider.html">
+							ServicesProvider						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Sprunje.html">
+							Sprunje						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Throttle.html">
+							Throttle						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Sprinkle.Core.Twig.html">
+							Twig						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-UserFrosting.Sprinkle.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Support.html">
+							Support<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Support.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Message.html">
+							Message						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Repository.html">
+							Repository<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Support.Repository.Loader.html">
+							Loader						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Repository.PathBuilder.html">
+							PathBuilder						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Support.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.System.html">
+							System<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.System.Bakery.html">
+							Bakery<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.System.Bakery.Command.html">
+							Command						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.System.Database.html">
+							Database<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.System.Database.Migrations.html">
+							Migrations<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.System.Database.Migrations.v410.html">
+							v410						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.System.Database.Model.html">
+							Model						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.System.Sprinkle.html">
+							Sprinkle						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-UserFrosting.Tests.html">
+							Tests<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Integration.html">
+							Integration						</a>
+							</li>
+					<li>
+						<a href="namespace-UserFrosting.Tests.Unit.html">
+							Unit						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-UserFrosting.Sprinkle.Core.Util.Captcha.html">Captcha</a></li>
+				<li><a href="class-UserFrosting.Sprinkle.Core.Util.CheckEnvironment.html">CheckEnvironment</a></li>
+				<li><a href="class-UserFrosting.Sprinkle.Core.Util.ClassMapper.html">ClassMapper</a></li>
+				<li><a href="class-UserFrosting.Sprinkle.Core.Util.EnvironmentInfo.html">EnvironmentInfo</a></li>
+				<li class="active"><a href="class-UserFrosting.Sprinkle.Core.Util.ShutdownHandler.html">ShutdownHandler</a></li>
+				<li><a href="class-UserFrosting.Sprinkle.Core.Util.Util.html">Util</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-UserFrosting.Sprinkle.Core.Util.BadClassNameException.html">BadClassNameException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class ShutdownHandler</h1>
+
+
+	<div class="description">
+	<p>Registers a handler to be invoked whenever the application shuts down.
+If it shut down due to a fatal error, will generate a clean error message.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+<b><span>UserFrosting\Sprinkle\Core\Util\ShutdownHandler</span></b>			
+			
+			 uses 
+					<a href="class-UserFrosting.Sprinkle.Core.Http.Concerns.DeterminesContentType.html"><span>UserFrosting\Sprinkle\Core\Http\Concerns\DeterminesContentType</span></a>
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-UserFrosting.html">UserFrosting</a>\<a href="namespace-UserFrosting.Sprinkle.html">Sprinkle</a>\<a href="namespace-UserFrosting.Sprinkle.Core.html">Core</a>\<a href="namespace-UserFrosting.Sprinkle.Core.Util.html">Util</a><br>
+		
+
+				<b>Author:</b>
+				Alex Weissman (https://alexanderweissman.com)<br>
+			<b>Located at</b> <a href="source-class-UserFrosting.Sprinkle.Core.Util.ShutdownHandler.html#13-167" title="Go to source code">sprinkles/core/src/Util/ShutdownHandler.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Core.Util.ShutdownHandler.html#33-43" title="Go to source code">__construct</a>( <span>Interop\Container\ContainerInterface <var>$ci</var></span>, <span>boolean <var>$displayErrorInfo</var></span> )</code>
+
+			<div class="description short">
+				<p>Constructor.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$ci</var></dt>
+						<dd>The global container object, which holds all your services.</dd>
+						<dt><var>$displayErrorInfo</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="register" id="_register">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_register">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Core.Util.ShutdownHandler.html#45-53" title="Go to source code">register</a>( )</code>
+
+			<div class="description short">
+				<p>Register this class with the shutdown handler.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Register this class with the shutdown handler.</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="fatalHandler" id="_fatalHandler">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_fatalHandler">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Core.Util.ShutdownHandler.html#55-97" title="Go to source code">fatalHandler</a>( )</code>
+
+			<div class="description short">
+				<p>Set up the fatal error handler, so that we get a clean error message and alert instead of a WSOD.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set up the fatal error handler, so that we get a clean error message and alert instead of a WSOD.</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="buildErrorInfoMessage" id="_buildErrorInfoMessage">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_buildErrorInfoMessage">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Core.Util.ShutdownHandler.html#99-120" title="Go to source code">buildErrorInfoMessage</a>( <span>array <var>$error</var></span> )</code>
+
+			<div class="description short">
+				<p>Build the error message string.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Build the error message string.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$error</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="buildErrorPage" id="_buildErrorPage">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_buildErrorPage">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Core.Util.ShutdownHandler.html#122-144" title="Go to source code">buildErrorPage</a>( <span>string <var>$message</var></span> )</code>
+
+			<div class="description short">
+				<p>Build an error response of the appropriate type as determined by the request's Accept header.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Build an error response of the appropriate type as determined by the request's Accept header.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$message</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="buildHtmlErrorPage" id="_buildHtmlErrorPage">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_buildHtmlErrorPage">#</a>
+			<code><a href="source-class-UserFrosting.Sprinkle.Core.Util.ShutdownHandler.html#146-166" title="Go to source code">buildHtmlErrorPage</a>( <span>string <var>$message</var></span> )</code>
+
+			<div class="description short">
+				<p>Build an HTML error page from an error string.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Build an HTML error page from an error string.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$message</var></dt>
+						<dd>$errorMessage</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods used from <a href="class-UserFrosting.Sprinkle.Core.Http.Concerns.DeterminesContentType.html#methods">UserFrosting\Sprinkle\Core\Http\Concerns\DeterminesContentType</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-UserFrosting.Sprinkle.Core.Http.Concerns.DeterminesContentType.html#_determineContentType">determineContentType()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="ci" id="$ci">
+			<td class="attributes"><code>
+				protected  
+				Interop\Container\ContainerInterface
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-UserFrosting.Sprinkle.Core.Util.ShutdownHandler.html#23-26" title="Go to source code"><var>$ci</var></a>
+
+				<div class="description short">
+					<p>The global container object, which holds all your services.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The global container object, which holds all your services.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$ci" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="displayErrorInfo" id="$displayErrorInfo">
+			<td class="attributes"><code>
+				protected  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-UserFrosting.Sprinkle.Core.Util.ShutdownHandler.html#28-31" title="Go to source code"><var>$displayErrorInfo</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$displayErrorInfo" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties used from <a href="class-UserFrosting.Sprinkle.Core.Http.Concerns.DeterminesContentType.html#properties">UserFrosting\Sprinkle\Core\Http\Concerns\DeterminesContentType</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-UserFrosting.Sprinkle.Core.Http.Concerns.DeterminesContentType.html#$knownContentTypes"><var>$knownContentTypes</var></a></code>
+			</p>
+		</div>
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
