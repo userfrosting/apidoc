@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UserFrosting API</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">UserFrosting API</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle.html">Sprinkle</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core.html">Core</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core-tests.html">Tests</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core-tests-integration.html">Integration</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core-tests-integration-database.html">Database</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            DatabaseTests
+                            <span class="phpdocumentor-class__extends">
+                    extends <abbr title="\UserFrosting\Tests\TestCase">TestCase</abbr>
+                </span>
+                                                        </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">18</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary"></p>
+        <section class="phpdocumentor-class__description"></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#property_schemaName">$schemaName</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_setUp">setUp()</a></th>
+                    <td class="phpdocumentor-cell">Setup the database schema.</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_createSchema">createSchema()</a></th>
+                    <td class="phpdocumentor-cell">createSchema</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_tearDown">tearDown()</a></th>
+                    <td class="phpdocumentor-cell">Tear down the database schema.</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testOneToManyRelationship">testOneToManyRelationship()</a></th>
+                    <td class="phpdocumentor-cell">testOneToManyRelationship</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testSyncOneToMany">testSyncOneToMany()</a></th>
+                    <td class="phpdocumentor-cell">Tests our custom HasManySyncable class.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testSyncMorphMany">testSyncMorphMany()</a></th>
+                    <td class="phpdocumentor-cell">Tests our custom MorphManySyncable class.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testBelongsToManyUnique">testBelongsToManyUnique()</a></th>
+                    <td class="phpdocumentor-cell">testBelongsToManyUnique</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testMorphsToManyUnique">testMorphsToManyUnique()</a></th>
+                    <td class="phpdocumentor-cell">testMorphsToManyUnique</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testMorphsToManyUniqueWithTertiary">testMorphsToManyUniqueWithTertiary()</a></th>
+                    <td class="phpdocumentor-cell">testMorphsToManyUniqueWithTertiary</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testBelongsToManyUniqueWithTertiary">testBelongsToManyUniqueWithTertiary()</a></th>
+                    <td class="phpdocumentor-cell">testBelongsToManyUniqueWithTertiary</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testBelongsToManyUniqueWithTertiaryEagerLoad">testBelongsToManyUniqueWithTertiaryEagerLoad()</a></th>
+                    <td class="phpdocumentor-cell">testBelongsToManyUniqueWithTertiaryEagerLoad</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testBelongsToManyThrough">testBelongsToManyThrough()</a></th>
+                    <td class="phpdocumentor-cell">Test the ability of a BelongsToManyThrough relationship to retrieve structured data on a single model or set of models.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testBelongsToManyThroughPaginated">testBelongsToManyThroughPaginated()</a></th>
+                    <td class="phpdocumentor-cell">Test the ability of a BelongsToManyThrough relationship to retrieve and count paginated queries.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testBelongsToManyThroughPaginatedWithOrderByAggregateColumn">testBelongsToManyThroughPaginatedWithOrderByAggregateColumn()</a></th>
+                    <td class="phpdocumentor-cell">Test the ability of a BelongsToManyThrough relationship to retrieve and count paginated queries,
+when we need to reference a virtual/computed column (for example in a sort).</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testBelongsToManyThroughWithVia">testBelongsToManyThroughWithVia()</a></th>
+                    <td class="phpdocumentor-cell">Test the ability of a BelongsToManyThrough relationship to retrieve structured data on a single model or set of models,
+eager loading the &quot;via&quot; models at the same time.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testQueryExclude">testQueryExclude()</a></th>
+                    <td class="phpdocumentor-cell">testQueryExclude</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testQueryExcludeOnJoinedTable">testQueryExcludeOnJoinedTable()</a></th>
+                    <td class="phpdocumentor-cell">testQueryExcludeOnJoinedTable</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testQueryExcludeUseQualifiedNamesOnJoinedTable">testQueryExcludeUseQualifiedNamesOnJoinedTable()</a></th>
+                    <td class="phpdocumentor-cell">testQueryExcludeUseQualifiedNamesOnJoinedTable</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_testQueryExcludeWildcard">testQueryExcludeWildcard()</a></th>
+                    <td class="phpdocumentor-cell">testQueryExcludeWildcard</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_connection">connection()</a></th>
+                    <td class="phpdocumentor-cell">Get a database connection instance.</td>
+                    <td class="phpdocumentor-cell"><abbr title="\Illuminate\Database\Connection">Connection</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_schema">schema()</a></th>
+                    <td class="phpdocumentor-cell">Get a schema builder instance.</td>
+                    <td class="phpdocumentor-cell"><abbr title="\Illuminate\Database\Schema\Builder">Builder</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_generateRoles">generateRoles()</a></th>
+                    <td class="phpdocumentor-cell">generateRoles</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_generatePermissions">generatePermissions()</a></th>
+                    <td class="phpdocumentor-cell">generatePermissions</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_generateRolesWithPermissions">generateRolesWithPermissions()</a></th>
+                    <td class="phpdocumentor-cell">generateRolesWithPermissions</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_generateJobs">generateJobs()</a></th>
+                    <td class="phpdocumentor-cell">generateJobs</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_generateLocations">generateLocations()</a></th>
+                    <td class="phpdocumentor-cell">generateLocations</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_generateTasks">generateTasks()</a></th>
+                    <td class="phpdocumentor-cell">generateTasks</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_generateAssignments">generateAssignments()</a></th>
+                    <td class="phpdocumentor-cell">generateAssignments</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_assertBelongsToManyThroughForDavid">assertBelongsToManyThroughForDavid()</a></th>
+                    <td class="phpdocumentor-cell">assertBelongsToManyThroughForDavid</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html#method_assertBelongsToManyThroughForAlex">assertBelongsToManyThroughForAlex()</a></th>
+                    <td class="phpdocumentor-cell">assertBelongsToManyThroughForAlex</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                                            </table>
+
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_schemaName"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$schemaName</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">23</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$schemaName</span>
+         = <span class="phpdocumentor-signature__default-value">&#039;test_integration&#039;</span>    </code>
+    </article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method_setUp"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setUp()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">28</span>
+    </aside>
+        <p class="phpdocumentor-summary">Setup the database schema.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">setUp</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+    
+    
+        
+    
+</article>
+                                    <a id="method_createSchema"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">createSchema()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">42</span>
+    </aside>
+        <p class="phpdocumentor-summary">createSchema</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">createSchema</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_tearDown"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">tearDown()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">115</span>
+    </aside>
+        <p class="phpdocumentor-summary">Tear down the database schema.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">tearDown</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+    
+    
+        
+    
+</article>
+                                    <a id="method_testOneToManyRelationship"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testOneToManyRelationship()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">137</span>
+    </aside>
+        <p class="phpdocumentor-summary">testOneToManyRelationship</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testOneToManyRelationship</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testSyncOneToMany"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testSyncOneToMany()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">160</span>
+    </aside>
+        <p class="phpdocumentor-summary">Tests our custom HasManySyncable class.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testSyncOneToMany</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testSyncMorphMany"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testSyncMorphMany()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">208</span>
+    </aside>
+        <p class="phpdocumentor-summary">Tests our custom MorphManySyncable class.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testSyncMorphMany</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testBelongsToManyUnique"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testBelongsToManyUnique()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">258</span>
+    </aside>
+        <p class="phpdocumentor-summary">testBelongsToManyUnique</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testBelongsToManyUnique</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testMorphsToManyUnique"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testMorphsToManyUnique()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">297</span>
+    </aside>
+        <p class="phpdocumentor-summary">testMorphsToManyUnique</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testMorphsToManyUnique</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">depends</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>testBelongsToManyUnique</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testMorphsToManyUniqueWithTertiary"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testMorphsToManyUniqueWithTertiary()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">339</span>
+    </aside>
+        <p class="phpdocumentor-summary">testMorphsToManyUniqueWithTertiary</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testMorphsToManyUniqueWithTertiary</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">depends</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>testMorphsToManyUnique</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testBelongsToManyUniqueWithTertiary"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testBelongsToManyUniqueWithTertiary()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">409</span>
+    </aside>
+        <p class="phpdocumentor-summary">testBelongsToManyUniqueWithTertiary</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testBelongsToManyUniqueWithTertiary</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">depends</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>testBelongsToManyUnique</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testBelongsToManyUniqueWithTertiaryEagerLoad"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testBelongsToManyUniqueWithTertiaryEagerLoad()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">482</span>
+    </aside>
+        <p class="phpdocumentor-summary">testBelongsToManyUniqueWithTertiaryEagerLoad</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testBelongsToManyUniqueWithTertiaryEagerLoad</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">depends</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>testBelongsToManyUniqueWithTertiary</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testBelongsToManyThrough"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testBelongsToManyThrough()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">574</span>
+    </aside>
+        <p class="phpdocumentor-summary">Test the ability of a BelongsToManyThrough relationship to retrieve structured data on a single model or set of models.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testBelongsToManyThrough</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testBelongsToManyThroughPaginated"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testBelongsToManyThroughPaginated()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">662</span>
+    </aside>
+        <p class="phpdocumentor-summary">Test the ability of a BelongsToManyThrough relationship to retrieve and count paginated queries.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testBelongsToManyThroughPaginated</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">depends</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>testBelongsToManyThrough</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testBelongsToManyThroughPaginatedWithOrderByAggregateColumn"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testBelongsToManyThroughPaginatedWithOrderByAggregateColumn()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">699</span>
+    </aside>
+        <p class="phpdocumentor-summary">Test the ability of a BelongsToManyThrough relationship to retrieve and count paginated queries,
+when we need to reference a virtual/computed column (for example in a sort).</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testBelongsToManyThroughPaginatedWithOrderByAggregateColumn</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">depends</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>testBelongsToManyThrough</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testBelongsToManyThroughWithVia"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testBelongsToManyThroughWithVia()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">729</span>
+    </aside>
+        <p class="phpdocumentor-summary">Test the ability of a BelongsToManyThrough relationship to retrieve structured data on a single model or set of models,
+eager loading the &quot;via&quot; models at the same time.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testBelongsToManyThroughWithVia</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">depends</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>testBelongsToManyThrough</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testQueryExclude"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testQueryExclude()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">760</span>
+    </aside>
+        <p class="phpdocumentor-summary">testQueryExclude</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testQueryExclude</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testQueryExcludeOnJoinedTable"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testQueryExcludeOnJoinedTable()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">776</span>
+    </aside>
+        <p class="phpdocumentor-summary">testQueryExcludeOnJoinedTable</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testQueryExcludeOnJoinedTable</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">depends</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>testQueryExclude</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testQueryExcludeUseQualifiedNamesOnJoinedTable"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testQueryExcludeUseQualifiedNamesOnJoinedTable()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">823</span>
+    </aside>
+        <p class="phpdocumentor-summary">testQueryExcludeUseQualifiedNamesOnJoinedTable</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testQueryExcludeUseQualifiedNamesOnJoinedTable</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">depends</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>testQueryExclude</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testQueryExcludeWildcard"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testQueryExcludeWildcard()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">866</span>
+    </aside>
+        <p class="phpdocumentor-summary">testQueryExcludeWildcard</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testQueryExcludeWildcard</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">depends</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>testQueryExclude</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_connection"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">connection()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">899</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get a database connection instance.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">connection</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$connection</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;test_integration&#039;</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Connection">Connection</abbr></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$connection</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">&#039;test_integration&#039;</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>[description]</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Connection">Connection</abbr></span>
+            
+</article>
+                                    <a id="method_schema"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">schema()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">910</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get a schema builder instance.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">schema</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$connection</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;test_integration&#039;</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Schema\Builder">Builder</abbr></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$connection</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">&#039;test_integration&#039;</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Schema\Builder">Builder</abbr></span>
+            
+</article>
+                                    <a id="method_generateRoles"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">generateRoles()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">918</span>
+    </aside>
+        <p class="phpdocumentor-summary">generateRoles</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">generateRoles</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_generatePermissions"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">generatePermissions()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">941</span>
+    </aside>
+        <p class="phpdocumentor-summary">generatePermissions</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">generatePermissions</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_generateRolesWithPermissions"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">generateRolesWithPermissions()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">969</span>
+    </aside>
+        <p class="phpdocumentor-summary">generateRolesWithPermissions</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">generateRolesWithPermissions</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_generateJobs"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">generateJobs()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">986</span>
+    </aside>
+        <p class="phpdocumentor-summary">generateJobs</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">generateJobs</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_generateLocations"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">generateLocations()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">1031</span>
+    </aside>
+        <p class="phpdocumentor-summary">generateLocations</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">generateLocations</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_generateTasks"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">generateTasks()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">1049</span>
+    </aside>
+        <p class="phpdocumentor-summary">generateTasks</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">generateTasks</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_generateAssignments"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">generateAssignments()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">1072</span>
+    </aside>
+        <p class="phpdocumentor-summary">generateAssignments</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">generateAssignments</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_assertBelongsToManyThroughForDavid"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">assertBelongsToManyThroughForDavid()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">1112</span>
+    </aside>
+        <p class="phpdocumentor-summary">assertBelongsToManyThroughForDavid</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">assertBelongsToManyThroughForDavid</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$permissions</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$permissions</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_assertBelongsToManyThroughForAlex"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">assertBelongsToManyThroughForAlex()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php"><a href="../files/app-sprinkles-core-tests-integration-database-databasetests.html"><abbr title="app/sprinkles/core/tests/Integration/Database/DatabaseTests.php">DatabaseTests.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">1163</span>
+    </aside>
+        <p class="phpdocumentor-summary">assertBelongsToManyThroughForAlex</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">assertBelongsToManyThroughForAlex</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$permissions</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$permissions</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                                            </section>
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

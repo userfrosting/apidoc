@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UserFrosting API</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">UserFrosting API</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle.html">Sprinkle</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core.html">Core</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core-tests.html">Tests</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core-tests-integration.html">Integration</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core-tests-integration-database.html">Database</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core-tests-integration-database-migrator.html">Migrator</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            DatabaseMigratorIntegrationTest
+                            <span class="phpdocumentor-class__extends">
+                    extends <abbr title="\UserFrosting\Tests\TestCase">TestCase</abbr>
+                </span>
+                                                        </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">22</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">Migrator Tests</p>
+        <section class="phpdocumentor-class__description"></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#property_connection">$connection</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#property_migrationTable">$migrationTable</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#property_schema">$schema</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\Illuminate\Database\Schema\Builder">Builder</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#property_migrator">$migrator</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-Migrator.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\Migrator">Migrator</abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#property_locator">$locator</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-MigrationLocator.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\MigrationLocator">MigrationLocator</abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#property_repository">$repository</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-DatabaseMigrationRepository.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\DatabaseMigrationRepository">DatabaseMigrationRepository</abbr></a></td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_setUp">setUp()</a></th>
+                    <td class="phpdocumentor-cell">Setup migration instances used for all tests</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testMigrationRepositoryCreated">testMigrationRepositoryCreated()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testBasicMigration">testBasicMigration()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testRepository">testRepository()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testMigrationsCanBeRolledBack">testMigrationsCanBeRolledBack()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testMigrationsCanBeReset">testMigrationsCanBeReset()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testNoErrorIsThrownWhenNoOutstandingMigrationsExist">testNoErrorIsThrownWhenNoOutstandingMigrationsExist()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testNoErrorIsThrownWhenNothingToRollback">testNoErrorIsThrownWhenNothingToRollback()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testPretendUp">testPretendUp()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testPretendRollback">testPretendRollback()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testChangeRepositoryAndDeprecatedClass">testChangeRepositoryAndDeprecatedClass()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testWithInvalidClass">testWithInvalidClass()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testDependableMigrations">testDependableMigrations()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testDependableMigrationsWithInstalled">testDependableMigrationsWithInstalled()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testUnfulfillableMigrations">testUnfulfillableMigrations()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testSpecificMigrationCanBeRollback">testSpecificMigrationCanBeRollback()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html#method_testSpecificMigrationRollbackWithDependencies">testSpecificMigrationRollbackWithDependencies()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                                            </table>
+
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_connection"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$connection</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">27</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$connection</span>
+         = <span class="phpdocumentor-signature__default-value">&#039;test_integration&#039;</span>    </code>
+    </article>
+                                    <a id="property_migrationTable"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$migrationTable</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">32</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$migrationTable</span>
+         = <span class="phpdocumentor-signature__default-value">&#039;migrations&#039;</span>    </code>
+    </article>
+                                    <a id="property_schema"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$schema</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">37</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\Illuminate\Database\Schema\Builder">Builder</abbr></span>
+        <span class="phpdocumentor-signature__name">$schema</span>
+            </code>
+    </article>
+                                    <a id="property_migrator"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$migrator</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">42</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-Migrator.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\Migrator">Migrator</abbr></a></span>
+        <span class="phpdocumentor-signature__name">$migrator</span>
+            </code>
+    </article>
+                                    <a id="property_locator"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$locator</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">47</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-MigrationLocator.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\MigrationLocator">MigrationLocator</abbr></a></span>
+        <span class="phpdocumentor-signature__name">$locator</span>
+            </code>
+    </article>
+                                    <a id="property_repository"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$repository</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">52</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-DatabaseMigrationRepository.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\DatabaseMigrationRepository">DatabaseMigrationRepository</abbr></a></span>
+        <span class="phpdocumentor-signature__name">$repository</span>
+            </code>
+    </article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method_setUp"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setUp()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">57</span>
+    </aside>
+        <p class="phpdocumentor-summary">Setup migration instances used for all tests</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">setUp</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+    
+    
+        
+    
+</article>
+                                    <a id="method_testMigrationRepositoryCreated"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testMigrationRepositoryCreated()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">78</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testMigrationRepositoryCreated</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testBasicMigration"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testBasicMigration()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">83</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testBasicMigration</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testRepository"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testRepository()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">93</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testRepository</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testMigrationsCanBeRolledBack"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testMigrationsCanBeRolledBack()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">104</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testMigrationsCanBeRolledBack</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testMigrationsCanBeReset"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testMigrationsCanBeReset()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">121</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testMigrationsCanBeReset</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testNoErrorIsThrownWhenNoOutstandingMigrationsExist"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testNoErrorIsThrownWhenNoOutstandingMigrationsExist()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">136</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testNoErrorIsThrownWhenNoOutstandingMigrationsExist</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testNoErrorIsThrownWhenNothingToRollback"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testNoErrorIsThrownWhenNothingToRollback()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">144</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testNoErrorIsThrownWhenNothingToRollback</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testPretendUp"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testPretendUp()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">155</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testPretendUp</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testPretendRollback"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testPretendRollback()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">164</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testPretendRollback</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testChangeRepositoryAndDeprecatedClass"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testChangeRepositoryAndDeprecatedClass()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">177</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testChangeRepositoryAndDeprecatedClass</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testWithInvalidClass"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testWithInvalidClass()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">196</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testWithInvalidClass</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testDependableMigrations"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testDependableMigrations()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">209</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testDependableMigrations</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testDependableMigrationsWithInstalled"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testDependableMigrationsWithInstalled()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">228</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testDependableMigrationsWithInstalled</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testUnfulfillableMigrations"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testUnfulfillableMigrations()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">249</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testUnfulfillableMigrations</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testSpecificMigrationCanBeRollback"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testSpecificMigrationCanBeRollback()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">260</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testSpecificMigrationCanBeRollback</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_testSpecificMigrationRollbackWithDependencies"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">testSpecificMigrationRollbackWithDependencies()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php"><a href="../files/app-sprinkles-core-tests-integration-database-migrator-databasemigratorintegrationtest.html"><abbr title="app/sprinkles/core/tests/Integration/Database/Migrator/DatabaseMigratorIntegrationTest.php">DatabaseMigratorIntegrationTest.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">284</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">testSpecificMigrationRollbackWithDependencies</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                                            </section>
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

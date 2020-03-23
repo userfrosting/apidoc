@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UserFrosting API</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">UserFrosting API</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle.html">Sprinkle</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-account.html">Account</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-account-authenticate.html">Authenticate</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            Authenticator
+                                                        </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">36</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">Handles authentication tasks.</p>
+        <section class="phpdocumentor-class__description"></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_classMapper">$classMapper</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Sprinkle-Core-Util-ClassMapper.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\ClassMapper">ClassMapper</abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_session">$session</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\UserFrosting\Session\Session">Session</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_config">$config</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_cache">$cache</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\Illuminate\Cache\Repository">Repository</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_db">$db</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\Illuminate\Database\Capsule\Manager">Manager</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_loggedOut">$loggedOut</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_rememberMeStorage">$rememberMeStorage</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Sprinkle-Account-Rememberme-PDOStorage.html"><abbr title="\UserFrosting\Sprinkle\Account\Rememberme\PDOStorage">PDOStorage</abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_rememberMe">$rememberMe</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\Birke\Rememberme\Authenticator">Authenticator</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_user">$user</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_viaRemember">$viaRemember</a></th>
+                    <td class="phpdocumentor-cell">Indicates if the user was authenticated via a rememberMe cookie.</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method___construct">__construct()</a></th>
+                    <td class="phpdocumentor-cell">Create a new Authenticator object.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_attempt">attempt()</a></th>
+                    <td class="phpdocumentor-cell">Attempts to authenticate a user based on a supplied identity and password.</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_check">check()</a></th>
+                    <td class="phpdocumentor-cell">Determine if the current user is authenticated.</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_guest">guest()</a></th>
+                    <td class="phpdocumentor-cell">Determine if the current user is a guest (unauthenticated).</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_login">login()</a></th>
+                    <td class="phpdocumentor-cell">Process an account login request.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_logout">logout()</a></th>
+                    <td class="phpdocumentor-cell">Processes an account logout request.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_user">user()</a></th>
+                    <td class="phpdocumentor-cell">Try to get the currently authenticated user, returning a guest user if none was found.</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_viaRemember">viaRemember()</a></th>
+                    <td class="phpdocumentor-cell">Determine whether the current user was authenticated using a remember me cookie.</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_loginRememberedUser">loginRememberedUser()</a></th>
+                    <td class="phpdocumentor-cell">Attempt to log in the client from their rememberMe token (in their cookie).</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_loginSessionUser">loginSessionUser()</a></th>
+                    <td class="phpdocumentor-cell">Attempt to log in the client from the session.</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_validateRememberMeCookie">validateRememberMeCookie()</a></th>
+                    <td class="phpdocumentor-cell">Determine if the cookie contains a valid rememberMe token.</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_validateUserAccount">validateUserAccount()</a></th>
+                    <td class="phpdocumentor-cell">Tries to load the specified user by id from the database.</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#method_flushSessionCache">flushSessionCache()</a></th>
+                    <td class="phpdocumentor-cell">Flush the cache associated with a session id.</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                                            </table>
+
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_classMapper"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$classMapper</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">41</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Sprinkle-Core-Util-ClassMapper.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\ClassMapper">ClassMapper</abbr></a></span>
+        <span class="phpdocumentor-signature__name">$classMapper</span>
+            </code>
+    </article>
+                                    <a id="property_session"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$session</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">46</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\UserFrosting\Session\Session">Session</abbr></span>
+        <span class="phpdocumentor-signature__name">$session</span>
+            </code>
+    </article>
+                                    <a id="property_config"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$config</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">51</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></span>
+        <span class="phpdocumentor-signature__name">$config</span>
+            </code>
+    </article>
+                                    <a id="property_cache"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$cache</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">56</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\Illuminate\Cache\Repository">Repository</abbr></span>
+        <span class="phpdocumentor-signature__name">$cache</span>
+            </code>
+    </article>
+                                    <a id="property_db"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$db</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">61</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\Illuminate\Database\Capsule\Manager">Manager</abbr></span>
+        <span class="phpdocumentor-signature__name">$db</span>
+            </code>
+    </article>
+                                    <a id="property_loggedOut"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$loggedOut</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">66</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__name">$loggedOut</span>
+         = <span class="phpdocumentor-signature__default-value">false</span>    </code>
+    </article>
+                                    <a id="property_rememberMeStorage"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$rememberMeStorage</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">71</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Sprinkle-Account-Rememberme-PDOStorage.html"><abbr title="\UserFrosting\Sprinkle\Account\Rememberme\PDOStorage">PDOStorage</abbr></a></span>
+        <span class="phpdocumentor-signature__name">$rememberMeStorage</span>
+            </code>
+    </article>
+                                    <a id="property_rememberMe"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$rememberMe</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">76</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\Birke\Rememberme\Authenticator">Authenticator</abbr></span>
+        <span class="phpdocumentor-signature__name">$rememberMe</span>
+            </code>
+    </article>
+                                    <a id="property_user"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$user</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">81</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a></span>
+        <span class="phpdocumentor-signature__name">$user</span>
+            </code>
+    </article>
+                                    <a id="property_viaRemember"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$viaRemember</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">88</span>
+    </aside>
+            <p class="phpdocumentor-summary">Indicates if the user was authenticated via a rememberMe cookie.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__name">$viaRemember</span>
+         = <span class="phpdocumentor-signature__default-value">false</span>    </code>
+    </article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method___construct"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">99</span>
+    </aside>
+        <p class="phpdocumentor-summary">Create a new Authenticator object.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">__construct</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$classMapper</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Sprinkle-Core-Util-ClassMapper.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\ClassMapper">ClassMapper</abbr></a></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$session</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\Session\Session">Session</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$config</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$cache</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Cache\Repository">Repository</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$db</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Capsule\Manager">Manager</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$classMapper</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Sprinkle-Core-Util-ClassMapper.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\ClassMapper">ClassMapper</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Maps generic class identifiers to specific class names.</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$session</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\Session\Session">Session</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The session wrapper object that will store the user's id.</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$config</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Config object that contains authentication settings.</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$cache</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Cache\Repository">Repository</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Cache service instance</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$db</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Capsule\Manager">Manager</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Database service instance</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_attempt"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">attempt()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">150</span>
+    </aside>
+        <p class="phpdocumentor-summary">Attempts to authenticate a user based on a supplied identity and password.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">attempt</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$identityColumn</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$identityValue</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$password</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$rememberMe</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a></span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>If successful, the user's id is stored in session.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$identityColumn</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$identityValue</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$password</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$rememberMe</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a></span>
+            
+</article>
+                                    <a id="method_check"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">check()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">190</span>
+    </aside>
+        <p class="phpdocumentor-summary">Determine if the current user is authenticated.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">check</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            
+</article>
+                                    <a id="method_guest"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">guest()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">200</span>
+    </aside>
+        <p class="phpdocumentor-summary">Determine if the current user is a guest (unauthenticated).</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">guest</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            
+</article>
+                                    <a id="method_login"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">login()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">216</span>
+    </aside>
+        <p class="phpdocumentor-summary">Process an account login request.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">login</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$user</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$rememberMe</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>This method logs in the specified user, allowing the client to assume the user's identity for the duration of the session.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$user</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The user to log in.</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$rememberMe</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Set to true to make this a &quot;persistent session&quot;, i.e. one that will re-login even after the session expires.</p></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">todo</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Figure out a way to update the currentUser service to reflect the logged-in user <em>immediately</em> in the service provider.
+As it stands, the currentUser service will still reflect a &quot;guest user&quot; for the remainder of the request.</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_logout"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">logout()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">251</span>
+    </aside>
+        <p class="phpdocumentor-summary">Processes an account logout request.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">logout</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$complete</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Logs the currently authenticated user out, destroying the PHP session and clearing the persistent session.
+This can optionally remove persistent sessions across all browsers/devices, since there can be a &quot;RememberMe&quot; cookie
+and corresponding database entries in multiple browsers/devices.  See <a href="http://jaspan.com/improved_persistent_login_cookie_best_practice">http://jaspan.com/improved_persistent_login_cookie_best_practice</a>.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$complete</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>If set to true, will ensure that the user is logged out from <em>all</em> browsers on all devices.</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_user"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">user()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">301</span>
+    </aside>
+        <p class="phpdocumentor-summary">Try to get the currently authenticated user, returning a guest user if none was found.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">user</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Tries to re-establish a session for &quot;remember-me&quot; users who have been logged out due to an expired session.</p></section>
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</span>
+            
+</article>
+                                    <a id="method_viaRemember"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">viaRemember()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">338</span>
+    </aside>
+        <p class="phpdocumentor-summary">Determine whether the current user was authenticated using a remember me cookie.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">viaRemember</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>This function is useful when users are performing sensitive operations, and you may want to force them to re-authenticate.</p></section>
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            
+</article>
+                                    <a id="method_loginRememberedUser"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">loginRememberedUser()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">350</span>
+    </aside>
+        <p class="phpdocumentor-summary">Attempt to log in the client from their rememberMe token (in their cookie).</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">loginRememberedUser</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|bool</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>The client attempted to log in with an invalid rememberMe token.</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|bool</span>
+                    &mdash; <span class="phpdocumentor-description"><p>If successful, the User object of the remembered user.  Otherwise, return false.</p></span>
+            
+</article>
+                                    <a id="method_loginSessionUser"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">loginSessionUser()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">378</span>
+    </aside>
+        <p class="phpdocumentor-summary">Attempt to log in the client from the session.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">loginSessionUser</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>The client attempted to use an expired rememberMe token.</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</span>
+                    &mdash; <span class="phpdocumentor-description"><p>If successful, the User object of the user in session.  Otherwise, return null.</p></span>
+            
+</article>
+                                    <a id="method_validateRememberMeCookie"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">validateRememberMeCookie()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">400</span>
+    </aside>
+        <p class="phpdocumentor-summary">Determine if the cookie contains a valid rememberMe token.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">validateRememberMeCookie</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            
+</article>
+                                    <a id="method_validateUserAccount"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">validateUserAccount()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">426</span>
+    </aside>
+        <p class="phpdocumentor-summary">Tries to load the specified user by id from the database.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">validateUserAccount</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$userId</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Checks that the account is valid and enabled, throwing an exception if not.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$userId</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</span>
+            
+</article>
+                                    <a id="method_flushSessionCache"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">flushSessionCache()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/account/src/Authenticate/Authenticator.php"><a href="../files/app-sprinkles-account-src-authenticate-authenticator.html"><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">459</span>
+    </aside>
+        <p class="phpdocumentor-summary">Flush the cache associated with a session id.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">flushSessionCache</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$id</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$id</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The session id</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            
+</article>
+                                                            </section>
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

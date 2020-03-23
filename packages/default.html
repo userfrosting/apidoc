@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UserFrosting API</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">UserFrosting API</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                </ul>
+
+    <h2>Default</h2>
+
+    
+            <h3>Interfaces, Classes and Traits</h3>
+        <dl>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a></dt>
+                <dd>User Interface.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Csrf-CsrfProviderInterface.html"><abbr title="\UserFrosting\Sprinkle\Core\Csrf\CsrfProviderInterface">CsrfProviderInterface</abbr></a></dt>
+                <dd>CSRF Provider interface.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-MigrationInterface.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\MigrationInterface">MigrationInterface</abbr></a></dt>
+                <dd>Migration Interfaces class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-MigrationLocatorInterface.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\MigrationLocatorInterface">MigrationLocatorInterface</abbr></a></dt>
+                <dd>MigrationLocatorInterface.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-MigrationRepositoryInterface.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\MigrationRepositoryInterface">MigrationRepositoryInterface</abbr></a></dt>
+                <dd>MigrationRepository Interface.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Seeder-SeedInterface.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Seeder\SeedInterface">SeedInterface</abbr></a></dt>
+                <dd>All seeds must implement this interface.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Handler-ExceptionHandlerInterface.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Handler\ExceptionHandlerInterface">ExceptionHandlerInterface</abbr></a></dt>
+                <dd>All exception handlers must implement this interface.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Renderer-ErrorRendererInterface.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Renderer\ErrorRendererInterface">ErrorRendererInterface</abbr></a></dt>
+                <dd>ErrorRendererInterface.</dd>
+            
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Account-Registration.html"><abbr title="\UserFrosting\Sprinkle\Account\Account\Registration">Registration</abbr></a></dt>
+                <dd>Handles user registration tasks.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Account.html"><abbr title="\UserFrosting\Sprinkle\Account\Account">Account</abbr></a></dt>
+                <dd>Bootstrapper class for the &#039;account&#039; sprinkle.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Authenticator">Authenticator</abbr></a></dt>
+                <dd>Handles authentication tasks.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-AuthGuard.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\AuthGuard">AuthGuard</abbr></a></dt>
+                <dd>Middleware to catch requests that fail because they require user authentication.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AccountDisabledException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AccountDisabledException">AccountDisabledException</abbr></a></dt>
+                <dd>Disabled account exception.  Used when an account has been disabled.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AccountInvalidException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AccountInvalidException">AccountInvalidException</abbr></a></dt>
+                <dd>Invalid account exception.  Used when an account has been removed during an active session.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AccountNotVerifiedException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AccountNotVerifiedException">AccountNotVerifiedException</abbr></a></dt>
+                <dd>Unverified account exception.  Used when an account is required to complete email verification, but hasn&#039;t done so yet.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AuthCompromisedException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AuthCompromisedException">AuthCompromisedException</abbr></a></dt>
+                <dd>Compromised authentication exception.  Used when we suspect theft of the rememberMe cookie.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AuthExpiredException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AuthExpiredException">AuthExpiredException</abbr></a></dt>
+                <dd>Expired authentication exception.  Used when the user needs to authenticate/reauthenticate.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-InvalidCredentialsException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\InvalidCredentialsException">InvalidCredentialsException</abbr></a></dt>
+                <dd>Invalid credentials exception.  Used when an account fails authentication for some reason.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Hasher.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Hasher">Hasher</abbr></a></dt>
+                <dd>Password hashing and validation class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authorize-AccessConditionExpression.html"><abbr title="\UserFrosting\Sprinkle\Account\Authorize\AccessConditionExpression">AccessConditionExpression</abbr></a></dt>
+                <dd>AccessConditionExpression class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authorize-AuthorizationException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authorize\AuthorizationException">AuthorizationException</abbr></a></dt>
+                <dd>AuthorizationException class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authorize-AuthorizationManager.html"><abbr title="\UserFrosting\Sprinkle\Account\Authorize\AuthorizationManager">AuthorizationManager</abbr></a></dt>
+                <dd>AuthorizationManager class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Authorize-ParserNodeFunctionEvaluator.html"><abbr title="\UserFrosting\Sprinkle\Account\Authorize\ParserNodeFunctionEvaluator">ParserNodeFunctionEvaluator</abbr></a></dt>
+                <dd>ParserNodeFunctionEvaluator class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Bakery-BakeCommand.html"><abbr title="\UserFrosting\Sprinkle\Account\Bakery\BakeCommand">BakeCommand</abbr></a></dt>
+                <dd>Bake command extension.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Bakery-CreateAdminUser.html"><abbr title="\UserFrosting\Sprinkle\Account\Bakery\CreateAdminUser">CreateAdminUser</abbr></a></dt>
+                <dd>Create root user CLI command.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Controller-AccountController.html"><abbr title="\UserFrosting\Sprinkle\Account\Controller\AccountController">AccountController</abbr></a></dt>
+                <dd>Controller class for /account/* URLs.  Handles account-related activities, including login, registration, password recovery, and account settings.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Controller-Exception-SpammyRequestException.html"><abbr title="\UserFrosting\Sprinkle\Account\Controller\Exception\SpammyRequestException">SpammyRequestException</abbr></a></dt>
+                <dd>Spammy request exception.  Used when a bot has attempted to spam a public form, and fallen into our honeypot.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v400-ActivitiesTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v400\ActivitiesTable">ActivitiesTable</abbr></a></dt>
+                <dd>Sessions table migration
+Version 4.0.0.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v400-GroupsTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v400\GroupsTable">GroupsTable</abbr></a></dt>
+                <dd>Groups table migration
+&quot;Group&quot; now replaces the notion of &quot;primary group&quot; in earlier versions of UF.  A user can belong to exactly one group.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v400-PasswordResetsTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v400\PasswordResetsTable">PasswordResetsTable</abbr></a></dt>
+                <dd>password_resets table migration
+Manages requests for password resets.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v400-PermissionRolesTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v400\PermissionRolesTable">PermissionRolesTable</abbr></a></dt>
+                <dd>Permission_roles table migration
+Many-to-many mapping between permissions and roles.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v400-PermissionsTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v400\PermissionsTable">PermissionsTable</abbr></a></dt>
+                <dd>Permissions table migration
+Permissions now replace the &#039;authorize_group&#039; and &#039;authorize_user&#039; tables.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v400-PersistencesTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v400\PersistencesTable">PersistencesTable</abbr></a></dt>
+                <dd>Persistences table migration
+Many-to-many mapping between roles and users.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v400-RolesTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v400\RolesTable">RolesTable</abbr></a></dt>
+                <dd>Roles table migration
+Roles replace &quot;groups&quot; in UF 0.3.x.  Users acquire permissions through roles.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v400-RoleUsersTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v400\RoleUsersTable">RoleUsersTable</abbr></a></dt>
+                <dd>Role_users table migration
+Many-to-many mapping between roles and users.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v400-UsersTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v400\UsersTable">UsersTable</abbr></a></dt>
+                <dd>Users table migration
+Removed the &#039;display_name&#039;, &#039;title&#039;, &#039;secret_token&#039;, and &#039;flag_password_reset&#039; fields, and added first and last name and &#039;last_activity_id&#039;.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v400-VerificationsTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v400\VerificationsTable">VerificationsTable</abbr></a></dt>
+                <dd>Verifications table migration
+Manages requests for email account verification.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v420-AddingForeignKeys.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v420\AddingForeignKeys">AddingForeignKeys</abbr></a></dt>
+                <dd>Foreign Keys migration
+Adds missing foreign keys from 4.0.0 migrations
+Version 4.2.0.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v430-UpdateGroupsTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v430\UpdateGroupsTable">UpdateGroupsTable</abbr></a></dt>
+                <dd>Groups table migration
+Changes the `icon` column property of `default` to NULL to align with new Font Awesome 5 tag convention.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Migrations-v430-UpdateUsersTable.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Migrations\v430\UpdateUsersTable">UpdateUsersTable</abbr></a></dt>
+                <dd>Groups table migration
+Changes `group_id` column properties to allow user to be created without a group.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Activity.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Activity">Activity</abbr></a></dt>
+                <dd>Activity Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Events-DeleteUserCacheEvent.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Events\DeleteUserCacheEvent">DeleteUserCacheEvent</abbr></a></dt>
+                <dd>Event for global cache object deletion on model update.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Group.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Group">Group</abbr></a></dt>
+                <dd>Group Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-PasswordReset.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\PasswordReset">PasswordReset</abbr></a></dt>
+                <dd>Password Reset Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Permission.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Permission">Permission</abbr></a></dt>
+                <dd>Permission Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Persistence.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Persistence">Persistence</abbr></a></dt>
+                <dd>Persistence db Model.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Role.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Role">Role</abbr></a></dt>
+                <dd>Role Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-User.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\User">User</abbr></a></dt>
+                <dd>User Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Verification.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Verification">Verification</abbr></a></dt>
+                <dd>Verification Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Seeds-DefaultGroups.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Seeds\DefaultGroups">DefaultGroups</abbr></a></dt>
+                <dd>Seeder for the default groups.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Seeds-DefaultPermissions.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Seeds\DefaultPermissions">DefaultPermissions</abbr></a></dt>
+                <dd>Seeder for the default permissions.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Seeds-DefaultRoles.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Seeds\DefaultRoles">DefaultRoles</abbr></a></dt>
+                <dd>Seeder for the default roles.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Error-Handler-AuthCompromisedExceptionHandler.html"><abbr title="\UserFrosting\Sprinkle\Account\Error\Handler\AuthCompromisedExceptionHandler">AuthCompromisedExceptionHandler</abbr></a></dt>
+                <dd>Handler for AuthCompromisedExceptions.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Error-Handler-AuthExpiredExceptionHandler.html"><abbr title="\UserFrosting\Sprinkle\Account\Error\Handler\AuthExpiredExceptionHandler">AuthExpiredExceptionHandler</abbr></a></dt>
+                <dd>Handler for AuthExpiredExceptions.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Error-Handler-ForbiddenExceptionHandler.html"><abbr title="\UserFrosting\Sprinkle\Account\Error\Handler\ForbiddenExceptionHandler">ForbiddenExceptionHandler</abbr></a></dt>
+                <dd>Handler for ForbiddenExceptions.  Only really needed to override the default error message.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Facades-Password.html"><abbr title="\UserFrosting\Sprinkle\Account\Facades\Password">Password</abbr></a></dt>
+                <dd>Implements facade for the &quot;password&quot; service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-I18n-LocaleServicesProvider.html"><abbr title="\UserFrosting\Sprinkle\Account\I18n\LocaleServicesProvider">LocaleServicesProvider</abbr></a></dt>
+                <dd>Locale service provider, replacing the Core one.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-I18n-SiteLocale.html"><abbr title="\UserFrosting\Sprinkle\Account\I18n\SiteLocale">SiteLocale</abbr></a></dt>
+                <dd>Helper methods for the locale system.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Log-UserActivityDatabaseHandler.html"><abbr title="\UserFrosting\Sprinkle\Account\Log\UserActivityDatabaseHandler">UserActivityDatabaseHandler</abbr></a></dt>
+                <dd>Monolog handler for storing user activities to the database.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Log-UserActivityProcessor.html"><abbr title="\UserFrosting\Sprinkle\Account\Log\UserActivityProcessor">UserActivityProcessor</abbr></a></dt>
+                <dd>Monolog processor for constructing the user activity message.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Rememberme-PDOStorage.html"><abbr title="\UserFrosting\Sprinkle\Account\Rememberme\PDOStorage">PDOStorage</abbr></a></dt>
+                <dd>Store login tokens in database with PDO class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Repository-PasswordResetRepository.html"><abbr title="\UserFrosting\Sprinkle\Account\Repository\PasswordResetRepository">PasswordResetRepository</abbr></a></dt>
+                <dd>Token repository class for password reset requests.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Repository-TokenRepository.html"><abbr title="\UserFrosting\Sprinkle\Account\Repository\TokenRepository">TokenRepository</abbr></a></dt>
+                <dd>An abstract class for interacting with a repository of time-sensitive user tokens.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Repository-VerificationRepository.html"><abbr title="\UserFrosting\Sprinkle\Account\Repository\VerificationRepository">VerificationRepository</abbr></a></dt>
+                <dd>Token repository class for new account verifications.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-ServicesProvider-ServicesProvider.html"><abbr title="\UserFrosting\Sprinkle\Account\ServicesProvider\ServicesProvider">ServicesProvider</abbr></a></dt>
+                <dd>Registers services for the account sprinkle, such as currentUser, etc.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Twig-AccountExtension.html"><abbr title="\UserFrosting\Sprinkle\Account\Twig\AccountExtension">AccountExtension</abbr></a></dt>
+                <dd>Extends Twig functionality for the Account sprinkle.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Util-HashFailedException.html"><abbr title="\UserFrosting\Sprinkle\Account\Util\HashFailedException">HashFailedException</abbr></a></dt>
+                <dd>Password hash failure exception.  Used when the supplied password could not be hashed for some reason.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Util-Util.html"><abbr title="\UserFrosting\Sprinkle\Account\Util\Util">Util</abbr></a></dt>
+                <dd>Util Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-AuthenticatorTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\AuthenticatorTest">AuthenticatorTest</abbr></a></dt>
+                <dd>Integration tests for the Authenticator.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-AuthorizationManagerTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\AuthorizationManagerTest">AuthorizationManagerTest</abbr></a></dt>
+                <dd>Integration tests for the built-in Sprunje classes.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-Controller-AccountControllerTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\Controller\AccountControllerTest">AccountControllerTest</abbr></a></dt>
+                <dd>Tests AccountController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-Database-Models-UserModelTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\Database\Models\UserModelTest">UserModelTest</abbr></a></dt>
+                <dd>UserModelTest Class
+Tests the User Model.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-FactoriesTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\FactoriesTest">FactoriesTest</abbr></a></dt>
+                <dd>FactoriesTest class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-FindUniqueTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\FindUniqueTest">FindUniqueTest</abbr></a></dt>
+                <dd>Test for bug with `withTrashed` in `findUnique` not available when `SoftDeletes` trait is not included in a model.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-I18n-TranslatorServicesProviderTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\I18n\TranslatorServicesProviderTest">TranslatorServicesProviderTest</abbr></a></dt>
+                <dd>Tests AccountController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-PDOStorageTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\PDOStorageTest">PDOStorageTest</abbr></a></dt>
+                <dd></dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-RegistrationTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\RegistrationTest">RegistrationTest</abbr></a></dt>
+                <dd>RegistrationTest Class
+Tests the Registration class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-ServicesProvider-AlertsServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\ServicesProvider\AlertsServiceTest">AlertsServiceTest</abbr></a></dt>
+                <dd>Integration tests for `authGuard` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-ServicesProvider-AuthLoggerServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\ServicesProvider\AuthLoggerServiceTest">AuthLoggerServiceTest</abbr></a></dt>
+                <dd>Integration tests for `authLogger` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-ServicesProvider-AuthorizerServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\ServicesProvider\AuthorizerServiceTest">AuthorizerServiceTest</abbr></a></dt>
+                <dd>Integration tests for `authorizer` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-ServicesProvider-CurrentUserServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\ServicesProvider\CurrentUserServiceTest">CurrentUserServiceTest</abbr></a></dt>
+                <dd>Integration tests for `currentUser` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-ServicesProvider-PasswordHasherServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\ServicesProvider\PasswordHasherServiceTest">PasswordHasherServiceTest</abbr></a></dt>
+                <dd>Integration tests for `passwordHasher` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-ServicesProvider-RepoPasswordResetServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\ServicesProvider\RepoPasswordResetServiceTest">RepoPasswordResetServiceTest</abbr></a></dt>
+                <dd>Integration tests for `repoPasswordReset` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-ServicesProvider-RepoVerificationServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\ServicesProvider\RepoVerificationServiceTest">RepoVerificationServiceTest</abbr></a></dt>
+                <dd>Integration tests for `repoVerification` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-ServicesProvider-UserActivityLoggerServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\ServicesProvider\UserActivityLoggerServiceTest">UserActivityLoggerServiceTest</abbr></a></dt>
+                <dd>Integration tests for `userActivityLogger` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Integration-UserModelTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Integration\UserModelTest">UserModelTest</abbr></a></dt>
+                <dd>UserModelTest Class
+Tests the User Model.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-Unit-Authenticate-HasherTest.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\Unit\Authenticate\HasherTest">HasherTest</abbr></a></dt>
+                <dd>Tests the password Hasher class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Admin.html"><abbr title="\UserFrosting\Sprinkle\Admin\Admin">Admin</abbr></a></dt>
+                <dd>Bootstrapper class for the &#039;admin&#039; sprinkle.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Controller-ActivityController.html"><abbr title="\UserFrosting\Sprinkle\Admin\Controller\ActivityController">ActivityController</abbr></a></dt>
+                <dd>Controller class for activity-related requests.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Controller-AdminController.html"><abbr title="\UserFrosting\Sprinkle\Admin\Controller\AdminController">AdminController</abbr></a></dt>
+                <dd>AdminController Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Controller-GroupController.html"><abbr title="\UserFrosting\Sprinkle\Admin\Controller\GroupController">GroupController</abbr></a></dt>
+                <dd>Controller class for group-related requests, including listing groups, CRUD for groups, etc.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Controller-PermissionController.html"><abbr title="\UserFrosting\Sprinkle\Admin\Controller\PermissionController">PermissionController</abbr></a></dt>
+                <dd>Controller class for permission-related requests, including listing permissions, CRUD for permissions, etc.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Controller-RoleController.html"><abbr title="\UserFrosting\Sprinkle\Admin\Controller\RoleController">RoleController</abbr></a></dt>
+                <dd>Controller class for role-related requests, including listing roles, CRUD for roles, etc.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Controller-UserController.html"><abbr title="\UserFrosting\Sprinkle\Admin\Controller\UserController">UserController</abbr></a></dt>
+                <dd>Controller class for user-related requests, including listing users, CRUD for users, etc.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-ServicesProvider-ServicesProvider.html"><abbr title="\UserFrosting\Sprinkle\Admin\ServicesProvider\ServicesProvider">ServicesProvider</abbr></a></dt>
+                <dd>Registers services for the admin sprinkle.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Sprunje-ActivitySprunje.html"><abbr title="\UserFrosting\Sprinkle\Admin\Sprunje\ActivitySprunje">ActivitySprunje</abbr></a></dt>
+                <dd>ActivitySprunje.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Sprunje-GroupSprunje.html"><abbr title="\UserFrosting\Sprinkle\Admin\Sprunje\GroupSprunje">GroupSprunje</abbr></a></dt>
+                <dd>GroupSprunje.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Sprunje-PermissionSprunje.html"><abbr title="\UserFrosting\Sprinkle\Admin\Sprunje\PermissionSprunje">PermissionSprunje</abbr></a></dt>
+                <dd>PermissionSprunje.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Sprunje-PermissionUserSprunje.html"><abbr title="\UserFrosting\Sprinkle\Admin\Sprunje\PermissionUserSprunje">PermissionUserSprunje</abbr></a></dt>
+                <dd>PermissionUserSprunje.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Sprunje-RoleSprunje.html"><abbr title="\UserFrosting\Sprinkle\Admin\Sprunje\RoleSprunje">RoleSprunje</abbr></a></dt>
+                <dd>RoleSprunje.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Sprunje-UserPermissionSprunje.html"><abbr title="\UserFrosting\Sprinkle\Admin\Sprunje\UserPermissionSprunje">UserPermissionSprunje</abbr></a></dt>
+                <dd>UserPermissionSprunje.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Sprunje-UserSprunje.html"><abbr title="\UserFrosting\Sprinkle\Admin\Sprunje\UserSprunje">UserSprunje</abbr></a></dt>
+                <dd>UserSprunje.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-Controller-ActivityControllerTest.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\Controller\ActivityControllerTest">ActivityControllerTest</abbr></a></dt>
+                <dd>Tests ActivityController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-Controller-AdminControllerTest.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\Controller\AdminControllerTest">AdminControllerTest</abbr></a></dt>
+                <dd>Tests CoreController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-Controller-GroupControllerGuestTest.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\Controller\GroupControllerGuestTest">GroupControllerGuestTest</abbr></a></dt>
+                <dd>Tests GroupController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-Controller-GroupControllerTest.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\Controller\GroupControllerTest">GroupControllerTest</abbr></a></dt>
+                <dd>Tests GroupController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-Controller-PermissionControllerGuestTest.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\Controller\PermissionControllerGuestTest">PermissionControllerGuestTest</abbr></a></dt>
+                <dd>Tests CoreController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-Controller-PermissionControllerTest.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\Controller\PermissionControllerTest">PermissionControllerTest</abbr></a></dt>
+                <dd>Tests CoreController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-Controller-RoleControllerGuestTest.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\Controller\RoleControllerGuestTest">RoleControllerGuestTest</abbr></a></dt>
+                <dd>Tests RoleController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-Controller-RoleControllerTest.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\Controller\RoleControllerTest">RoleControllerTest</abbr></a></dt>
+                <dd>Tests RoleController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-Controller-UserControllerCreateTest.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\Controller\UserControllerCreateTest">UserControllerCreateTest</abbr></a></dt>
+                <dd>Tests UserController
+Specific tests for createUser, which fails on pgsql because of a bug when
+creating a user with specific id before calling create</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-Controller-UserControllerGuestTest.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\Controller\UserControllerGuestTest">UserControllerGuestTest</abbr></a></dt>
+                <dd>Tests UserController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-Controller-UserControllerTest.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\Controller\UserControllerTest">UserControllerTest</abbr></a></dt>
+                <dd>Tests UserController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Admin-Tests-Integration-SprunjeTests.html"><abbr title="\UserFrosting\Sprinkle\Admin\Tests\Integration\SprunjeTests">SprunjeTests</abbr></a></dt>
+                <dd>Integration tests for the built-in Sprunje classes.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Alert-AlertStream.html"><abbr title="\UserFrosting\Sprinkle\Core\Alert\AlertStream">AlertStream</abbr></a></dt>
+                <dd>AlertStream Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Alert-CacheAlertStream.html"><abbr title="\UserFrosting\Sprinkle\Core\Alert\CacheAlertStream">CacheAlertStream</abbr></a></dt>
+                <dd>CacheAlertStream Class
+Implements a message stream for use between HTTP requests, with i18n
+support via the Translator class using the cache system to store
+the alerts. Note that the tags are added each time instead of the
+constructor since the session_id can change when the user logs in or out.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Alert-SessionAlertStream.html"><abbr title="\UserFrosting\Sprinkle\Core\Alert\SessionAlertStream">SessionAlertStream</abbr></a></dt>
+                <dd>SessionAlertStream Class
+Implements a message stream for use between HTTP requests, with i18n support via the Translator class
+Using the session storage to store the alerts.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-BakeCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\BakeCommand">BakeCommand</abbr></a></dt>
+                <dd>Bake command.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-BuildAssets.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\BuildAssets">BuildAssets</abbr></a></dt>
+                <dd>Assets builder CLI Tools.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-ClearCacheCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\ClearCacheCommand">ClearCacheCommand</abbr></a></dt>
+                <dd>ClearCache CLI Command.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-DebugCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\DebugCommand">DebugCommand</abbr></a></dt>
+                <dd>Debug CLI tool.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-LocaleCompareCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\LocaleCompareCommand">LocaleCompareCommand</abbr></a></dt>
+                <dd>locale:missing-keys command.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-LocaleDictionaryCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\LocaleDictionaryCommand">LocaleDictionaryCommand</abbr></a></dt>
+                <dd>locale:dictionary command.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-LocaleInfoCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\LocaleInfoCommand">LocaleInfoCommand</abbr></a></dt>
+                <dd>locale:info command.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-MigrateCleanCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\MigrateCleanCommand">MigrateCleanCommand</abbr></a></dt>
+                <dd>migrate:clean Bakery Command
+Remove stale migrations from the database.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-MigrateCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\MigrateCommand">MigrateCommand</abbr></a></dt>
+                <dd>migrate Bakery Command
+Perform database migration.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-MigrateRefreshCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\MigrateRefreshCommand">MigrateRefreshCommand</abbr></a></dt>
+                <dd>migrate:refresh Bakery Command.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-MigrateResetCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\MigrateResetCommand">MigrateResetCommand</abbr></a></dt>
+                <dd>migrate:reset Bakery Command
+Reset the database to a clean state.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-MigrateRollbackCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\MigrateRollbackCommand">MigrateRollbackCommand</abbr></a></dt>
+                <dd>migrate:rollback Bakery Command
+Rollback the last migrations ran against the database.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-MigrateStatusCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\MigrateStatusCommand">MigrateStatusCommand</abbr></a></dt>
+                <dd>migrate:status Bakery Command
+Show the list of installed and pending migration.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-RouteListCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\RouteListCommand">RouteListCommand</abbr></a></dt>
+                <dd>route:list Bakery Command
+Generate a list all registered routes
+Inspired by Laravel `route:list` artisan command.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-SeedCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\SeedCommand">SeedCommand</abbr></a></dt>
+                <dd>seed Bakery Command
+Perform a database seed.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-SeedListCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\SeedListCommand">SeedListCommand</abbr></a></dt>
+                <dd>seed Bakery Command
+Perform a database seed.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-SetupCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\SetupCommand">SetupCommand</abbr></a></dt>
+                <dd>Setup wizard CLI Tools.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-SetupDbCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\SetupDbCommand">SetupDbCommand</abbr></a></dt>
+                <dd>DB Setup Wizard CLI Tools.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-SetupEnvCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\SetupEnvCommand">SetupEnvCommand</abbr></a></dt>
+                <dd>Setup wizard CLI Tools.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-SetupSmtpCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\SetupSmtpCommand">SetupSmtpCommand</abbr></a></dt>
+                <dd>SMTP Setup Wizard CLI Tools.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-SprinkleListCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\SprinkleListCommand">SprinkleListCommand</abbr></a></dt>
+                <dd>Sprinkle:list CLI tool.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-Test.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\Test">Test</abbr></a></dt>
+                <dd>Automated testing CLI tool.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-TestMailCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\TestMailCommand">TestMailCommand</abbr></a></dt>
+                <dd>TestMail CLI Command.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Controller-CoreController.html"><abbr title="\UserFrosting\Sprinkle\Core\Controller\CoreController">CoreController</abbr></a></dt>
+                <dd>CoreController Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Controller-SimpleController.html"><abbr title="\UserFrosting\Sprinkle\Core\Controller\SimpleController">SimpleController</abbr></a></dt>
+                <dd>SimpleController Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Core.html"><abbr title="\UserFrosting\Sprinkle\Core\Core">Core</abbr></a></dt>
+                <dd>Bootstrapper class for the core sprinkle.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Csrf-SlimCsrfProvider.html"><abbr title="\UserFrosting\Sprinkle\Core\Csrf\SlimCsrfProvider">SlimCsrfProvider</abbr></a></dt>
+                <dd>Slim Csrf Provider Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Builder.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Builder">Builder</abbr></a></dt>
+                <dd>UserFrosting&#039;s custom Query Builder Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-DatabaseInvalidException.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\DatabaseInvalidException">DatabaseInvalidException</abbr></a></dt>
+                <dd>Invalid database exception.  Used when the database cannot be accessed.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-EloquentBuilder.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\EloquentBuilder">EloquentBuilder</abbr></a></dt>
+                <dd>UserFrosting&#039;s custom Eloquent Builder Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migration.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migration">Migration</abbr></a></dt>
+                <dd>Abstract Migration class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrations-v400-SessionsTable.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrations\v400\SessionsTable">SessionsTable</abbr></a></dt>
+                <dd>Sessions table migration
+Version 4.0.0.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrations-v400-ThrottlesTable.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrations\v400\ThrottlesTable">ThrottlesTable</abbr></a></dt>
+                <dd>Throttles table migration
+Version 4.0.0.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-DatabaseMigrationRepository.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\DatabaseMigrationRepository">DatabaseMigrationRepository</abbr></a></dt>
+                <dd>MigrationRepository Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-MigrationDependencyAnalyser.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\MigrationDependencyAnalyser">MigrationDependencyAnalyser</abbr></a></dt>
+                <dd>MigrationDependencyAnalyser Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-MigrationLocator.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\MigrationLocator">MigrationLocator</abbr></a></dt>
+                <dd>MigrationLocator Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-MigrationRollbackDependencyAnalyser.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\MigrationRollbackDependencyAnalyser">MigrationRollbackDependencyAnalyser</abbr></a></dt>
+                <dd>MigrationRollbackDependencyAnalyser Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Migrator-Migrator.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Migrator\Migrator">Migrator</abbr></a></dt>
+                <dd>Migrator Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Models-Model.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Models\Model">Model</abbr></a></dt>
+                <dd>Model Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Models-Session.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Models\Session">Session</abbr></a></dt>
+                <dd>Session Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Models-Throttle.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Models\Throttle">Throttle</abbr></a></dt>
+                <dd>Throttle Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-BelongsToManyThrough.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\BelongsToManyThrough">BelongsToManyThrough</abbr></a></dt>
+                <dd>A BelongsToMany relationship that queries through an additional intermediate model.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-BelongsToManyUnique.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\BelongsToManyUnique">BelongsToManyUnique</abbr></a></dt>
+                <dd>A BelongsToMany relationship that reduces the related members to a unique (by primary key) set.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-HasManySyncable.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\HasManySyncable">HasManySyncable</abbr></a></dt>
+                <dd>A HasMany relationship that supports a `sync` method.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-MorphManySyncable.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\MorphManySyncable">MorphManySyncable</abbr></a></dt>
+                <dd>A MorphMany relationship that constrains on the value of an additional foreign key in the pivot table.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-MorphToManyUnique.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\MorphToManyUnique">MorphToManyUnique</abbr></a></dt>
+                <dd>A MorphToMany relationship that reduces the related members to a unique (by primary key) set.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Seeder-BaseSeed.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Seeder\BaseSeed">BaseSeed</abbr></a></dt>
+                <dd>Seeder Class
+Base class for seeds.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Seeder-Seeder.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Seeder\Seeder">Seeder</abbr></a></dt>
+                <dd>Seeder Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-ExceptionHandlerManager.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\ExceptionHandlerManager">ExceptionHandlerManager</abbr></a></dt>
+                <dd>Default UserFrosting application error handler.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Handler-ExceptionHandler.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Handler\ExceptionHandler">ExceptionHandler</abbr></a></dt>
+                <dd>Generic handler for exceptions.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Handler-HttpExceptionHandler.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Handler\HttpExceptionHandler">HttpExceptionHandler</abbr></a></dt>
+                <dd>Handler for HttpExceptions.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Handler-NotFoundExceptionHandler.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Handler\NotFoundExceptionHandler">NotFoundExceptionHandler</abbr></a></dt>
+                <dd>Handler for NotFoundExceptions.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Handler-PhpMailerExceptionHandler.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Handler\PhpMailerExceptionHandler">PhpMailerExceptionHandler</abbr></a></dt>
+                <dd>Handler for phpMailer exceptions.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Renderer-ErrorRenderer.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Renderer\ErrorRenderer">ErrorRenderer</abbr></a></dt>
+                <dd>[abstract description].</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Renderer-HtmlRenderer.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Renderer\HtmlRenderer">HtmlRenderer</abbr></a></dt>
+                <dd>[abstract description].</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Renderer-JsonRenderer.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Renderer\JsonRenderer">JsonRenderer</abbr></a></dt>
+                <dd>Default JSON Error Renderer.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Renderer-PlainTextRenderer.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Renderer\PlainTextRenderer">PlainTextRenderer</abbr></a></dt>
+                <dd>Plain Text Error Renderer.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Renderer-WhoopsRenderer.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Renderer\WhoopsRenderer">WhoopsRenderer</abbr></a></dt>
+                <dd>[abstract description].</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Renderer-XmlRenderer.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Renderer\XmlRenderer">XmlRenderer</abbr></a></dt>
+                <dd>Default XML Error Renderer.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Facades-Cache.html"><abbr title="\UserFrosting\Sprinkle\Core\Facades\Cache">Cache</abbr></a></dt>
+                <dd>Implements facade for the &quot;cache&quot; service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Facades-Config.html"><abbr title="\UserFrosting\Sprinkle\Core\Facades\Config">Config</abbr></a></dt>
+                <dd>Implements facade for the &quot;config&quot; service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Facades-Debug.html"><abbr title="\UserFrosting\Sprinkle\Core\Facades\Debug">Debug</abbr></a></dt>
+                <dd>Implements facade for the &quot;debugLogger&quot; service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Facades-Seeder.html"><abbr title="\UserFrosting\Sprinkle\Core\Facades\Seeder">Seeder</abbr></a></dt>
+                <dd>Implements facade for the &quot;seeder&quot; service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Facades-Storage.html"><abbr title="\UserFrosting\Sprinkle\Core\Facades\Storage">Storage</abbr></a></dt>
+                <dd>Implements facade for the &quot;filesystem&quot; service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Facades-Translator.html"><abbr title="\UserFrosting\Sprinkle\Core\Facades\Translator">Translator</abbr></a></dt>
+                <dd>Implements facade for the &quot;translator&quot; service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Filesystem-FilesystemManager.html"><abbr title="\UserFrosting\Sprinkle\Core\Filesystem\FilesystemManager">FilesystemManager</abbr></a></dt>
+                <dd>Filesystem disk manager service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-I18n-LocaleServicesProvider.html"><abbr title="\UserFrosting\Sprinkle\Core\I18n\LocaleServicesProvider">LocaleServicesProvider</abbr></a></dt>
+                <dd>Locale service provider.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-I18n-SiteLocale.html"><abbr title="\UserFrosting\Sprinkle\Core\I18n\SiteLocale">SiteLocale</abbr></a></dt>
+                <dd>Helper methods for the locale system.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-I18n-TranslatorServicesProvider.html"><abbr title="\UserFrosting\Sprinkle\Core\I18n\TranslatorServicesProvider">TranslatorServicesProvider</abbr></a></dt>
+                <dd>Translator services provider.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Log-DatabaseHandler.html"><abbr title="\UserFrosting\Sprinkle\Core\Log\DatabaseHandler">DatabaseHandler</abbr></a></dt>
+                <dd>Monolog handler for storing the record to a database.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Log-MixedFormatter.html"><abbr title="\UserFrosting\Sprinkle\Core\Log\MixedFormatter">MixedFormatter</abbr></a></dt>
+                <dd>Monolog formatter for pretty-printing arrays and objects.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Mail-EmailRecipient.html"><abbr title="\UserFrosting\Sprinkle\Core\Mail\EmailRecipient">EmailRecipient</abbr></a></dt>
+                <dd>EmailRecipient Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Mail-Mailer.html"><abbr title="\UserFrosting\Sprinkle\Core\Mail\Mailer">Mailer</abbr></a></dt>
+                <dd>Mailer Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Mail-MailMessage.html"><abbr title="\UserFrosting\Sprinkle\Core\Mail\MailMessage">MailMessage</abbr></a></dt>
+                <dd>MailMessage Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Mail-StaticMailMessage.html"><abbr title="\UserFrosting\Sprinkle\Core\Mail\StaticMailMessage">StaticMailMessage</abbr></a></dt>
+                <dd>StaticMailMessage Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Mail-TwigMailMessage.html"><abbr title="\UserFrosting\Sprinkle\Core\Mail\TwigMailMessage">TwigMailMessage</abbr></a></dt>
+                <dd>MailMessage Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Model-UFModel.html"><abbr title="\UserFrosting\Sprinkle\Core\Model\UFModel">UFModel</abbr></a></dt>
+                <dd>UFModel Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Router.html"><abbr title="\UserFrosting\Sprinkle\Core\Router">Router</abbr></a></dt>
+                <dd>Router.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-ServicesProvider-BaseServicesProvider.html"><abbr title="\UserFrosting\Sprinkle\Core\ServicesProvider\BaseServicesProvider">BaseServicesProvider</abbr></a></dt>
+                <dd>UserFrosting services provider Interface.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-ServicesProvider-ServicesProvider.html"><abbr title="\UserFrosting\Sprinkle\Core\ServicesProvider\ServicesProvider">ServicesProvider</abbr></a></dt>
+                <dd>UserFrosting core services provider.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Sprunje-Sprunje.html"><abbr title="\UserFrosting\Sprinkle\Core\Sprunje\Sprunje">Sprunje</abbr></a></dt>
+                <dd>Sprunje.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Throttle-Throttler.html"><abbr title="\UserFrosting\Sprinkle\Core\Throttle\Throttler">Throttler</abbr></a></dt>
+                <dd>Handles throttling (rate limiting) of specific types of requests.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Throttle-ThrottlerException.html"><abbr title="\UserFrosting\Sprinkle\Core\Throttle\ThrottlerException">ThrottlerException</abbr></a></dt>
+                <dd>Throttler exception.  Used when there is a problem with the request throttler.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Throttle-ThrottleRule.html"><abbr title="\UserFrosting\Sprinkle\Core\Throttle\ThrottleRule">ThrottleRule</abbr></a></dt>
+                <dd>ThrottleRule Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Twig-CacheHelper.html"><abbr title="\UserFrosting\Sprinkle\Core\Twig\CacheHelper">CacheHelper</abbr></a></dt>
+                <dd>Provides helper function to delete the Twig cache directory.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Twig-CoreExtension.html"><abbr title="\UserFrosting\Sprinkle\Core\Twig\CoreExtension">CoreExtension</abbr></a></dt>
+                <dd>Extends Twig functionality for the Core sprinkle.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Util-BadClassNameException.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\BadClassNameException">BadClassNameException</abbr></a></dt>
+                <dd>Bad class name exception.  Used when a class name is dynamically invoked, but the class does not exist.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Util-Captcha.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\Captcha">Captcha</abbr></a></dt>
+                <dd>Captcha Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Util-CheckEnvironment.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\CheckEnvironment">CheckEnvironment</abbr></a></dt>
+                <dd>Performs pre-flight tests on your server environment to check that it meets the requirements.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Util-ClassMapper.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\ClassMapper">ClassMapper</abbr></a></dt>
+                <dd>UserFrosting class mapper.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Util-EnvironmentInfo.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\EnvironmentInfo">EnvironmentInfo</abbr></a></dt>
+                <dd>EnvironmentInfo Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Util-NoCache.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\NoCache">NoCache</abbr></a></dt>
+                <dd>Middleware to add a &#039;Cache-Control&#039; header to the response to prevent caching.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Util-RawAssetBundles.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\RawAssetBundles">RawAssetBundles</abbr></a></dt>
+                <dd>RawAssetBundles Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Util-ShutdownHandler.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\ShutdownHandler">ShutdownHandler</abbr></a></dt>
+                <dd>Registers a handler to be invoked whenever the application shuts down.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Util-Util.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\Util">Util</abbr></a></dt>
+                <dd>Util Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-ControllerTestCase.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\ControllerTestCase">ControllerTestCase</abbr></a></dt>
+                <dd>Special TestCase for Controller Tests</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Bakery-BakeryMigrateCommandTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Bakery\BakeryMigrateCommandTest">BakeryMigrateCommandTest</abbr></a></dt>
+                <dd>MigrateCommand Test</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Bakery-BakeryMigrateRefreshCommandTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Bakery\BakeryMigrateRefreshCommandTest">BakeryMigrateRefreshCommandTest</abbr></a></dt>
+                <dd>MigrateRefreshCommand Test</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Bakery-BakeryMigrateResetCommandTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Bakery\BakeryMigrateResetCommandTest">BakeryMigrateResetCommandTest</abbr></a></dt>
+                <dd>MigrateResetCommand tests</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Bakery-BakeryMigrateRollbackCommandTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Bakery\BakeryMigrateRollbackCommandTest">BakeryMigrateRollbackCommandTest</abbr></a></dt>
+                <dd>MigrateRollbackCommand</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Bakery-BakeryMigrateStatusCommandTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Bakery\BakeryMigrateStatusCommandTest">BakeryMigrateStatusCommandTest</abbr></a></dt>
+                <dd>MigrateStatusCommand</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Bakery-LocaleCompareCommandTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Bakery\LocaleCompareCommandTest">LocaleCompareCommandTest</abbr></a></dt>
+                <dd>Test for LocaleCompareCommand (locale:compare)</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Bakery-LocaleDictionaryCommandTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Bakery\LocaleDictionaryCommandTest">LocaleDictionaryCommandTest</abbr></a></dt>
+                <dd>Test for LocaleDictionaryCommand (locale:dictionary)</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Bakery-LocaleInfoCommandTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Bakery\LocaleInfoCommandTest">LocaleInfoCommandTest</abbr></a></dt>
+                <dd>Test for LocaleInfoCommand (locale:info)</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-CoreControllerTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\CoreControllerTest">CoreControllerTest</abbr></a></dt>
+                <dd>Tests CoreController</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-DatabaseTests.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\DatabaseTests">DatabaseTests</abbr></a></dt>
+                <dd></dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-EloquentTestModel.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\EloquentTestModel">EloquentTestModel</abbr></a></dt>
+                <dd>Eloquent Models.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-EloquentTestUser.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\EloquentTestUser">EloquentTestUser</abbr></a></dt>
+                <dd>Eloquent Models.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-EloquentTestEmail.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\EloquentTestEmail">EloquentTestEmail</abbr></a></dt>
+                <dd>Eloquent Models.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-EloquentTestPhone.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\EloquentTestPhone">EloquentTestPhone</abbr></a></dt>
+                <dd>Eloquent Models.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-EloquentTestRole.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\EloquentTestRole">EloquentTestRole</abbr></a></dt>
+                <dd>Eloquent Models.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-EloquentTestPermission.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\EloquentTestPermission">EloquentTestPermission</abbr></a></dt>
+                <dd>Eloquent Models.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-EloquentTestTask.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\EloquentTestTask">EloquentTestTask</abbr></a></dt>
+                <dd>Eloquent Models.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-EloquentTestLocation.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\EloquentTestLocation">EloquentTestLocation</abbr></a></dt>
+                <dd>Eloquent Models.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-EloquentTestAssignment.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\EloquentTestAssignment">EloquentTestAssignment</abbr></a></dt>
+                <dd>Eloquent Models.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-EloquentTestJob.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\EloquentTestJob">EloquentTestJob</abbr></a></dt>
+                <dd>Eloquent Models.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorIntegrationTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\DatabaseMigratorIntegrationTest">DatabaseMigratorIntegrationTest</abbr></a></dt>
+                <dd>Migrator Tests</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-MigrationLocatorStub.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\MigrationLocatorStub">MigrationLocatorStub</abbr></a></dt>
+                <dd>MigrationLocator Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-FlightsTableMigrationLocatorStub.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\FlightsTableMigrationLocatorStub">FlightsTableMigrationLocatorStub</abbr></a></dt>
+                <dd>MigrationLocator Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-InvalidMigrationLocatorStub.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\InvalidMigrationLocatorStub">InvalidMigrationLocatorStub</abbr></a></dt>
+                <dd>This stub contain migration which file doesn&#039;t exists</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DependableMigrationLocatorStub.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\DependableMigrationLocatorStub">DependableMigrationLocatorStub</abbr></a></dt>
+                <dd>This stub contain migration which order they need to be run is different
+   than the order the file are returned because of dependencies management.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-UnfulfillableMigrationLocatorStub.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\UnfulfillableMigrationLocatorStub">UnfulfillableMigrationLocatorStub</abbr></a></dt>
+                <dd>This stub contain migration which order they need to be run is different
+   than the order the file are returned because of dependencies management</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DeprecatedMigrationLocatorStub.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\DeprecatedMigrationLocatorStub">DeprecatedMigrationLocatorStub</abbr></a></dt>
+                <dd>This stub contain migration which order they need to be run is different
+   than the order the file are returned because of dependencies management</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\DatabaseMigratorServiceTest">DatabaseMigratorServiceTest</abbr></a></dt>
+                <dd>Tests for the Migrator Service</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-DatabaseMigratorTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\DatabaseMigratorTest">DatabaseMigratorTest</abbr></a></dt>
+                <dd>Tests for the Migrator Class</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-MigrationDependencyAnalyserTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\MigrationDependencyAnalyserTest">MigrationDependencyAnalyserTest</abbr></a></dt>
+                <dd></dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-MigrationLocatorTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\MigrationLocatorTest">MigrationLocatorTest</abbr></a></dt>
+                <dd>MigrationLocator Tests</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Database-Migrator-MigrationRepositoryTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Database\Migrator\MigrationRepositoryTest">MigrationRepositoryTest</abbr></a></dt>
+                <dd>DatabaseMigrationRespository Test</dd>
+                            <dt><a href="../classes/UserFrosting-Tests-Integration-Error-Handler-ExceptionHandlerTest.html"><abbr title="\UserFrosting\Tests\Integration\Error\Handler\ExceptionHandlerTest">ExceptionHandlerTest</abbr></a></dt>
+                <dd></dd>
+                            <dt><a href="../classes/UserFrosting-Tests-Integration-Error-Renderer-WhoopsRendererTest.html"><abbr title="\UserFrosting\Tests\Integration\Error\Renderer\WhoopsRendererTest">WhoopsRendererTest</abbr></a></dt>
+                <dd></dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Filesystem-FilesystemTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Filesystem\FilesystemTest">FilesystemTest</abbr></a></dt>
+                <dd>FilesystemTest class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-I18n-SiteLocaleTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\I18n\SiteLocaleTest">SiteLocaleTest</abbr></a></dt>
+                <dd>SiteLocaleTest class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-I18n-TranslatorServicesProviderTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\I18n\TranslatorServicesProviderTest">TranslatorServicesProviderTest</abbr></a></dt>
+                <dd>Tests AccountController</dd>
+                            <dt><a href="../classes/UserFrosting-Tests-Integration-Migrations-DeprecatedClassTable.html"><abbr title="\UserFrosting\Tests\Integration\Migrations\DeprecatedClassTable">DeprecatedClassTable</abbr></a></dt>
+                <dd>Abstract Migration class.</dd>
+                            <dt><a href="../classes/UserFrosting-Tests-Integration-Migrations-one-CreatePasswordResetsTable.html"><abbr title="\UserFrosting\Tests\Integration\Migrations\one\CreatePasswordResetsTable">CreatePasswordResetsTable</abbr></a></dt>
+                <dd>Abstract Migration class.</dd>
+                            <dt><a href="../classes/UserFrosting-Tests-Integration-Migrations-one-CreateUsersTable.html"><abbr title="\UserFrosting\Tests\Integration\Migrations\one\CreateUsersTable">CreateUsersTable</abbr></a></dt>
+                <dd>Abstract Migration class.</dd>
+                            <dt><a href="../classes/UserFrosting-Tests-Integration-Migrations-two-CreateFlightsTable.html"><abbr title="\UserFrosting\Tests\Integration\Migrations\two\CreateFlightsTable">CreateFlightsTable</abbr></a></dt>
+                <dd>Abstract Migration class.</dd>
+                            <dt><a href="../classes/UserFrosting-Tests-Integration-Migrations-UnfulfillableTable.html"><abbr title="\UserFrosting\Tests\Integration\Migrations\UnfulfillableTable">UnfulfillableTable</abbr></a></dt>
+                <dd>This migration is not fulfulable because it&#039;s dependencie are not met !</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-RouterTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\RouterTest">RouterTest</abbr></a></dt>
+                <dd></dd>
+                            <dt><a href="../classes/UserFrosting-Tests-Integration-Seeder-SeederTests.html"><abbr title="\UserFrosting\Tests\Integration\Seeder\SeederTests">SeederTests</abbr></a></dt>
+                <dd></dd>
+                            <dt><a href="../classes/UserFrosting-Tests-Integration-Seeder-ServicesProviderStub.html"><abbr title="\UserFrosting\Tests\Integration\Seeder\ServicesProviderStub">ServicesProviderStub</abbr></a></dt>
+                <dd>ServicesProviderStub</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Seeds-Seed1.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Seeds\Seed1">Seed1</abbr></a></dt>
+                <dd>Seed1</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Seeds-Seed2.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Seeds\Seed2">Seed2</abbr></a></dt>
+                <dd>Seed2</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Seeds-Seed.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Seeds\Seed">Seed</abbr></a></dt>
+                <dd>Seed1</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-AlertsServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\AlertsServiceTest">AlertsServiceTest</abbr></a></dt>
+                <dd>Integration tests for `alerts` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-AssetLoaderServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\AssetLoaderServiceTest">AssetLoaderServiceTest</abbr></a></dt>
+                <dd>Integration tests for `assetLoader` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-AssetsServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\AssetsServiceTest">AssetsServiceTest</abbr></a></dt>
+                <dd>Integration tests for `assets` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-CacheServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\CacheServiceTest">CacheServiceTest</abbr></a></dt>
+                <dd>Integration tests for `cache` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-CheckEnvironmentServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\CheckEnvironmentServiceTest">CheckEnvironmentServiceTest</abbr></a></dt>
+                <dd>Integration tests for `checkEnvironment` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-ClassMapperServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\ClassMapperServiceTest">ClassMapperServiceTest</abbr></a></dt>
+                <dd>Integration tests for `classMapper` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-ConfigServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\ConfigServiceTest">ConfigServiceTest</abbr></a></dt>
+                <dd>Integration tests for `config` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-DbServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\DbServiceTest">DbServiceTest</abbr></a></dt>
+                <dd>Integration tests for `debugLogger` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-DebugLoggerServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\DebugLoggerServiceTest">DebugLoggerServiceTest</abbr></a></dt>
+                <dd>Integration tests for `debugLogger` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-ErrorHandlerServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\ErrorHandlerServiceTest">ErrorHandlerServiceTest</abbr></a></dt>
+                <dd>Integration tests for `errorHandler` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-ErrorLoggerServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\ErrorLoggerServiceTest">ErrorLoggerServiceTest</abbr></a></dt>
+                <dd>Integration tests for `errorLogger` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-FactoryServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\FactoryServiceTest">FactoryServiceTest</abbr></a></dt>
+                <dd>Integration tests for `factory` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-MailerServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\MailerServiceTest">MailerServiceTest</abbr></a></dt>
+                <dd>Integration tests for `mailer` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-QueryLoggerServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\QueryLoggerServiceTest">QueryLoggerServiceTest</abbr></a></dt>
+                <dd>Integration tests for `queryLogger` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-RouterServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\RouterServiceTest">RouterServiceTest</abbr></a></dt>
+                <dd>Integration tests for `router` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-ThrottlerServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\ThrottlerServiceTest">ThrottlerServiceTest</abbr></a></dt>
+                <dd>Integration tests for `throttler` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-TranslatorServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\TranslatorServiceTest">TranslatorServiceTest</abbr></a></dt>
+                <dd>Integration tests for `translator` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-ServicesProvider-ViewServiceTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\ServicesProvider\ViewServiceTest">ViewServiceTest</abbr></a></dt>
+                <dd>Integration tests for `view` service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Session-SessionDatabaseHandlerTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Session\SessionDatabaseHandlerTest">SessionDatabaseHandlerTest</abbr></a></dt>
+                <dd>Integration tests for the session service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Session-SessionFileHandlerTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Session\SessionFileHandlerTest">SessionFileHandlerTest</abbr></a></dt>
+                <dd>Integration tests for the session service.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-TestDatabaseTraitTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\TestDatabaseTraitTest">TestDatabaseTraitTest</abbr></a></dt>
+                <dd></dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Util-CheckEnvironmentTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Util\CheckEnvironmentTest">CheckEnvironmentTest</abbr></a></dt>
+                <dd>CheckEnvironement Test</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Unit-Alert-CacheAlertStreamTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Unit\Alert\CacheAlertStreamTest">CacheAlertStreamTest</abbr></a></dt>
+                <dd></dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Unit-Alert-SessionAlertStreamTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Unit\Alert\SessionAlertStreamTest">SessionAlertStreamTest</abbr></a></dt>
+                <dd></dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Unit-Database-Relations-BelongsToManyThroughTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Unit\Database\Relations\BelongsToManyThroughTest">BelongsToManyThroughTest</abbr></a></dt>
+                <dd>Tests the BelongsToManyThrough relation.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Unit-Database-Relations-EloquentBelongsToManyModelStub.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Unit\Database\Relations\EloquentBelongsToManyModelStub">EloquentBelongsToManyModelStub</abbr></a></dt>
+                <dd>Model Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Unit-DatabaseSyncableTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Unit\DatabaseSyncableTest">DatabaseSyncableTest</abbr></a></dt>
+                <dd>Tests the HasManySyncable relation.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Unit-Sprunje-SprunjeTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Unit\Sprunje\SprunjeTest">SprunjeTest</abbr></a></dt>
+                <dd>SprunjeTest class.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Unit-Sprunje-SprunjeStub.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Unit\Sprunje\SprunjeStub">SprunjeStub</abbr></a></dt>
+                <dd>Sprunje.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Unit-Sprunje-SprunjeTestModelStub.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Unit\Sprunje\SprunjeTestModelStub">SprunjeTestModelStub</abbr></a></dt>
+                <dd>Model Class.</dd>
+                            <dt><a href="../classes/UserFrosting-System-Bakery-Bakery.html"><abbr title="\UserFrosting\System\Bakery\Bakery">Bakery</abbr></a></dt>
+                <dd>Base class for UserFrosting Bakery CLI tools.</dd>
+                            <dt><a href="../classes/UserFrosting-System-Bakery-BaseCommand.html"><abbr title="\UserFrosting\System\Bakery\BaseCommand">BaseCommand</abbr></a></dt>
+                <dd>Base class for UserFrosting Bakery CLI tools.</dd>
+                            <dt><a href="../classes/UserFrosting-System-Bakery-Migration.html"><abbr title="\UserFrosting\System\Bakery\Migration">Migration</abbr></a></dt>
+                <dd>Abstract Migration class.</dd>
+                            <dt><a href="../classes/UserFrosting-System-Facade.html"><abbr title="\UserFrosting\System\Facade">Facade</abbr></a></dt>
+                <dd>Implements base functionality for static &quot;facade&quot; classes.</dd>
+                            <dt><a href="../classes/UserFrosting-System-ServicesProvider.html"><abbr title="\UserFrosting\System\ServicesProvider">ServicesProvider</abbr></a></dt>
+                <dd>UserFrosting system services provider.</dd>
+                            <dt><a href="../classes/UserFrosting-System-SlimAppEvent.html"><abbr title="\UserFrosting\System\SlimAppEvent">SlimAppEvent</abbr></a></dt>
+                <dd>Used for events that need to access the Slim application.</dd>
+                            <dt><a href="../classes/UserFrosting-System-Sprinkle-Sprinkle.html"><abbr title="\UserFrosting\System\Sprinkle\Sprinkle">Sprinkle</abbr></a></dt>
+                <dd>Sprinkle class.</dd>
+                            <dt><a href="../classes/UserFrosting-System-Sprinkle-SprinkleManager.html"><abbr title="\UserFrosting\System\Sprinkle\SprinkleManager">SprinkleManager</abbr></a></dt>
+                <dd>Sprinkle manager class.</dd>
+                            <dt><a href="../classes/UserFrosting-System-UserFrosting.html"><abbr title="\UserFrosting\System\UserFrosting">UserFrosting</abbr></a></dt>
+                <dd>UserFrosting Main Class.</dd>
+            
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Account-Tests-withTestUser.html"><abbr title="\UserFrosting\Sprinkle\Account\Tests\withTestUser">withTestUser</abbr></a></dt>
+                <dd>Helper trait to pose as user when running an integration test</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-Helper-ConfirmableTrait.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\Helper\ConfirmableTrait">ConfirmableTrait</abbr></a></dt>
+                <dd>Confirmable Trait. Include method used to confirm action.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-Helper-DatabaseTest.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\Helper\DatabaseTest">DatabaseTest</abbr></a></dt>
+                <dd>Database Test Trait. Include method to test the db connexion</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-Helper-LocaleOption.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\Helper\LocaleOption">LocaleOption</abbr></a></dt>
+                <dd>Locale Helper.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Bakery-Helper-NodeVersionCheck.html"><abbr title="\UserFrosting\Sprinkle\Core\Bakery\Helper\NodeVersionCheck">NodeVersionCheck</abbr></a></dt>
+                <dd>Helper trait to check NodeJS and NPM version dependencies.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Models-Concerns-HasRelationships.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Models\Concerns\HasRelationships">HasRelationships</abbr></a></dt>
+                <dd>HasRelationships trait.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Syncable.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\Concerns\Syncable">Syncable</abbr></a></dt>
+                <dd>Implements the `sync` method for HasMany relationships.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\Concerns\Unique">Unique</abbr></a></dt>
+                <dd>Enforce uniqueness for BelongsToManyUnique, MorphToManyUnique, and BelongsToManyThrough.</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Http-Concerns-DeterminesContentType.html"><abbr title="\UserFrosting\Sprinkle\Core\Http\Concerns\DeterminesContentType">DeterminesContentType</abbr></a></dt>
+                <dd>Trait for classes that need to determine a request&#039;s accepted content type(s).</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-DatabaseTransactions.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\DatabaseTransactions">DatabaseTransactions</abbr></a></dt>
+                <dd>Trait enabling wrapping of each test case in a database transaction
+Based on Laravel `DatabaseTransactions` Traits</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-Integration-Bakery-Helper-runCommand.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\Integration\Bakery\Helper\runCommand">runCommand</abbr></a></dt>
+                <dd>Helper method to test a Bakery command</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-RefreshDatabase.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\RefreshDatabase">RefreshDatabase</abbr></a></dt>
+                <dd>Trait enabling wrapping of each test case in a database transaction
+Based on Laravel `RefreshDatabase` Traits</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-TestDatabase.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\TestDatabase">TestDatabase</abbr></a></dt>
+                <dd>Trait used to run test against the `test_integration` db connection</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-withController.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\withController">withController</abbr></a></dt>
+                <dd>Trait used to run test against the `test_integration` db connection</dd>
+                            <dt><a href="../classes/UserFrosting-Sprinkle-Core-Tests-withDatabaseSessionHandler.html"><abbr title="\UserFrosting\Sprinkle\Core\Tests\withDatabaseSessionHandler">withDatabaseSessionHandler</abbr></a></dt>
+                <dd>Trait used to run test against the `test_integration` db connection</dd>
+                    </dl>
+    
+    
+    
+                <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

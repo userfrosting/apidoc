@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>    UserFrosting API &raquo; Markers
+</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">UserFrosting API</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+        <li><a href="../index.html">Home</a></li>
+    </ul>
+
+    <div class="phpdocumentor-row">
+        <h2 class="phpdocumentor-content__title">Markers</h2>
+
+                    <h3>Table of Contents</h3>
+            <table class="phpdocumentor-table_of_contents">
+                                                            <tr>
+                            <td class="phpdocumentor-cell"><a href="#app/sprinkles/account/src/Authenticate/Authenticator.php">app/sprinkles/account/src/Authenticate/Authenticator.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="#app/sprinkles/account/src/Controller/AccountController.php">app/sprinkles/account/src/Controller/AccountController.php</a></td>
+                            <td class="phpdocumentor-cell">3</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="#app/sprinkles/account/src/Database/Models/Group.php">app/sprinkles/account/src/Database/Models/Group.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="#app/sprinkles/account/src/Database/Models/Interfaces/UserInterface.php">app/sprinkles/account/src/Database/Models/Interfaces/UserInterface.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="#app/sprinkles/account/src/Database/Models/User.php">app/sprinkles/account/src/Database/Models/User.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="#app/sprinkles/admin/tests/Integration/Controller/GroupControllerGuestTest.php">app/sprinkles/admin/tests/Integration/Controller/GroupControllerGuestTest.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="#app/sprinkles/admin/tests/Integration/Controller/RoleControllerGuestTest.php">app/sprinkles/admin/tests/Integration/Controller/RoleControllerGuestTest.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="#app/sprinkles/core/tests/Integration/ServicesProvider/AssetsServiceTest.php">app/sprinkles/core/tests/Integration/ServicesProvider/AssetsServiceTest.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                </table>
+        
+                    <a id="app/sprinkles/account/src/Authenticate/Authenticator.php"></a>
+            <h3><abbr title="app/sprinkles/account/src/Authenticate/Authenticator.php">Authenticator.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">216</td>
+                        <td class="phpdocumentor-cell">Figure out a way to update the currentUser service to reflect the logged-in user *immediately* in the service provider.
+As it stands, the currentUser service will still reflect a &quot;guest user&quot; for the remainder of the request.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="app/sprinkles/account/src/Controller/AccountController.php"></a>
+            <h3><abbr title="app/sprinkles/account/src/Controller/AccountController.php">AccountController.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">193</td>
+                        <td class="phpdocumentor-cell">require additional user information</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">193</td>
+                        <td class="phpdocumentor-cell">prevent password reset requests for root account?
+
+AuthGuard: false
+Route: /account/forgot-password
+Route Name: {none}
+Request type: POST</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1325</td>
+                        <td class="phpdocumentor-cell">Can this route be abused for account enumeration?  If so we should throttle it as well.
+
+AuthGuard: false
+Route: /account/suggest-username
+Route Name: {none}
+Request type: GET</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="app/sprinkles/account/src/Database/Models/Group.php"></a>
+            <h3><abbr title="app/sprinkles/account/src/Database/Models/Group.php">Group.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">53</td>
+                        <td class="phpdocumentor-cell">What do we do with users when their group is deleted?  Reassign them?  Or, can a user be &quot;groupless&quot;?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="app/sprinkles/account/src/Database/Models/Interfaces/UserInterface.php"></a>
+            <h3><abbr title="app/sprinkles/account/src/Database/Models/Interfaces/UserInterface.php">UserInterface.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">123</td>
+                        <td class="phpdocumentor-cell">Transition to Laravel Event dispatcher to handle this</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">134</td>
+                        <td class="phpdocumentor-cell">Transition to Laravel Event dispatcher to handle this</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="app/sprinkles/account/src/Database/Models/User.php"></a>
+            <h3><abbr title="app/sprinkles/account/src/Database/Models/User.php">User.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">382</td>
+                        <td class="phpdocumentor-cell">Transition to Laravel Event dispatcher to handle this</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">422</td>
+                        <td class="phpdocumentor-cell">Transition to Laravel Event dispatcher to handle this</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="app/sprinkles/admin/tests/Integration/Controller/GroupControllerGuestTest.php"></a>
+            <h3><abbr title="app/sprinkles/admin/tests/Integration/Controller/GroupControllerGuestTest.php">GroupControllerGuestTest.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">241</td>
+                        <td class="phpdocumentor-cell">test individual permission with the delete_group permission too</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="app/sprinkles/admin/tests/Integration/Controller/RoleControllerGuestTest.php"></a>
+            <h3><abbr title="app/sprinkles/admin/tests/Integration/Controller/RoleControllerGuestTest.php">RoleControllerGuestTest.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">96</td>
+                        <td class="phpdocumentor-cell">test individual permissions too</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="app/sprinkles/core/tests/Integration/ServicesProvider/AssetsServiceTest.php"></a>
+            <h3><abbr title="app/sprinkles/core/tests/Integration/ServicesProvider/AssetsServiceTest.php">AssetsServiceTest.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">23</td>
+                        <td class="phpdocumentor-cell">Need to test the actual output. We know an instance is returned, but
+we don&#039;t necessary know it returns the correct streams and whatnot</td>
+                    </tr>
+                                </tbody>
+            </table>
+            </div>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

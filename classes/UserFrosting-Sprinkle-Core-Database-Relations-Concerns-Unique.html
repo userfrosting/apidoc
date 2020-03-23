@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UserFrosting API</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">UserFrosting API</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle.html">Sprinkle</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core.html">Core</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core-database.html">Database</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core-database-relations.html">Relations</a></li>
+                    <li><a href="../namespaces/userfrosting-sprinkle-core-database-relations-concerns.html">Concerns</a></li>
+            </ul>
+
+    <h2 class="phpdocumentor-content__title">
+        Unique
+            </h2>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">23</span>
+    </aside>
+
+    <p class="phpdocumentor-trait__summary">Enforce uniqueness for BelongsToManyUnique, MorphToManyUnique, and BelongsToManyThrough.</p>
+    <section class="phpdocumentor-trait__description"></section>
+
+    <h3>Table of Contents</h3>
+    <table class="phpdocumentor-table_of_contents">
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#property_tertiaryRelated">$tertiaryRelated</a></th>
+                <td class="phpdocumentor-cell">The related tertiary model instance.</td>
+                <td class="phpdocumentor-cell">\Illuminate\Database\Eloquent\Model</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#property_tertiaryRelationName">$tertiaryRelationName</a></th>
+                <td class="phpdocumentor-cell">The name to use for the tertiary relation (e.g. &#039;roles_via&#039;, etc).</td>
+                <td class="phpdocumentor-cell">string</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#property_tertiaryKey">$tertiaryKey</a></th>
+                <td class="phpdocumentor-cell">The foreign key to the related tertiary model instance.</td>
+                <td class="phpdocumentor-cell">string</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#property_tertiaryCallback">$tertiaryCallback</a></th>
+                <td class="phpdocumentor-cell">A callback to apply to the tertiary query.</td>
+                <td class="phpdocumentor-cell">callable|null</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#property_limit">$limit</a></th>
+                <td class="phpdocumentor-cell">The limit to apply on the number of related models retrieved.</td>
+                <td class="phpdocumentor-cell">int|null</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#property_offset">$offset</a></th>
+                <td class="phpdocumentor-cell">The offset to apply on the related models retrieved.</td>
+                <td class="phpdocumentor-cell">int|null</td>
+            </tr>
+                                            <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_skip">skip()</a></th>
+                <td class="phpdocumentor-cell">Alias to set the &quot;offset&quot; value of the query.</td>
+                <td class="phpdocumentor-cell">self</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_offset">offset()</a></th>
+                <td class="phpdocumentor-cell">Set the &quot;offset&quot; value of the query.</td>
+                <td class="phpdocumentor-cell">self</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_take">take()</a></th>
+                <td class="phpdocumentor-cell">Alias to set the &quot;limit&quot; value of the query.</td>
+                <td class="phpdocumentor-cell">self</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_limit">limit()</a></th>
+                <td class="phpdocumentor-cell">Set the &quot;limit&quot; value of the query.</td>
+                <td class="phpdocumentor-cell">self</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_withLimit">withLimit()</a></th>
+                <td class="phpdocumentor-cell">Set the limit on the number of intermediate models to load.</td>
+                <td class="phpdocumentor-cell">$this</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_withOffset">withOffset()</a></th>
+                <td class="phpdocumentor-cell">Set the offset when loading the intermediate models.</td>
+                <td class="phpdocumentor-cell">$this</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_withTertiary">withTertiary()</a></th>
+                <td class="phpdocumentor-cell">Add a query to load the nested tertiary models for this relationship.</td>
+                <td class="phpdocumentor-cell">self</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_count">count()</a></th>
+                <td class="phpdocumentor-cell">Return the count of child models for this relationship.</td>
+                <td class="phpdocumentor-cell">int</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_getRelationExistenceCountQuery">getRelationExistenceCountQuery()</a></th>
+                <td class="phpdocumentor-cell">Add the constraints for a relationship count query.</td>
+                <td class="phpdocumentor-cell">\Illuminate\Database\Eloquent\Builder</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_match">match()</a></th>
+                <td class="phpdocumentor-cell">Match the eagerly loaded results to their parents.</td>
+                <td class="phpdocumentor-cell">array</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_get">get()</a></th>
+                <td class="phpdocumentor-cell">Execute the query as a &quot;select&quot; statement, getting all requested models
+and matching up any tertiary models.</td>
+                <td class="phpdocumentor-cell">\Illuminate\Database\Eloquent\Collection</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_getPaginatedQuery">getPaginatedQuery()</a></th>
+                <td class="phpdocumentor-cell">If we are applying either a limit or offset, we&#039;ll first determine a limited/offset list of model ids
+to select from in the final query.</td>
+                <td class="phpdocumentor-cell">\Illuminate\Database\Eloquent\Builder</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_getEager">getEager()</a></th>
+                <td class="phpdocumentor-cell">Get the full join results for this query, overriding the default getEager() method.</td>
+                <td class="phpdocumentor-cell">\Illuminate\Database\Eloquent\Collection</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_getModels">getModels()</a></th>
+                <td class="phpdocumentor-cell">Get the hydrated models and eager load their relations, optionally
+condensing the set of models before performing the eager loads.</td>
+                <td class="phpdocumentor-cell">\Illuminate\Database\Eloquent\Collection</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_condenseModels">condenseModels()</a></th>
+                <td class="phpdocumentor-cell">Condense the raw join query results into a set of unique models.</td>
+                <td class="phpdocumentor-cell">array</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_buildDictionary">buildDictionary()</a></th>
+                <td class="phpdocumentor-cell">Build dictionary of related models keyed by the top-level &quot;parent&quot; id.</td>
+                <td class="phpdocumentor-cell">array</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_buildTertiaryDictionary">buildTertiaryDictionary()</a></th>
+                <td class="phpdocumentor-cell">Build dictionary of tertiary models keyed by the corresponding related model keys.</td>
+                <td class="phpdocumentor-cell">array</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_transferPivotsToTertiary">transferPivotsToTertiary()</a></th>
+                <td class="phpdocumentor-cell">Transfer the pivot to the tertiary model.</td>
+                <td class="phpdocumentor-cell">mixed</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_getTertiaryModels">getTertiaryModels()</a></th>
+                <td class="phpdocumentor-cell">Get the tertiary models for the relationship.</td>
+                <td class="phpdocumentor-cell">\Illuminate\Database\Eloquent\Collection</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_matchTertiaryModels">matchTertiaryModels()</a></th>
+                <td class="phpdocumentor-cell">Match a collection of child models into a collection of parent models using a dictionary.</td>
+                <td class="phpdocumentor-cell">mixed</td>
+            </tr>
+                    <tr>
+                <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-Concerns-Unique.html#method_unsetTertiaryPivots">unsetTertiaryPivots()</a></th>
+                <td class="phpdocumentor-cell">Unset tertiary pivots on a collection or array of models.</td>
+                <td class="phpdocumentor-cell">mixed</td>
+            </tr>
+                            </table>
+
+            <section>
+            <h3 class="phpdocumentor-properties__header">Properties</h3>
+                            <a id="property_tertiaryRelated"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$tertiaryRelated</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">30</span>
+    </aside>
+            <p class="phpdocumentor-summary">The related tertiary model instance.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\Illuminate\Database\Eloquent\Model">Model</abbr></span>
+        <span class="phpdocumentor-signature__name">$tertiaryRelated</span>
+         = <span class="phpdocumentor-signature__default-value">null</span>    </code>
+    </article>
+                            <a id="property_tertiaryRelationName"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$tertiaryRelationName</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">37</span>
+    </aside>
+            <p class="phpdocumentor-summary">The name to use for the tertiary relation (e.g. &#039;roles_via&#039;, etc).</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$tertiaryRelationName</span>
+         = <span class="phpdocumentor-signature__default-value">null</span>    </code>
+    </article>
+                            <a id="property_tertiaryKey"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$tertiaryKey</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">44</span>
+    </aside>
+            <p class="phpdocumentor-summary">The foreign key to the related tertiary model instance.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$tertiaryKey</span>
+            </code>
+    </article>
+                            <a id="property_tertiaryCallback"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$tertiaryCallback</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">51</span>
+    </aside>
+            <p class="phpdocumentor-summary">A callback to apply to the tertiary query.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">callable|null</span>
+        <span class="phpdocumentor-signature__name">$tertiaryCallback</span>
+         = <span class="phpdocumentor-signature__default-value">null</span>    </code>
+    </article>
+                            <a id="property_limit"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$limit</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">58</span>
+    </aside>
+            <p class="phpdocumentor-summary">The limit to apply on the number of related models retrieved.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$limit</span>
+         = <span class="phpdocumentor-signature__default-value">null</span>    </code>
+    </article>
+                            <a id="property_offset"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$offset</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">65</span>
+    </aside>
+            <p class="phpdocumentor-summary">The offset to apply on the related models retrieved.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__name">$offset</span>
+         = <span class="phpdocumentor-signature__default-value">null</span>    </code>
+    </article>
+                                            </section>
+    
+            <section>
+            <h3 class="phpdocumentor-methods__header">Methods</h3>
+                            <a id="method_skip"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">skip()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">74</span>
+    </aside>
+        <p class="phpdocumentor-summary">Alias to set the &quot;offset&quot; value of the query.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">skip</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$value</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">self</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$value</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            
+</article>
+                            <a id="method_offset"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">offset()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">90</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set the &quot;offset&quot; value of the query.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">offset</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$value</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">self</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$value</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">todo</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Implement for 'unionOffset' as well?  (By checking the value of $this-&gt;query-&gt;getQuery()-&gt;unions)</p></section></dd>
+                                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            
+</article>
+                            <a id="method_take"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">take()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">104</span>
+    </aside>
+        <p class="phpdocumentor-summary">Alias to set the &quot;limit&quot; value of the query.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">take</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$value</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">self</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$value</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            
+</article>
+                            <a id="method_limit"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">limit()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">120</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set the &quot;limit&quot; value of the query.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">limit</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$value</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">self</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$value</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">todo</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Implement for 'unionLimit' as well?  (By checking the value of $this-&gt;query-&gt;getQuery()-&gt;unions)</p></section></dd>
+                                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            
+</article>
+                            <a id="method_withLimit"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+            phpdocumentor-element--deprecated                                            "
+>
+    <h4 class="phpdocumentor-method__name">withLimit()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">138</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set the limit on the number of intermediate models to load.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code phpdocumentor-signature--deprecated">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">withLimit</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$value</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">$this</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$value</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">deprecated</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>since 4.1.7</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            
+</article>
+                            <a id="method_withOffset"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+            phpdocumentor-element--deprecated                                            "
+>
+    <h4 class="phpdocumentor-method__name">withOffset()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">152</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set the offset when loading the intermediate models.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code phpdocumentor-signature--deprecated">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">withOffset</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$value</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">$this</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$value</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">deprecated</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>since 4.1.7</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            
+</article>
+                            <a id="method_withTertiary"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">withTertiary()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">167</span>
+    </aside>
+        <p class="phpdocumentor-summary">Add a query to load the nested tertiary models for this relationship.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">withTertiary</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$tertiaryRelated</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$tertiaryRelationName</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$tertiaryKey</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$tertiaryCallback</span> :
+                <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">self</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$tertiaryRelated</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$tertiaryRelationName</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$tertiaryKey</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$tertiaryCallback</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            
+</article>
+                            <a id="method_count"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">count()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">195</span>
+    </aside>
+        <p class="phpdocumentor-summary">Return the count of child models for this relationship.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">count</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">int</span>
+    </code>
+
+    
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            
+</article>
+                            <a id="method_getRelationExistenceCountQuery"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getRelationExistenceCountQuery()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">214</span>
+    </aside>
+        <p class="phpdocumentor-summary">Add the constraints for a relationship count query.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getRelationExistenceCountQuery</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$query</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$parentQuery</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$query</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$parentQuery</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">see</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
+            
+</article>
+                            <a id="method_match"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">match()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">232</span>
+    </aside>
+        <p class="phpdocumentor-summary">Match the eagerly loaded results to their parents.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">match</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$models</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$results</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$relation</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$models</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$results</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$relation</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
+                            <a id="method_get"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">get()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">271</span>
+    </aside>
+        <p class="phpdocumentor-summary">Execute the query as a &quot;select&quot; statement, getting all requested models
+and matching up any tertiary models.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">get</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$columns</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[&#039;*&#039;]</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$columns</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">[&#039;*&#039;]</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+            
+</article>
+                            <a id="method_getPaginatedQuery"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getPaginatedQuery()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">292</span>
+    </aside>
+        <p class="phpdocumentor-summary">If we are applying either a limit or offset, we&#039;ll first determine a limited/offset list of model ids
+to select from in the final query.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getPaginatedQuery</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$query</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$limit</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$offset</span> :
+                <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$query</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$limit</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$offset</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
+            
+</article>
+                            <a id="method_getEager"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getEager()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">337</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get the full join results for this query, overriding the default getEager() method.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getEager</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>The default getEager() method would normally just call get() on this relationship.
+This is not what we want here though, because our get() method removes records before
+<code class="prettyprint">match</code> has a chance to build out the substructures.</p></section>
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+            
+</article>
+                            <a id="method_getModels"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getModels()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">351</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get the hydrated models and eager load their relations, optionally
+condensing the set of models before performing the eager loads.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getModels</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$columns</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[&#039;*&#039;]</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$condenseModels</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$columns</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">[&#039;*&#039;]</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$condenseModels</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+            
+</article>
+                            <a id="method_condenseModels"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">condenseModels()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">399</span>
+    </aside>
+        <p class="phpdocumentor-summary">Condense the raw join query results into a set of unique models.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">condenseModels</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$models</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Before doing this, we may optionally find any tertiary models that should be
+set as sub-relations on these models.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$models</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
+                            <a id="method_buildDictionary"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">buildDictionary()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">429</span>
+    </aside>
+        <p class="phpdocumentor-summary">Build dictionary of related models keyed by the top-level &quot;parent&quot; id.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">buildDictionary</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$results</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$parentKey</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>If there is a tertiary query set as well, then also build a two-level dictionary
+that maps parent ids to arrays of related ids, which in turn map to arrays
+of tertiary models corresponding to each relationship.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$results</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$parentKey</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
+                            <a id="method_buildTertiaryDictionary"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">buildTertiaryDictionary()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">492</span>
+    </aside>
+        <p class="phpdocumentor-summary">Build dictionary of tertiary models keyed by the corresponding related model keys.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">buildTertiaryDictionary</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$models</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$models</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
+                            <a id="method_transferPivotsToTertiary"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">transferPivotsToTertiary()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">519</span>
+    </aside>
+        <p class="phpdocumentor-summary">Transfer the pivot to the tertiary model.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">transferPivotsToTertiary</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$model</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Model">Model</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$tertiaryModel</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Model">Model</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$model</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Model">Model</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$tertiaryModel</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Model">Model</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                            <a id="method_getTertiaryModels"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getTertiaryModels()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">543</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get the tertiary models for the relationship.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">getTertiaryModels</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$models</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$models</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+            
+</article>
+                            <a id="method_matchTertiaryModels"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">matchTertiaryModels()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">572</span>
+    </aside>
+        <p class="phpdocumentor-summary">Match a collection of child models into a collection of parent models using a dictionary.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">matchTertiaryModels</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$dictionary</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$results</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$dictionary</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$results</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                            <a id="method_unsetTertiaryPivots"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">unsetTertiaryPivots()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php"><a href="../files/app-sprinkles-core-src-database-relations-concerns-unique.html"><abbr title="app/sprinkles/core/src/Database/Relations/Concerns/Unique.php">Unique.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">592</span>
+    </aside>
+        <p class="phpdocumentor-summary">Unset tertiary pivots on a collection or array of models.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">unsetTertiaryPivots</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$models</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$models</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                            </section>
+                <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
