@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UserFrosting API</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">UserFrosting API</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
+                    <li><a href="../namespaces/userfrosting-fortress.html">Fortress</a></li>
+                    <li><a href="../namespaces/userfrosting-fortress-adapter.html">Adapter</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            ClientSideValidationAdapter
+                                                        </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php"><a href="../files/app-vendor-userfrosting-fortress-src-adapter-clientsidevalidationadapter.html"><abbr title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php">ClientSideValidationAdapter.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">23</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">ClientSideValidationAdapter Class.</p>
+        <section class="phpdocumentor-class__description"><p>Loads validation rules from a schema and generates client-side rules compatible with a particular client-side (usually Javascript) plugin.</p></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Fortress-Adapter-ClientSideValidationAdapter.html#property_schema">$schema</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Fortress-RequestSchema-RequestSchemaInterface.html"><abbr title="\UserFrosting\Fortress\RequestSchema\RequestSchemaInterface">RequestSchemaInterface</abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Fortress-Adapter-ClientSideValidationAdapter.html#property_translator">$translator</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\UserFrosting\I18n\Translator">Translator</abbr></td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Fortress-Adapter-ClientSideValidationAdapter.html#method___construct">__construct()</a></th>
+                    <td class="phpdocumentor-cell">Create a new client-side validator.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Fortress-Adapter-ClientSideValidationAdapter.html#method_setSchema">setSchema()</a></th>
+                    <td class="phpdocumentor-cell">Set the schema for this validator.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Fortress-Adapter-ClientSideValidationAdapter.html#method_setTranslator">setTranslator()</a></th>
+                    <td class="phpdocumentor-cell">Set the translator for this validator, as a valid MessageTranslator object.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Fortress-Adapter-ClientSideValidationAdapter.html#method_rules">rules()</a></th>
+                    <td class="phpdocumentor-cell">Generate and return the validation rules for this specific validation adapter.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                                            </table>
+
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_schema"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$schema</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php"><a href="../files/app-vendor-userfrosting-fortress-src-adapter-clientsidevalidationadapter.html"><abbr title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php">ClientSideValidationAdapter.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">28</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Fortress-RequestSchema-RequestSchemaInterface.html"><abbr title="\UserFrosting\Fortress\RequestSchema\RequestSchemaInterface">RequestSchemaInterface</abbr></a></span>
+        <span class="phpdocumentor-signature__name">$schema</span>
+            </code>
+    </article>
+                                    <a id="property_translator"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$translator</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php"><a href="../files/app-vendor-userfrosting-fortress-src-adapter-clientsidevalidationadapter.html"><abbr title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php">ClientSideValidationAdapter.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">33</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\UserFrosting\I18n\Translator">Translator</abbr></span>
+        <span class="phpdocumentor-signature__name">$translator</span>
+            </code>
+    </article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method___construct"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php"><a href="../files/app-vendor-userfrosting-fortress-src-adapter-clientsidevalidationadapter.html"><abbr title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php">ClientSideValidationAdapter.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">41</span>
+    </aside>
+        <p class="phpdocumentor-summary">Create a new client-side validator.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">__construct</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$schema</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Fortress-RequestSchema-RequestSchemaInterface.html"><abbr title="\UserFrosting\Fortress\RequestSchema\RequestSchemaInterface">RequestSchemaInterface</abbr></a></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$translator</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\I18n\Translator">Translator</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$schema</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Fortress-RequestSchema-RequestSchemaInterface.html"><abbr title="\UserFrosting\Fortress\RequestSchema\RequestSchemaInterface">RequestSchemaInterface</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>A RequestSchema object, containing the validation rules.</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$translator</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\I18n\Translator">Translator</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>A Translator to be used to translate message ids found in the schema.</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_setSchema"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setSchema()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php"><a href="../files/app-vendor-userfrosting-fortress-src-adapter-clientsidevalidationadapter.html"><abbr title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php">ClientSideValidationAdapter.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">55</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set the schema for this validator.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">setSchema</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$schema</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Fortress-RequestSchema-RequestSchemaInterface.html"><abbr title="\UserFrosting\Fortress\RequestSchema\RequestSchemaInterface">RequestSchemaInterface</abbr></a></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$schema</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Fortress-RequestSchema-RequestSchemaInterface.html"><abbr title="\UserFrosting\Fortress\RequestSchema\RequestSchemaInterface">RequestSchemaInterface</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>A RequestSchemaInterface object, containing the validation rules.</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_setTranslator"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setTranslator()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php"><a href="../files/app-vendor-userfrosting-fortress-src-adapter-clientsidevalidationadapter.html"><abbr title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php">ClientSideValidationAdapter.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">67</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set the translator for this validator, as a valid MessageTranslator object.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">setTranslator</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$translator</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\I18n\Translator">Translator</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$translator</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\I18n\Translator">Translator</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>A Translator to be used to translate message ids found in the schema.</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_rules"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                        phpdocumentor-element--abstract                                "
+>
+    <h4 class="phpdocumentor-method__name">rules()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php"><a href="../files/app-vendor-userfrosting-fortress-src-adapter-clientsidevalidationadapter.html"><abbr title="app/vendor/userfrosting/fortress/src/Adapter/ClientSideValidationAdapter.php">ClientSideValidationAdapter.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">84</span>
+    </aside>
+        <p class="phpdocumentor-summary">Generate and return the validation rules for this specific validation adapter.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__abstract">abstract</span>                        <span class="phpdocumentor-signature__name">rules</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$format</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;json&#039;</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$stringEncode</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>This method returns a collection of rules, in the format required by the specified plugin.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$format</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">&#039;json&#039;</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The format in which to return the rules.  For example, &quot;json&quot; or &quot;html5&quot;.</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$stringEncode</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>In the case of JSON rules, specify whether or not to encode the result as a serialized JSON string.</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash; <span class="phpdocumentor-description"><p>The validation rule collection.</p></span>
+            
+</article>
+                                                            </section>
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

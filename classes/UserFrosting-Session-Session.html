@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UserFrosting API</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">UserFrosting API</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
+                    <li><a href="../namespaces/userfrosting-session.html">Session</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            Session
+                                                    <span class="phpdocumentor-class__implements">
+                    implements
+                                            <abbr title="\ArrayAccess">ArrayAccess</abbr>                                    </span>
+                                </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">23</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">A wrapper for $_SESSION that can be used with a variety of different session handlers, based on illuminate/session.</p>
+        <section class="phpdocumentor-class__description"></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#property_handler">$handler</a></th>
+                    <td class="phpdocumentor-cell">The session handler implementation.</td>
+                    <td class="phpdocumentor-cell"><abbr title="\SessionHandlerInterface">SessionHandlerInterface</abbr></td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method___construct">__construct()</a></th>
+                    <td class="phpdocumentor-cell">Create the session wrapper.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_status">status()</a></th>
+                    <td class="phpdocumentor-cell">Returns the current session status.</td>
+                    <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_start">start()</a></th>
+                    <td class="phpdocumentor-cell">Start the session.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_destroy">destroy()</a></th>
+                    <td class="phpdocumentor-cell">Destroy the current session, and unset all values in memory.  Destroy the session cookie as well to remove all traces client-side.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_regenerateId">regenerateId()</a></th>
+                    <td class="phpdocumentor-cell">Regenerate the session id.  For example, when logging someone in, you should regenerate the session to prevent session fixation attacks.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_getId">getId()</a></th>
+                    <td class="phpdocumentor-cell">Get the current session id.</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_has">has()</a></th>
+                    <td class="phpdocumentor-cell">Determine if the given session value exists.</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_get">get()</a></th>
+                    <td class="phpdocumentor-cell">Get the specified session value.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_set">set()</a></th>
+                    <td class="phpdocumentor-cell">Set a given session value.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_setExists">setExists()</a></th>
+                    <td class="phpdocumentor-cell">Set the existence of the session on the handler if applicable.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_prepend">prepend()</a></th>
+                    <td class="phpdocumentor-cell">Prepend a value onto an array session value.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_push">push()</a></th>
+                    <td class="phpdocumentor-cell">Push a value onto an array session value.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_all">all()</a></th>
+                    <td class="phpdocumentor-cell">Get all of the session items for the application.</td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_offsetExists">offsetExists()</a></th>
+                    <td class="phpdocumentor-cell">Determine if the given session option exists.</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_offsetGet">offsetGet()</a></th>
+                    <td class="phpdocumentor-cell">Get a session option.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_offsetSet">offsetSet()</a></th>
+                    <td class="phpdocumentor-cell">Set a session option.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_offsetUnset">offsetUnset()</a></th>
+                    <td class="phpdocumentor-cell">Unset a session option.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Session-Session.html#method_getHandler">getHandler()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\SessionHandlerInterface">SessionHandlerInterface</abbr></td>
+                </tr>
+                                            </table>
+
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_handler"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$handler</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">30</span>
+    </aside>
+            <p class="phpdocumentor-summary">The session handler implementation.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\SessionHandlerInterface">SessionHandlerInterface</abbr></span>
+        <span class="phpdocumentor-signature__name">$handler</span>
+            </code>
+    </article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method___construct"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">38</span>
+    </aside>
+        <p class="phpdocumentor-summary">Create the session wrapper.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">__construct</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$handler</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\SessionHandlerInterface">SessionHandlerInterface</abbr>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$config</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$handler</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\SessionHandlerInterface">SessionHandlerInterface</abbr>|null</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$config</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">[]</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_status"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">status()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">70</span>
+    </aside>
+        <p class="phpdocumentor-summary">Returns the current session status.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">status</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">int</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash; <span class="phpdocumentor-description"><p>PHP_SESSION_DISABLED | PHP_SESSION_NONE | PHP_SESSION_ACTIVE</p></span>
+            
+</article>
+                                    <a id="method_start"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">start()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">78</span>
+    </aside>
+        <p class="phpdocumentor-summary">Start the session.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">start</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_destroy"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">destroy()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">90</span>
+    </aside>
+        <p class="phpdocumentor-summary">Destroy the current session, and unset all values in memory.  Destroy the session cookie as well to remove all traces client-side.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">destroy</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$destroyCookie</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$destroyCookie</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Destroy the cookie on the client side as well.</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_regenerateId"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">regenerateId()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">121</span>
+    </aside>
+        <p class="phpdocumentor-summary">Regenerate the session id.  For example, when logging someone in, you should regenerate the session to prevent session fixation attacks.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">regenerateId</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$deleteOldSession</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$deleteOldSession</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Set to true when you are logging someone in.</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_getId"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getId()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">133</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get the current session id.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getId</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">string</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            
+</article>
+                                    <a id="method_has"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">has()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">145</span>
+    </aside>
+        <p class="phpdocumentor-summary">Determine if the given session value exists.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">has</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$key</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$key</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            
+</article>
+                                    <a id="method_get"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">get()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">158</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get the specified session value.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">get</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$key</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$default</span> :
+                <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$key</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$default</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_set"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">set()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">169</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set a given session value.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">set</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$key</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array|string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$value</span> :
+                <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$key</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array|string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$value</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_setExists"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setExists()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">185</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set the existence of the session on the handler if applicable.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">setExists</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$value</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$value</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_prepend"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">prepend()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">198</span>
+    </aside>
+        <p class="phpdocumentor-summary">Prepend a value onto an array session value.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">prepend</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$key</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$value</span> :
+                <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$key</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$value</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_push"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">push()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">213</span>
+    </aside>
+        <p class="phpdocumentor-summary">Push a value onto an array session value.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">push</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$key</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$value</span> :
+                <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$key</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$value</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_all"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">all()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">227</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get all of the session items for the application.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">all</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
+                                    <a id="method_offsetExists"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">offsetExists()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">239</span>
+    </aside>
+        <p class="phpdocumentor-summary">Determine if the given session option exists.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">offsetExists</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$key</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$key</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            
+</article>
+                                    <a id="method_offsetGet"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">offsetGet()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">251</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get a session option.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">offsetGet</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$key</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$key</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_offsetSet"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">offsetSet()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">262</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set a session option.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">offsetSet</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$key</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$value</span> :
+                <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$key</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$value</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_offsetUnset"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">offsetUnset()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">272</span>
+    </aside>
+        <p class="phpdocumentor-summary">Unset a session option.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">offsetUnset</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$key</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$key</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_getHandler"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getHandler()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/session/src/Session.php"><a href="../files/app-vendor-userfrosting-session-src-session.html"><abbr title="app/vendor/userfrosting/session/src/Session.php">Session.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">280</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getHandler</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\SessionHandlerInterface">SessionHandlerInterface</abbr></span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\SessionHandlerInterface">SessionHandlerInterface</abbr></span>
+            
+</article>
+                                                            </section>
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

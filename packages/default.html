@@ -41,6 +41,11 @@
                                     <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
                                     <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
                                     <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
                             </ul>
             
     
@@ -60,6 +65,14 @@
     
             <h3>Interfaces, Classes and Traits</h3>
         <dl>
+                            <dt><a href="../classes/UserFrosting-Assets-AssetBundles-AssetBundlesInterface.html"><abbr title="\UserFrosting\Assets\AssetBundles\AssetBundlesInterface">AssetBundlesInterface</abbr></a></dt>
+                <dd>Represents a collection of asset bundles.</dd>
+                            <dt><a href="../classes/UserFrosting-Fortress-RequestDataTransformerInterface.html"><abbr title="\UserFrosting\Fortress\RequestDataTransformerInterface">RequestDataTransformerInterface</abbr></a></dt>
+                <dd>RequestDataTransformer Interface.</dd>
+                            <dt><a href="../classes/UserFrosting-Fortress-RequestSchema-RequestSchemaInterface.html"><abbr title="\UserFrosting\Fortress\RequestSchema\RequestSchemaInterface">RequestSchemaInterface</abbr></a></dt>
+                <dd>Represents a schema for an HTTP request, compliant with the WDVSS standard (https://github.com/alexweissman/wdvss).</dd>
+                            <dt><a href="../classes/UserFrosting-Fortress-ServerSideValidatorInterface.html"><abbr title="\UserFrosting\Fortress\ServerSideValidatorInterface">ServerSideValidatorInterface</abbr></a></dt>
+                <dd>ServerSideValidator Interface.</dd>
                             <dt><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a></dt>
                 <dd>User Interface.</dd>
                             <dt><a href="../classes/UserFrosting-Sprinkle-Core-Csrf-CsrfProviderInterface.html"><abbr title="\UserFrosting\Sprinkle\Core\Csrf\CsrfProviderInterface">CsrfProviderInterface</abbr></a></dt>
@@ -77,6 +90,58 @@
                             <dt><a href="../classes/UserFrosting-Sprinkle-Core-Error-Renderer-ErrorRendererInterface.html"><abbr title="\UserFrosting\Sprinkle\Core\Error\Renderer\ErrorRendererInterface">ErrorRendererInterface</abbr></a></dt>
                 <dd>ErrorRendererInterface.</dd>
             
+                            <dt><a href="../classes/UserFrosting-Assets-AssetBundles-GulpBundleAssetsBundles.html"><abbr title="\UserFrosting\Assets\AssetBundles\GulpBundleAssetsBundles">GulpBundleAssetsBundles</abbr></a></dt>
+                <dd>Represents a collection of asset bundles, loaded from a gulp-bundle-assets results file.</dd>
+                            <dt><a href="../classes/UserFrosting-Assets-AssetBundles-GulpBundleAssetsCompiledBundles.html"><abbr title="\UserFrosting\Assets\AssetBundles\GulpBundleAssetsCompiledBundles">GulpBundleAssetsCompiledBundles</abbr></a></dt>
+                <dd>Represents a collection of asset bundles, loaded from a gulp-bundle-assets results file.</dd>
+                            <dt><a href="../classes/UserFrosting-Assets-AssetBundles-GulpBundleAssetsRawBundles.html"><abbr title="\UserFrosting\Assets\AssetBundles\GulpBundleAssetsRawBundles">GulpBundleAssetsRawBundles</abbr></a></dt>
+                <dd>Represents a collection of asset bundles, loaded from a gulp-bundle-assets configuration file.</dd>
+                            <dt><a href="../classes/UserFrosting-Assets-AssetLoader.html"><abbr title="\UserFrosting\Assets\AssetLoader">AssetLoader</abbr></a></dt>
+                <dd>Asset loader class.</dd>
+                            <dt><a href="../classes/UserFrosting-Assets-Assets.html"><abbr title="\UserFrosting\Assets\Assets">Assets</abbr></a></dt>
+                <dd>Facilitates convenient access to assets and asset bundles within PHP code.</dd>
+                            <dt><a href="../classes/UserFrosting-Assets-AssetsTemplatePlugin.html"><abbr title="\UserFrosting\Assets\AssetsTemplatePlugin">AssetsTemplatePlugin</abbr></a></dt>
+                <dd>Generic plugin for template systems. Provides several convenience methods for linking assets within templates.</dd>
+                            <dt><a href="../classes/UserFrosting-Assets-Exception-InvalidBundlesFileException.html"><abbr title="\UserFrosting\Assets\Exception\InvalidBundlesFileException">InvalidBundlesFileException</abbr></a></dt>
+                <dd>JsonException.</dd>
+                            <dt><a href="../classes/UserFrosting-Assets-ServeAsset-SlimServeAsset.html"><abbr title="\UserFrosting\Assets\ServeAsset\SlimServeAsset">SlimServeAsset</abbr></a></dt>
+                <dd>Asset server for applications using Slim. Intended for development scenarios.</dd>
+                            <dt><a href="../classes/UserFrosting-Assets-Util-MimeType.html"><abbr title="\UserFrosting\Assets\Util\MimeType">MimeType</abbr></a></dt>
+                <dd>Maps file extensions to MIME types.  Adapted from thephpleague/flysystem.</dd>
+                            <dt><a href="../classes/UserFrosting-Cache-ArrayStore.html"><abbr title="\UserFrosting\Cache\ArrayStore">ArrayStore</abbr></a></dt>
+                <dd>ArrayStore Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Cache-Driver-FileTagSet.html"><abbr title="\UserFrosting\Cache\Driver\FileTagSet">FileTagSet</abbr></a></dt>
+                <dd>FileTagSet Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Cache-Driver-TaggableFileStore.html"><abbr title="\UserFrosting\Cache\Driver\TaggableFileStore">TaggableFileStore</abbr></a></dt>
+                <dd>TaggableFileStore Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Cache-Driver-TaggedFileCache.html"><abbr title="\UserFrosting\Cache\Driver\TaggedFileCache">TaggedFileCache</abbr></a></dt>
+                <dd>TaggedFileCache Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Cache-FileStore.html"><abbr title="\UserFrosting\Cache\FileStore">FileStore</abbr></a></dt>
+                <dd>FileStore Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Cache-MemcachedStore.html"><abbr title="\UserFrosting\Cache\MemcachedStore">MemcachedStore</abbr></a></dt>
+                <dd>MemcachedStore Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Cache-RedisStore.html"><abbr title="\UserFrosting\Cache\RedisStore">RedisStore</abbr></a></dt>
+                <dd>RedisStore Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Cache-TaggableFileStore.html"><abbr title="\UserFrosting\Cache\TaggableFileStore">TaggableFileStore</abbr></a></dt>
+                <dd>TaggableFileStore Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Config-ConfigPathBuilder.html"><abbr title="\UserFrosting\Config\ConfigPathBuilder">ConfigPathBuilder</abbr></a></dt>
+                <dd>Config path builder, which builds a list of files for a given config environment.</dd>
+                            <dt><a href="../classes/UserFrosting-Fortress-Adapter-ClientSideValidationAdapter.html"><abbr title="\UserFrosting\Fortress\Adapter\ClientSideValidationAdapter">ClientSideValidationAdapter</abbr></a></dt>
+                <dd>ClientSideValidationAdapter Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Fortress-Adapter-FormValidationAdapter.html"><abbr title="\UserFrosting\Fortress\Adapter\FormValidationAdapter">FormValidationAdapter</abbr></a></dt>
+                <dd>FormValidationAdapter Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Fortress-Adapter-JqueryValidationAdapter.html"><abbr title="\UserFrosting\Fortress\Adapter\JqueryValidationAdapter">JqueryValidationAdapter</abbr></a></dt>
+                <dd>JqueryValidationAdapter Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Fortress-RequestDataTransformer.html"><abbr title="\UserFrosting\Fortress\RequestDataTransformer">RequestDataTransformer</abbr></a></dt>
+                <dd>RequestDataTransformer Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Fortress-RequestSchema-RequestSchemaRepository.html"><abbr title="\UserFrosting\Fortress\RequestSchema\RequestSchemaRepository">RequestSchemaRepository</abbr></a></dt>
+                <dd>Represents a schema for an HTTP request, compliant with the WDVSS standard (https://github.com/alexweissman/wdvss).</dd>
+                            <dt><a href="../classes/UserFrosting-Fortress-RequestSchema.html"><abbr title="\UserFrosting\Fortress\RequestSchema">RequestSchema</abbr></a></dt>
+                <dd>RequestSchema Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Fortress-ServerSideValidator.html"><abbr title="\UserFrosting\Fortress\ServerSideValidator">ServerSideValidator</abbr></a></dt>
+                <dd>ServerSideValidator Class.</dd>
+                            <dt><a href="../classes/UserFrosting-Session-Session.html"><abbr title="\UserFrosting\Session\Session">Session</abbr></a></dt>
+                <dd>A wrapper for $_SESSION that can be used with a variety of different session handlers, based on illuminate/session.</dd>
                             <dt><a href="../classes/UserFrosting-Sprinkle-Account-Account-Registration.html"><abbr title="\UserFrosting\Sprinkle\Account\Account\Registration">Registration</abbr></a></dt>
                 <dd>Handles user registration tasks.</dd>
                             <dt><a href="../classes/UserFrosting-Sprinkle-Account-Account.html"><abbr title="\UserFrosting\Sprinkle\Account\Account">Account</abbr></a></dt>

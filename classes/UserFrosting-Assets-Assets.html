@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UserFrosting API</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">UserFrosting API</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
+                                    <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
+                    <li><a href="../namespaces/userfrosting-assets.html">Assets</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            Assets
+                                                        </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">27</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">Facilitates convenient access to assets and asset bundles within PHP code.</p>
+        <section class="phpdocumentor-class__description"><p>Useful for production and development scenarios.</p></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#property_locator">$locator</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\UserFrosting\UniformResourceLocator\ResourceLocatorInterface">ResourceLocatorInterface</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#property_locatorScheme">$locatorScheme</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#property_baseUrl">$baseUrl</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#property_assetBundles">$assetBundles</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">\UserFrosting\Assets\AssetBundles\AssetBundlesInterface[]</td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method___construct">__construct()</a></th>
+                    <td class="phpdocumentor-cell">Constructor.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_addAssetBundles">addAssetBundles()</a></th>
+                    <td class="phpdocumentor-cell">Add asset bundles.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_resetAssetBundles">resetAssetBundles()</a></th>
+                    <td class="phpdocumentor-cell">Reset asset bundles, removing all registered assetBundles.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_getAssetBundles">getAssetBundles()</a></th>
+                    <td class="phpdocumentor-cell">Returns the list of assetBundles.</td>
+                    <td class="phpdocumentor-cell">\UserFrosting\Assets\AssetBundles\AssetBundlesInterface[]</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_getJsBundleAssets">getJsBundleAssets()</a></th>
+                    <td class="phpdocumentor-cell">Get asset paths within specified JS bundle.</td>
+                    <td class="phpdocumentor-cell">string[]</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_getCssBundleAssets">getCssBundleAssets()</a></th>
+                    <td class="phpdocumentor-cell">Get asset paths within specified CSS bundle.</td>
+                    <td class="phpdocumentor-cell">string[]</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_getAbsoluteUrl">getAbsoluteUrl()</a></th>
+                    <td class="phpdocumentor-cell">Get Asset url.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_urlPathToAbsolutePath">urlPathToAbsolutePath()</a></th>
+                    <td class="phpdocumentor-cell">Processes a relative path from a URL to an absolute path. Returns null if no file exists at the generated path.</td>
+                    <td class="phpdocumentor-cell">null|string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_urlPathToStreamUri">urlPathToStreamUri()</a></th>
+                    <td class="phpdocumentor-cell">Processes a relative path from a URL to a locator stream uri. Returns null if no file exists at the generated path.</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_getBaseUrl">getBaseUrl()</a></th>
+                    <td class="phpdocumentor-cell">Returns base Assets base Url.</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_setBaseUrl">setBaseUrl()</a></th>
+                    <td class="phpdocumentor-cell">Set Asset base Url.</td>
+                    <td class="phpdocumentor-cell">$this</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_getLocatorScheme">getLocatorScheme()</a></th>
+                    <td class="phpdocumentor-cell">Get Asset Locator Scheme.</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Assets-Assets.html#method_setLocatorScheme">setLocatorScheme()</a></th>
+                    <td class="phpdocumentor-cell">Set Asset locator scheme.</td>
+                    <td class="phpdocumentor-cell">$this</td>
+                </tr>
+                                            </table>
+
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_locator"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$locator</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">30</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\UserFrosting\UniformResourceLocator\ResourceLocatorInterface">ResourceLocatorInterface</abbr></span>
+        <span class="phpdocumentor-signature__name">$locator</span>
+            </code>
+    </article>
+                                    <a id="property_locatorScheme"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$locatorScheme</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">33</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$locatorScheme</span>
+            </code>
+    </article>
+                                    <a id="property_baseUrl"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$baseUrl</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">36</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$baseUrl</span>
+            </code>
+    </article>
+                                    <a id="property_assetBundles"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$assetBundles</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">39</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">\UserFrosting\Assets\AssetBundles\AssetBundlesInterface[]</span>
+        <span class="phpdocumentor-signature__name">$assetBundles</span>
+         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
+    </article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method___construct"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">48</span>
+    </aside>
+        <p class="phpdocumentor-summary">Constructor.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">__construct</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$locator</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\UniformResourceLocator\ResourceLocatorInterface">ResourceLocatorInterface</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$locatorScheme</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$baseUrl</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$locator</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\UniformResourceLocator\ResourceLocatorInterface">ResourceLocatorInterface</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Resource locator used to find assets.</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$locatorScheme</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Scheme to use in locator.</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$baseUrl</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Sites base URL and optionally assets directory to later use when generating absolute path to an asset.</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_addAssetBundles"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">addAssetBundles()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">65</span>
+    </aside>
+        <p class="phpdocumentor-summary">Add asset bundles.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">addAssetBundles</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$assetBundles</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Assets-AssetBundles-AssetBundlesInterface.html"><abbr title="\UserFrosting\Assets\AssetBundles\AssetBundlesInterface">AssetBundlesInterface</abbr></a></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$assetBundles</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Assets-AssetBundles-AssetBundlesInterface.html"><abbr title="\UserFrosting\Assets\AssetBundles\AssetBundlesInterface">AssetBundlesInterface</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_resetAssetBundles"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">resetAssetBundles()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">73</span>
+    </aside>
+        <p class="phpdocumentor-summary">Reset asset bundles, removing all registered assetBundles.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">resetAssetBundles</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_getAssetBundles"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getAssetBundles()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">83</span>
+    </aside>
+        <p class="phpdocumentor-summary">Returns the list of assetBundles.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getAssetBundles</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">\UserFrosting\Assets\AssetBundles\AssetBundlesInterface[]</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">\UserFrosting\Assets\AssetBundles\AssetBundlesInterface[]</span>
+            
+</article>
+                                    <a id="method_getJsBundleAssets"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getJsBundleAssets()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">97</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get asset paths within specified JS bundle.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getJsBundleAssets</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$bundleName</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">string[]</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$bundleName</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Bundle name.</p></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>if specified JS asset bundle is not found.</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string[]</span>
+            
+</article>
+                                    <a id="method_getCssBundleAssets"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getCssBundleAssets()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">129</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get asset paths within specified CSS bundle.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getCssBundleAssets</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$bundleName</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">string[]</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$bundleName</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Bundle name.</p></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>if specified CSS asset bundle is not found.</p></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string[]</span>
+            
+</article>
+                                    <a id="method_getAbsoluteUrl"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getAbsoluteUrl()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">164</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get Asset url.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getAbsoluteUrl</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$streamPath</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string|array</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Transform a locator uri to a url accessible to a browser
+In other words, transform <code class="prettyprint">assets://vendor/bootstrap/js/bootstrap.js</code> to
+<code class="prettyprint">http://example.com/vendor/bootstrap/js/bootstrap.js</code>, replacing the <code class="prettyprint">://</code> with the base url
+Make sure the ressource exist in the process.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$streamPath</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string|array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The asset uri</p></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_urlPathToAbsolutePath"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">urlPathToAbsolutePath()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">195</span>
+    </aside>
+        <p class="phpdocumentor-summary">Processes a relative path from a URL to an absolute path. Returns null if no file exists at the generated path.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">urlPathToAbsolutePath</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$uncleanRelativePath</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">null|string</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Applies protections against attempts to access restricted files.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$uncleanRelativePath</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Potentially dangerous relative path.</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">null|string</span>
+            
+</article>
+                                    <a id="method_urlPathToStreamUri"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">urlPathToStreamUri()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">223</span>
+    </aside>
+        <p class="phpdocumentor-summary">Processes a relative path from a URL to a locator stream uri. Returns null if no file exists at the generated path.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">urlPathToStreamUri</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$urlPath</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">string</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Applies protections against attempts to access restricted files.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$urlPath</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            
+</article>
+                                    <a id="method_getBaseUrl"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getBaseUrl()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">250</span>
+    </aside>
+        <p class="phpdocumentor-summary">Returns base Assets base Url.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getBaseUrl</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">string</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            
+</article>
+                                    <a id="method_setBaseUrl"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setBaseUrl()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">264</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set Asset base Url.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">setBaseUrl</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$baseUrl</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">$this</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$baseUrl</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            
+</article>
+                                    <a id="method_getLocatorScheme"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getLocatorScheme()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">283</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get Asset Locator Scheme.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getLocatorScheme</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">string</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            
+</article>
+                                    <a id="method_setLocatorScheme"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setLocatorScheme()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/assets/src/Assets.php"><a href="../files/app-vendor-userfrosting-assets-src-assets.html"><abbr title="app/vendor/userfrosting/assets/src/Assets.php">Assets.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">297</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set Asset locator scheme.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">setLocatorScheme</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$locatorScheme</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">$this</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$locatorScheme</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+        <dl class="phpdocumentor-tag-list">
+                                                <dt class="phpdocumentor-tag-list__entry">
+                        <span class="phpdocumentor-tag__name">throws</span>
+                    </dt>
+                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+                                    </dl>
+    
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            
+</article>
+                                                            </section>
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
