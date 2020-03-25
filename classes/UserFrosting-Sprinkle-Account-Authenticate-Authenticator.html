@@ -3,30 +3,30 @@
 <head>
     <meta charset="utf-8">
     <title>UserFrosting API</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/template.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+        <link rel="stylesheet" href="../css/template.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
-    <script src="../js/search.js"></script>
-    <script defer src="../js/searchIndex.js"></script>
+        <script src="../js/search.js"></script>
+        <script defer src="../js/searchIndex.js"></script>
     </head>
 <body>
-<header class="phpdocumentor-top-header"></header>
-<header class="phpdocumentor-header">
-    <section class="phpdocumentor-section">
-        <h1 class="phpdocumentor-title">UserFrosting API</h1>
-    </section>
-</header>
-<main class="phpdocumentor">
-    <div class="phpdocumentor-section">
-        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <header class="phpdocumentor-top-header"></header>
+    <header class="phpdocumentor-header">
+        <section class="phpdocumentor-section">
+            <h1 class="phpdocumentor-title">UserFrosting API</h1>
+        </section>
+    </header>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
     <section data-search-form class="phpdocumentor-search">
-        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <h2 class="phpdocumentor-sidebar__category-header">Search</h2>
         <label class="phpdocumentor-label">
             <span class="visually-hidden">Search for</span>
             <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
@@ -34,29 +34,41 @@
     </section>
 
     
-    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
-            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
-                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
-            <ul class="phpdocumentor-list">
-                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
-                            </ul>
-            
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-i18n.html"><abbr title="\UserFrosting\I18n">I18n</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-support.html"><abbr title="\UserFrosting\Support">Support</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-uniformresourcelocator.html"><abbr title="\UserFrosting\UniformResourceLocator">UniformResourceLocator</abbr></a></li>
+                                    </ul>
+                        </section>
+
     
-    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
-        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
 </aside>
 
-        <div class="nine phpdocumentor-columns phpdocumentor-content">
-            <ul class="phpdocumentor-breadcrumbs">
+            <div class="nine phpdocumentor-columns phpdocumentor-content">
+                <ul class="phpdocumentor-breadcrumbs">
     <li><a href="../index.html">Home</a></li>
                         <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
                     <li><a href="../namespaces/userfrosting-sprinkle.html">Sprinkle</a></li>
@@ -76,6 +88,17 @@
 
         <p class="phpdocumentor-class__summary">Handles authentication tasks.</p>
         <section class="phpdocumentor-class__description"></section>
+                    <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>Alex Weissman (<a href="https://alexanderweissman.com">https://alexanderweissman.com</a>)
+Partially inspired by Laravel's Authentication component: <a href="https://github.com/laravel/framework/blob/5.3/src/Illuminate/Auth/SessionGuard.php">https://github.com/laravel/framework/blob/5.3/src/Illuminate/Auth/SessionGuard.php</a></p></section>
+                </dd>
+                        </dl>
+
 
         <h3>Table of Contents</h3>
         <table class="phpdocumentor-table_of_contents">
@@ -92,7 +115,7 @@
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_config">$config</a></th>
                     <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-Support-Repository-Repository.html"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></a></td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Authenticator.html#property_cache">$cache</a></th>
@@ -217,7 +240,8 @@
                 <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Sprinkle-Core-Util-ClassMapper.html"><abbr title="\UserFrosting\Sprinkle\Core\Util\ClassMapper">ClassMapper</abbr></a></span>
         <span class="phpdocumentor-signature__name">$classMapper</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_session"></a>
 <article
         class="
@@ -236,7 +260,8 @@
                 <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Session-Session.html"><abbr title="\UserFrosting\Session\Session">Session</abbr></a></span>
         <span class="phpdocumentor-signature__name">$session</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_config"></a>
 <article
         class="
@@ -252,10 +277,11 @@
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></span>
+                <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Support-Repository-Repository.html"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></a></span>
         <span class="phpdocumentor-signature__name">$config</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_cache"></a>
 <article
         class="
@@ -274,7 +300,8 @@
                 <span class="phpdocumentor-signature__type"><abbr title="\Illuminate\Cache\Repository">Repository</abbr></span>
         <span class="phpdocumentor-signature__name">$cache</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_db"></a>
 <article
         class="
@@ -293,7 +320,8 @@
                 <span class="phpdocumentor-signature__type"><abbr title="\Illuminate\Database\Capsule\Manager">Manager</abbr></span>
         <span class="phpdocumentor-signature__name">$db</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_loggedOut"></a>
 <article
         class="
@@ -312,7 +340,8 @@
                 <span class="phpdocumentor-signature__type">bool</span>
         <span class="phpdocumentor-signature__name">$loggedOut</span>
          = <span class="phpdocumentor-signature__default-value">false</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_rememberMeStorage"></a>
 <article
         class="
@@ -331,7 +360,8 @@
                 <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Sprinkle-Account-Rememberme-PDOStorage.html"><abbr title="\UserFrosting\Sprinkle\Account\Rememberme\PDOStorage">PDOStorage</abbr></a></span>
         <span class="phpdocumentor-signature__name">$rememberMeStorage</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_rememberMe"></a>
 <article
         class="
@@ -350,7 +380,8 @@
                 <span class="phpdocumentor-signature__type"><abbr title="\Birke\Rememberme\Authenticator">Authenticator</abbr></span>
         <span class="phpdocumentor-signature__name">$rememberMe</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_user"></a>
 <article
         class="
@@ -369,7 +400,8 @@
                 <span class="phpdocumentor-signature__type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a></span>
         <span class="phpdocumentor-signature__name">$user</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_viaRemember"></a>
 <article
         class="
@@ -389,7 +421,8 @@
                 <span class="phpdocumentor-signature__type">bool</span>
         <span class="phpdocumentor-signature__name">$viaRemember</span>
          = <span class="phpdocumentor-signature__default-value">false</span>    </code>
-    </article>
+            
+</article>
                                                             </section>
         
                     <section>
@@ -421,7 +454,7 @@
                             </span>
                     <span class="phpdocumentor-signature__argument">
             ,                 <span class="phpdocumentor-signature__argument__name">$config</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></span>
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Support-Repository-Repository.html"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></a></span>
                             </span>
                     <span class="phpdocumentor-signature__argument">
             ,                 <span class="phpdocumentor-signature__argument__name">$cache</span> :
@@ -450,7 +483,7 @@
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The session wrapper object that will store the user's id.</p></section></dd>
                             <dt class="phpdocumentor-argument-list__entry">
                     <span class="phpdocumentor-signature__argument__name">$config</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-Support-Repository-Repository.html"><abbr title="\UserFrosting\Support\Repository\Repository">Repository</abbr></a></span>
                                     </dt>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Config object that contains authentication settings.</p></section></dd>
                             <dt class="phpdocumentor-argument-list__entry">
@@ -466,6 +499,7 @@
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -533,22 +567,32 @@
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-InvalidCredentialsException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\InvalidCredentialsException">InvalidCredentialsException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AccountDisabledException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AccountDisabledException">AccountDisabledException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AccountNotVerifiedException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AccountNotVerifiedException">AccountNotVerifiedException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a></span>
             
@@ -577,6 +621,7 @@
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
             
@@ -605,6 +650,7 @@
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
             
@@ -654,15 +700,18 @@
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Set to true to make this a &quot;persistent session&quot;, i.e. one that will re-login even after the session expires.</p></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">todo</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Figure out a way to update the currentUser service to reflect the logged-in user <em>immediately</em> in the service provider.
-As it stands, the currentUser service will still reflect a &quot;guest user&quot; for the remainder of the request.</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">todo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>Figure out a way to update the currentUser service to reflect the logged-in user <em>immediately</em> in the service provider.
+As it stands, the currentUser service will still reflect a &quot;guest user&quot; for the remainder of the request.</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -706,6 +755,7 @@ and corresponding database entries in multiple browsers/devices.  See <a href="h
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -734,26 +784,39 @@ and corresponding database entries in multiple browsers/devices.  See <a href="h
         <section class="phpdocumentor-description"><p>Tries to re-establish a session for &quot;remember-me&quot; users who have been logged out due to an expired session.</p></section>
     
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AuthExpiredException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AuthExpiredException">AuthExpiredException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AuthCompromisedException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AuthCompromisedException">AuthCompromisedException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AccountInvalidException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AccountInvalidException">AccountInvalidException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AccountDisabledException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AccountDisabledException">AccountDisabledException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</span>
             
@@ -783,6 +846,7 @@ and corresponding database entries in multiple browsers/devices.  See <a href="h
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
             
@@ -810,14 +874,18 @@ and corresponding database entries in multiple browsers/devices.  See <a href="h
 
     
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>The client attempted to log in with an invalid rememberMe token.</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AuthCompromisedException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AuthCompromisedException">AuthCompromisedException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"><p>The client attempted to log in with an invalid rememberMe token.</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|bool</span>
                     &mdash; <span class="phpdocumentor-description"><p>If successful, the User object of the remembered user.  Otherwise, return false.</p></span>
@@ -846,14 +914,18 @@ and corresponding database entries in multiple browsers/devices.  See <a href="h
 
     
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>The client attempted to use an expired rememberMe token.</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AuthExpiredException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AuthExpiredException">AuthExpiredException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"><p>The client attempted to use an expired rememberMe token.</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</span>
                     &mdash; <span class="phpdocumentor-description"><p>If successful, the User object of the user in session.  Otherwise, return null.</p></span>
@@ -883,6 +955,7 @@ and corresponding database entries in multiple browsers/devices.  See <a href="h
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
             
@@ -923,18 +996,25 @@ and corresponding database entries in multiple browsers/devices.  See <a href="h
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AccountInvalidException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AccountInvalidException">AccountInvalidException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-Sprinkle-Account-Authenticate-Exception-AccountDisabledException.html"><abbr title="\UserFrosting\Sprinkle\Account\Authenticate\Exception\AccountDisabledException">AccountDisabledException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-Interfaces-UserInterface.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\Interfaces\UserInterface">UserInterface</abbr></a>|null</span>
             
@@ -975,22 +1055,25 @@ and corresponding database entries in multiple browsers/devices.  See <a href="h
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
             
 </article>
                                                             </section>
             </article>
-            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
 
-                <h2>Search results</h2>
-                <ul class="phpdocumentor-search-results__entries">
+                    <h2>Search results</h2>
+                    <ul class="phpdocumentor-search-results__entries">
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-
+    </main>
+    <script>
+        cssVars({});
+    </script>
 </body>
 </html>

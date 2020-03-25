@@ -3,30 +3,30 @@
 <head>
     <meta charset="utf-8">
     <title>UserFrosting API</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/template.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+        <link rel="stylesheet" href="../css/template.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
-    <script src="../js/search.js"></script>
-    <script defer src="../js/searchIndex.js"></script>
+        <script src="../js/search.js"></script>
+        <script defer src="../js/searchIndex.js"></script>
     </head>
 <body>
-<header class="phpdocumentor-top-header"></header>
-<header class="phpdocumentor-header">
-    <section class="phpdocumentor-section">
-        <h1 class="phpdocumentor-title">UserFrosting API</h1>
-    </section>
-</header>
-<main class="phpdocumentor">
-    <div class="phpdocumentor-section">
-        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <header class="phpdocumentor-top-header"></header>
+    <header class="phpdocumentor-header">
+        <section class="phpdocumentor-section">
+            <h1 class="phpdocumentor-title">UserFrosting API</h1>
+        </section>
+    </header>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
     <section data-search-form class="phpdocumentor-search">
-        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <h2 class="phpdocumentor-sidebar__category-header">Search</h2>
         <label class="phpdocumentor-label">
             <span class="visually-hidden">Search for</span>
             <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
@@ -34,29 +34,41 @@
     </section>
 
     
-    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
-            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
-                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
-            <ul class="phpdocumentor-list">
-                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
-                            </ul>
-            
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-i18n.html"><abbr title="\UserFrosting\I18n">I18n</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-support.html"><abbr title="\UserFrosting\Support">Support</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-uniformresourcelocator.html"><abbr title="\UserFrosting\UniformResourceLocator">UniformResourceLocator</abbr></a></li>
+                                    </ul>
+                        </section>
+
     
-    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
-        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
 </aside>
 
-        <div class="nine phpdocumentor-columns phpdocumentor-content">
-            <ul class="phpdocumentor-breadcrumbs">
+            <div class="nine phpdocumentor-columns phpdocumentor-content">
+                <ul class="phpdocumentor-breadcrumbs">
     <li><a href="../index.html">Home</a></li>
                         <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
                     <li><a href="../namespaces/userfrosting-sprinkle.html">Sprinkle</a></li>
@@ -80,6 +92,7 @@
 
         <p class="phpdocumentor-class__summary">[abstract description].</p>
         <section class="phpdocumentor-class__description"></section>
+                
 
         <h3>Table of Contents</h3>
         <table class="phpdocumentor-table_of_contents">
@@ -352,7 +365,8 @@ order they&#039;re declared.</p>
                 <span class="phpdocumentor-signature__type">array</span>
         <span class="phpdocumentor-signature__name">$searchPaths</span>
          = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_resourceCache"></a>
 <article
         class="
@@ -372,7 +386,8 @@ order they&#039;re declared.</p>
                 <span class="phpdocumentor-signature__type">array</span>
         <span class="phpdocumentor-signature__name">$resourceCache</span>
          = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_customCss"></a>
 <article
         class="
@@ -392,7 +407,8 @@ order they&#039;re declared.</p>
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$customCss</span>
          = <span class="phpdocumentor-signature__default-value">null</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_extraTables"></a>
 <article
         class="
@@ -411,7 +427,8 @@ order they&#039;re declared.</p>
                 <span class="phpdocumentor-signature__type">array[]</span>
         <span class="phpdocumentor-signature__name">$extraTables</span>
          = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_handleUnconditionally"></a>
 <article
         class="
@@ -430,7 +447,8 @@ order they&#039;re declared.</p>
                 <span class="phpdocumentor-signature__type">bool</span>
         <span class="phpdocumentor-signature__name">$handleUnconditionally</span>
          = <span class="phpdocumentor-signature__default-value">false</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_pageTitle"></a>
 <article
         class="
@@ -449,7 +467,8 @@ order they&#039;re declared.</p>
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$pageTitle</span>
          = <span class="phpdocumentor-signature__default-value">&#039;Whoops! There was an error.&#039;</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_applicationPaths"></a>
 <article
         class="
@@ -468,7 +487,8 @@ order they&#039;re declared.</p>
                 <span class="phpdocumentor-signature__type">array[]</span>
         <span class="phpdocumentor-signature__name">$applicationPaths</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_blacklist"></a>
 <article
         class="
@@ -487,7 +507,8 @@ order they&#039;re declared.</p>
                 <span class="phpdocumentor-signature__type">array[]</span>
         <span class="phpdocumentor-signature__name">$blacklist</span>
          = <span class="phpdocumentor-signature__default-value">[&#039;_GET&#039; =&gt; [], &#039;_POST&#039; =&gt; [], &#039;_FILES&#039; =&gt; [], &#039;_COOKIE&#039; =&gt; [], &#039;_SESSION&#039; =&gt; [], &#039;_SERVER&#039; =&gt; [&#039;DB_PASSWORD&#039;, &#039;SMTP_PASSWORD&#039;], &#039;_ENV&#039; =&gt; [&#039;DB_PASSWORD&#039;, &#039;SMTP_PASSWORD&#039;]]</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_editor"></a>
 <article
         class="
@@ -510,7 +531,17 @@ in an editor. If the string contains the special substrings
                 <span class="phpdocumentor-signature__type">mixed</span>
         <span class="phpdocumentor-signature__name">$editor</span>
             </code>
-    </article>
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>&quot;txmt://open?url=%file&amp;line=%line&quot;</p></section>
+                </dd>
+                        </dl>
+
+</article>
                                     <a id="property_editors"></a>
 <article
         class="
@@ -530,7 +561,8 @@ in an editor. If the string contains the special substrings
                 <span class="phpdocumentor-signature__type">array</span>
         <span class="phpdocumentor-signature__name">$editors</span>
          = <span class="phpdocumentor-signature__default-value">[&#039;sublime&#039; =&gt; &#039;subl://open?url=file://%file&amp;line=%line&#039;, &#039;textmate&#039; =&gt; &#039;txmt://open?url=file://%file&amp;line=%line&#039;, &#039;emacs&#039; =&gt; &#039;emacs://open?url=file://%file&amp;line=%line&#039;, &#039;macvim&#039; =&gt; &#039;mvim://open/?url=file://%file&amp;line=%line&#039;, &#039;phpstorm&#039; =&gt; &#039;phpstorm://open?file=%file&amp;line=%line&#039;, &#039;idea&#039; =&gt; &#039;idea://open?file=%file&amp;line=%line&#039;]</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_inspector"></a>
 <article
         class="
@@ -549,7 +581,8 @@ in an editor. If the string contains the special substrings
                 <span class="phpdocumentor-signature__type"><abbr title="\Whoops\Exception\Inspector">Inspector</abbr></span>
         <span class="phpdocumentor-signature__name">$inspector</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_templateHelper"></a>
 <article
         class="
@@ -568,7 +601,8 @@ in an editor. If the string contains the special substrings
                 <span class="phpdocumentor-signature__type"><abbr title="\Whoops\Util\TemplateHelper">TemplateHelper</abbr></span>
         <span class="phpdocumentor-signature__name">$templateHelper</span>
             </code>
-    </article>
+            
+</article>
                                                                     <a id="property_request"></a>
 <article
         class="
@@ -587,7 +621,8 @@ in an editor. If the string contains the special substrings
                 <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></span>
         <span class="phpdocumentor-signature__name">$request</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_response"></a>
 <article
         class="
@@ -606,7 +641,8 @@ in an editor. If the string contains the special substrings
                 <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span>
         <span class="phpdocumentor-signature__name">$response</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_exception"></a>
 <article
         class="
@@ -625,7 +661,8 @@ in an editor. If the string contains the special substrings
                 <span class="phpdocumentor-signature__type"><abbr title="\Throwable">Throwable</abbr></span>
         <span class="phpdocumentor-signature__name">$exception</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_displayErrorDetails"></a>
 <article
         class="
@@ -646,7 +683,8 @@ in an editor. If the string contains the special substrings
         <span class="phpdocumentor-signature__name">$displayErrorDetails</span>
             </code>
         <section class="phpdocumentor-description">Each renderer may choose if and how to implement this.</section>
-    </article>
+            
+</article>
                             </section>
         
                     <section>
@@ -714,6 +752,7 @@ in an editor. If the string contains the special substrings
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -741,6 +780,7 @@ in an editor. If the string contains the special substrings
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
             
@@ -792,6 +832,7 @@ will be flattened with print_r.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -843,14 +884,18 @@ be flattened with print_r.</p></section>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Callable returning an associative array</p></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>If $callback is not callable</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                                                <section class="phpdocumentor-description"><p>If $callback is not callable</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -900,6 +945,7 @@ be flattened with print_r.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -942,6 +988,7 @@ table under that label.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array[]|callable</span>
             
@@ -984,6 +1031,7 @@ handle or return prematurely.</p>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool|null</span>
             
@@ -1035,21 +1083,26 @@ be set as the file reference&#039;s href attribute.</p>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">example</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>$run-&gt;addEditor('macvim', &quot;mvim://open?url=file://%file&amp;line=%line&quot;)</p></section></dd>
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">example</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>$run-&gt;addEditor('remove-it', function($file, $line) {
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>$run-&gt;addEditor('macvim', &quot;mvim://open?url=file://%file&amp;line=%line&quot;)</p></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>$run-&gt;addEditor('remove-it', function($file, $line) {
 unlink($file);
 return &quot;<a href="http://stackoverflow.com">http://stackoverflow.com</a>&quot;;
-});</p></section></dd>
-                                    </dl>
-    
+});</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1092,22 +1145,30 @@ return a string.</p>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">example</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>$run-&gt;setEditor(function($file, $line) { return &quot;file:///{$file}&quot;; });</p></section></dd>
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">example</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>$run-&gt;setEditor('sublime');</p></section></dd>
-                                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>If invalid argument identifier provided</p></section></dd>
-                                    </dl>
-    
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>$run-&gt;setEditor(function($file, $line) { return &quot;file:///{$file}&quot;; });</p></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>$run-&gt;setEditor('sublime');</p></section>
+                </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                                                <section class="phpdocumentor-description"><p>If invalid argument identifier provided</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1159,14 +1220,18 @@ file reference.</p>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>If editor resolver does not return a string</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                                                <section class="phpdocumentor-description"><p>If editor resolver does not return a string</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|bool</span>
             
@@ -1217,14 +1282,18 @@ valid callable function/closure.</p>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>If editor resolver does not return a boolean</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\UnexpectedValueException">UnexpectedValueException</abbr></span>
+                                                                                <section class="phpdocumentor-description"><p>If editor resolver does not return a boolean</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
             
@@ -1264,6 +1333,7 @@ valid callable function/closure.</p>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1291,6 +1361,7 @@ valid callable function/closure.</p>
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
             
@@ -1331,14 +1402,18 @@ resources.</p>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>If $path is not a valid directory</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                                                <section class="phpdocumentor-description"><p>If $path is not a valid directory</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1379,6 +1454,7 @@ resources.</p>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1406,6 +1482,7 @@ resources.</p>
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -1432,14 +1509,17 @@ resources.</p>
 
     
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">deprecated</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
             
@@ -1478,14 +1558,17 @@ resources.</p>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">deprecated</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1514,6 +1597,7 @@ resources.</p>
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -1554,6 +1638,7 @@ resources.</p>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1594,6 +1679,7 @@ resources.</p>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1645,6 +1731,7 @@ valid callable function/closure.</p>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -1672,6 +1759,7 @@ valid callable function/closure.</p>
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Throwable">Throwable</abbr></span>
             
@@ -1699,6 +1787,7 @@ valid callable function/closure.</p>
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Whoops\Exception\Inspector">Inspector</abbr></span>
             
@@ -1741,14 +1830,18 @@ for all resources.</p></section>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>If resource cannot be found in any of the available paths</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
+                                                                                <section class="phpdocumentor-description"><p>If resource cannot be found in any of the available paths</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
             
@@ -1800,6 +1893,7 @@ for all resources.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
                     &mdash; <span class="phpdocumentor-description"><p>$values without sensitive data</p></span>
@@ -1868,6 +1962,7 @@ for all resources.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1895,6 +1990,7 @@ for all resources.</p></section>
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
             
@@ -1922,22 +2018,25 @@ for all resources.</p></section>
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Slim\Http\Body">Body</abbr></span>
             
 </article>
                             </section>
             </article>
-            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
 
-                <h2>Search results</h2>
-                <ul class="phpdocumentor-search-results__entries">
+                    <h2>Search results</h2>
+                    <ul class="phpdocumentor-search-results__entries">
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-
+    </main>
+    <script>
+        cssVars({});
+    </script>
 </body>
 </html>

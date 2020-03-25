@@ -3,30 +3,30 @@
 <head>
     <meta charset="utf-8">
     <title>UserFrosting API</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/template.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+        <link rel="stylesheet" href="../css/template.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
-    <script src="../js/search.js"></script>
-    <script defer src="../js/searchIndex.js"></script>
+        <script src="../js/search.js"></script>
+        <script defer src="../js/searchIndex.js"></script>
     </head>
 <body>
-<header class="phpdocumentor-top-header"></header>
-<header class="phpdocumentor-header">
-    <section class="phpdocumentor-section">
-        <h1 class="phpdocumentor-title">UserFrosting API</h1>
-    </section>
-</header>
-<main class="phpdocumentor">
-    <div class="phpdocumentor-section">
-        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <header class="phpdocumentor-top-header"></header>
+    <header class="phpdocumentor-header">
+        <section class="phpdocumentor-section">
+            <h1 class="phpdocumentor-title">UserFrosting API</h1>
+        </section>
+    </header>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
     <section data-search-form class="phpdocumentor-search">
-        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <h2 class="phpdocumentor-sidebar__category-header">Search</h2>
         <label class="phpdocumentor-label">
             <span class="visually-hidden">Search for</span>
             <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
@@ -34,29 +34,41 @@
     </section>
 
     
-    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
-            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
-                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
-            <ul class="phpdocumentor-list">
-                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
-                            </ul>
-            
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-i18n.html"><abbr title="\UserFrosting\I18n">I18n</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-support.html"><abbr title="\UserFrosting\Support">Support</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-uniformresourcelocator.html"><abbr title="\UserFrosting\UniformResourceLocator">UniformResourceLocator</abbr></a></li>
+                                    </ul>
+                        </section>
+
     
-    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
-        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
 </aside>
 
-        <div class="nine phpdocumentor-columns phpdocumentor-content">
-            <ul class="phpdocumentor-breadcrumbs">
+            <div class="nine phpdocumentor-columns phpdocumentor-content">
+                <ul class="phpdocumentor-breadcrumbs">
     <li><a href="../index.html">Home</a></li>
                         <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
                     <li><a href="../namespaces/userfrosting-sprinkle.html">Sprinkle</a></li>
@@ -83,6 +95,23 @@
 
         <p class="phpdocumentor-class__summary">A BelongsToMany relationship that queries through an additional intermediate model.</p>
         <section class="phpdocumentor-class__description"></section>
+                    <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>Alex Weissman (<a href="https://alexanderweissman.com">https://alexanderweissman.com</a>)</p></section>
+                </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php"><abbr title="https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php">https://github.com/laravel/framework/blob/5.8/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php</abbr></a></span>
+                                                            <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
 
         <h3>Table of Contents</h3>
         <table class="phpdocumentor-table_of_contents">
@@ -303,7 +332,8 @@ condensing the set of models before performing the eager loads.</td>
                 <span class="phpdocumentor-signature__type"><abbr title="\Illuminate\Database\Eloquent\Relations\Relation">Relation</abbr></span>
         <span class="phpdocumentor-signature__name">$intermediateRelation</span>
             </code>
-    </article>
+            
+</article>
                                                                     <a id="property_tertiaryRelated"></a>
 <article
         class="
@@ -323,7 +353,8 @@ condensing the set of models before performing the eager loads.</td>
                 <span class="phpdocumentor-signature__type"><abbr title="\Illuminate\Database\Eloquent\Model">Model</abbr></span>
         <span class="phpdocumentor-signature__name">$tertiaryRelated</span>
          = <span class="phpdocumentor-signature__default-value">null</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_tertiaryRelationName"></a>
 <article
         class="
@@ -343,7 +374,8 @@ condensing the set of models before performing the eager loads.</td>
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$tertiaryRelationName</span>
          = <span class="phpdocumentor-signature__default-value">null</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_tertiaryKey"></a>
 <article
         class="
@@ -363,7 +395,8 @@ condensing the set of models before performing the eager loads.</td>
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$tertiaryKey</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_tertiaryCallback"></a>
 <article
         class="
@@ -383,7 +416,8 @@ condensing the set of models before performing the eager loads.</td>
                 <span class="phpdocumentor-signature__type">callable|null</span>
         <span class="phpdocumentor-signature__name">$tertiaryCallback</span>
          = <span class="phpdocumentor-signature__default-value">null</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_limit"></a>
 <article
         class="
@@ -403,7 +437,8 @@ condensing the set of models before performing the eager loads.</td>
                 <span class="phpdocumentor-signature__type">int|null</span>
         <span class="phpdocumentor-signature__name">$limit</span>
          = <span class="phpdocumentor-signature__default-value">null</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_offset"></a>
 <article
         class="
@@ -423,7 +458,8 @@ condensing the set of models before performing the eager loads.</td>
                 <span class="phpdocumentor-signature__type">int|null</span>
         <span class="phpdocumentor-signature__name">$offset</span>
          = <span class="phpdocumentor-signature__default-value">null</span>    </code>
-    </article>
+            
+</article>
                             </section>
         
                     <section>
@@ -536,6 +572,7 @@ condensing the set of models before performing the eager loads.</td>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -566,6 +603,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
             
@@ -593,14 +631,18 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
 
     
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">see</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="../\Illuminate\Database\Eloquent\Relations\BelongsToMany"><abbr title="\Illuminate\Database\Eloquent\Relations\BelongsToMany">BelongsToMany</abbr></a></span>
+                                                            <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
             
@@ -650,6 +692,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
             
@@ -690,6 +733,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -718,6 +762,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
             
@@ -776,6 +821,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -816,6 +862,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -856,6 +903,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
             
@@ -885,6 +933,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -925,6 +974,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
             
@@ -964,18 +1014,24 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">todo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>Implement for 'unionOffset' as well?  (By checking the value of $this-&gt;query-&gt;getQuery()-&gt;unions)</p></section>
+                </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">todo</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Implement for 'unionOffset' as well?  (By checking the value of $this-&gt;query-&gt;getQuery()-&gt;unions)</p></section></dd>
-                                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">see</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="../\Illuminate\Database\Query\Builder"><abbr title="\Illuminate\Database\Query\Builder">Builder</abbr></a></span>
+                                                            <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
             
@@ -1016,6 +1072,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
             
@@ -1055,18 +1112,24 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">todo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>Implement for 'unionLimit' as well?  (By checking the value of $this-&gt;query-&gt;getQuery()-&gt;unions)</p></section>
+                </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">todo</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Implement for 'unionLimit' as well?  (By checking the value of $this-&gt;query-&gt;getQuery()-&gt;unions)</p></section></dd>
-                                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">see</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="../\Illuminate\Database\Query\Builder"><abbr title="\Illuminate\Database\Query\Builder">Builder</abbr></a></span>
+                                                            <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
             
@@ -1106,14 +1169,17 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">deprecated</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>since 4.1.7</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>since 4.1.7</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">$this</span>
             
@@ -1153,14 +1219,17 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">deprecated</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>since 4.1.7</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>since 4.1.7</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">$this</span>
             
@@ -1228,6 +1297,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">self</span>
             
@@ -1255,14 +1325,18 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
 
     
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">see</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="http://stackoverflow.com/a/29728129/2970321"><abbr title="http://stackoverflow.com/a/29728129/2970321">http://stackoverflow.com/a/29728129/2970321</abbr></a></span>
+                                                            <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
             
@@ -1311,14 +1385,18 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">see</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="../\Illuminate\Database\Eloquent\Relations\Relation"><abbr title="\Illuminate\Database\Eloquent\Relations\Relation">Relation</abbr></a></span>
+                                                            <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
             
@@ -1377,6 +1455,7 @@ It would be better if BelongsToMany had a simple accessor for its foreign key.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -1418,6 +1497,7 @@ and matching up any tertiary models.</p>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
             
@@ -1477,6 +1557,7 @@ to select from in the final query.</p>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
             
@@ -1508,6 +1589,7 @@ This is not what we want here though, because our get() method removes records b
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
             
@@ -1558,6 +1640,7 @@ condensing the set of models before performing the eager loads.</p>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
             
@@ -1600,6 +1683,7 @@ set as sub-relations on these models.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -1652,6 +1736,7 @@ of tertiary models corresponding to each relationship.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -1692,6 +1777,7 @@ of tertiary models corresponding to each relationship.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -1741,6 +1827,7 @@ of tertiary models corresponding to each relationship.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1781,6 +1868,7 @@ of tertiary models corresponding to each relationship.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Collection">Collection</abbr></span>
             
@@ -1830,6 +1918,7 @@ of tertiary models corresponding to each relationship.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1870,22 +1959,25 @@ of tertiary models corresponding to each relationship.</p></section>
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
 </article>
                             </section>
             </article>
-            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
 
-                <h2>Search results</h2>
-                <ul class="phpdocumentor-search-results__entries">
+                    <h2>Search results</h2>
+                    <ul class="phpdocumentor-search-results__entries">
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-
+    </main>
+    <script>
+        cssVars({});
+    </script>
 </body>
 </html>

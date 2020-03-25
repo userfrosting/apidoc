@@ -1,0 +1,2127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UserFrosting API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+        <link rel="stylesheet" href="../css/template.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+        <script src="../js/search.js"></script>
+        <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+    <header class="phpdocumentor-top-header"></header>
+    <header class="phpdocumentor-header">
+        <section class="phpdocumentor-section">
+            <h1 class="phpdocumentor-title">UserFrosting API</h1>
+        </section>
+    </header>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h2 class="phpdocumentor-sidebar__category-header">Search</h2>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-i18n.html"><abbr title="\UserFrosting\I18n">I18n</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-support.html"><abbr title="\UserFrosting\Support">Support</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-uniformresourcelocator.html"><abbr title="\UserFrosting\UniformResourceLocator">UniformResourceLocator</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="nine phpdocumentor-columns phpdocumentor-content">
+                <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
+                    <li><a href="../namespaces/userfrosting-uniformresourcelocator.html">UniformResourceLocator</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            ResourceLocator
+                                                    <span class="phpdocumentor-class__implements">
+                    implements
+                                            <a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocatorInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceLocatorInterface">ResourceLocatorInterface</abbr></a>                                    </span>
+                                </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">27</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">ResourceLocator Class.</p>
+        <section class="phpdocumentor-class__description"><p>The locator is used to find resources.</p></section>
+                    <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>Louis Charette</p></section>
+                </dd>
+                        </dl>
+
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_streams">$streams</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_locations">$locations</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_cache">$cache</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_basePath">$basePath</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_filesystem">$filesystem</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\Illuminate\Filesystem\Filesystem">Filesystem</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_separator">$separator</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_streamBuilder">$streamBuilder</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\RocketTheme\Toolbox\StreamWrapper\StreamBuilder">StreamBuilder</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_reservedStreams">$reservedStreams</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string[]</td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method___construct">__construct()</a></th>
+                    <td class="phpdocumentor-cell">Constructor.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method___invoke">__invoke()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string|bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_addStream">addStream()</a></th>
+                    <td class="phpdocumentor-cell">Add an exisitng ResourceStream to the stream list.</td>
+                    <td class="phpdocumentor-cell">static</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_setupStreamWrapper">setupStreamWrapper()</a></th>
+                    <td class="phpdocumentor-cell">Register the scheme as a php stream wrapper.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_unsetStreamWrapper">unsetStreamWrapper()</a></th>
+                    <td class="phpdocumentor-cell">Unset a php stream wrapper.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_registerStream">registerStream()</a></th>
+                    <td class="phpdocumentor-cell">Register a new stream.</td>
+                    <td class="phpdocumentor-cell">static</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_registerSharedStream">registerSharedStream()</a></th>
+                    <td class="phpdocumentor-cell">Register a new shared stream.</td>
+                    <td class="phpdocumentor-cell">static</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_addPath">addPath()</a></th>
+                    <td class="phpdocumentor-cell">AddPath function. Used to preserve compatibility with RocketTheme/Toolbox.</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_removeStream">removeStream()</a></th>
+                    <td class="phpdocumentor-cell">Unregister the specified stream.</td>
+                    <td class="phpdocumentor-cell">static</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_getStream">getStream()</a></th>
+                    <td class="phpdocumentor-cell">Return information about a specfic stream.</td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_getStreams">getStreams()</a></th>
+                    <td class="phpdocumentor-cell">Return information about a all registered stream.</td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_listStreams">listStreams()</a></th>
+                    <td class="phpdocumentor-cell">Return a list of all the stream scheme registered.</td>
+                    <td class="phpdocumentor-cell">string[]</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_schemeExists">schemeExists()</a></th>
+                    <td class="phpdocumentor-cell">Returns true if a stream has been defined.</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_addLocation">addLocation()</a></th>
+                    <td class="phpdocumentor-cell">Add an existing RessourceLocation instance to the location list.</td>
+                    <td class="phpdocumentor-cell">static</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_registerLocation">registerLocation()</a></th>
+                    <td class="phpdocumentor-cell">Register a new location.</td>
+                    <td class="phpdocumentor-cell">static</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_removeLocation">removeLocation()</a></th>
+                    <td class="phpdocumentor-cell">Unregister the specified location.</td>
+                    <td class="phpdocumentor-cell">static</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_getLocation">getLocation()</a></th>
+                    <td class="phpdocumentor-cell">Get a location instance based on it&#039;s name.</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocationInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceLocationInterface">ResourceLocationInterface</abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_getLocations">getLocations()</a></th>
+                    <td class="phpdocumentor-cell">Get a a list of all registered locations.</td>
+                    <td class="phpdocumentor-cell">\UserFrosting\UniformResourceLocator\ResourceLocationInterface[]</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_listLocations">listLocations()</a></th>
+                    <td class="phpdocumentor-cell">Return a list of all the locations registered by name.</td>
+                    <td class="phpdocumentor-cell">string[]</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_locationExist">locationExist()</a></th>
+                    <td class="phpdocumentor-cell">Returns true if a location has been defined.</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_getResource">getResource()</a></th>
+                    <td class="phpdocumentor-cell">Return a resource instance.</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceInterface">ResourceInterface</abbr></a>|bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_getResources">getResources()</a></th>
+                    <td class="phpdocumentor-cell">Return a list of resources instances.</td>
+                    <td class="phpdocumentor-cell">\UserFrosting\UniformResourceLocator\ResourceInterface[]</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_listResources">listResources()</a></th>
+                    <td class="phpdocumentor-cell">List all ressources found at a given uri.</td>
+                    <td class="phpdocumentor-cell">\UserFrosting\UniformResourceLocator\ResourceInterface[]</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_reset">reset()</a></th>
+                    <td class="phpdocumentor-cell">Reset locator by removing all the registered streams and locations.</td>
+                    <td class="phpdocumentor-cell">static</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_normalize">normalize()</a></th>
+                    <td class="phpdocumentor-cell">Returns the canonicalized URI on success.</td>
+                    <td class="phpdocumentor-cell">string|array|bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_isStream">isStream()</a></th>
+                    <td class="phpdocumentor-cell">Returns true if uri is resolvable by using locator.</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_findResource">findResource()</a></th>
+                    <td class="phpdocumentor-cell">Find highest priority instance from a resource. Return the path for said resource
+For example, if looking for a `test.json` ressource, only the top priority
+instance of `test.json` found will be returned.</td>
+                    <td class="phpdocumentor-cell">string|bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_findResources">findResources()</a></th>
+                    <td class="phpdocumentor-cell">Find all instances from a resource. Return an array of paths for said resource
+For example, if looking for a `test.json` ressource, all instance
+of `test.json` found will be listed.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_findCached">findCached()</a></th>
+                    <td class="phpdocumentor-cell">Find a resource from the cached properties.</td>
+                    <td class="phpdocumentor-cell">\UserFrosting\UniformResourceLocator\ResourceInterface[]|<a href="../classes/UserFrosting-UniformResourceLocator-ResourceInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceInterface">ResourceInterface</abbr></a>|bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_searchPaths">searchPaths()</a></th>
+                    <td class="phpdocumentor-cell">Build the search path out of the defined strean and locations.</td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_find">find()</a></th>
+                    <td class="phpdocumentor-cell">Returns path of a file (or directory) based on a search uri.</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceInterface">ResourceInterface</abbr></a>|\UserFrosting\UniformResourceLocator\ResourceInterface[]</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_getStreamBuilder">getStreamBuilder()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\RocketTheme\Toolbox\StreamWrapper\StreamBuilder">StreamBuilder</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_getBasePath">getBasePath()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_setBasePath">setBasePath()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">static</td>
+                </tr>
+                                            </table>
+
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_streams"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$streams</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">32</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$streams</span>
+         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
+            
+</article>
+                                    <a id="property_locations"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$locations</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">37</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$locations</span>
+         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
+            
+</article>
+                                    <a id="property_cache"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$cache</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">42</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">array</span>
+        <span class="phpdocumentor-signature__name">$cache</span>
+         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
+            
+</article>
+                                    <a id="property_basePath"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$basePath</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">47</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$basePath</span>
+            </code>
+            
+</article>
+                                    <a id="property_filesystem"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$filesystem</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">52</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\Illuminate\Filesystem\Filesystem">Filesystem</abbr></span>
+        <span class="phpdocumentor-signature__name">$filesystem</span>
+            </code>
+            
+</article>
+                                    <a id="property_separator"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$separator</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">57</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$separator</span>
+         = <span class="phpdocumentor-signature__default-value">&#039;/&#039;</span>    </code>
+            
+</article>
+                                    <a id="property_streamBuilder"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$streamBuilder</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">62</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\RocketTheme\Toolbox\StreamWrapper\StreamBuilder">StreamBuilder</abbr></span>
+        <span class="phpdocumentor-signature__name">$streamBuilder</span>
+            </code>
+            
+</article>
+                                    <a id="property_reservedStreams"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$reservedStreams</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">67</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type">string[]</span>
+        <span class="phpdocumentor-signature__name">$reservedStreams</span>
+         = <span class="phpdocumentor-signature__default-value">[&#039;file&#039;]</span>    </code>
+            
+</article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method___construct"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">74</span>
+    </aside>
+        <p class="phpdocumentor-summary">Constructor.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">__construct</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$basePath</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$basePath</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default '')</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method___invoke"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">__invoke()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">96</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">__invoke</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$uri</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">string|bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$uri</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\BadMethodCallException">BadMethodCallException</abbr></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|bool</span>
+            
+</article>
+                                    <a id="method_addStream"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">addStream()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">108</span>
+    </aside>
+        <p class="phpdocumentor-summary">Add an exisitng ResourceStream to the stream list.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">addStream</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$stream</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceStreamInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceStreamInterface">ResourceStreamInterface</abbr></a></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">static</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$stream</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceStreamInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceStreamInterface">ResourceStreamInterface</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            
+</article>
+                                    <a id="method_setupStreamWrapper"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setupStreamWrapper()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">128</span>
+    </aside>
+        <p class="phpdocumentor-summary">Register the scheme as a php stream wrapper.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">setupStreamWrapper</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$scheme</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$scheme</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The stream scheme</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_unsetStreamWrapper"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">unsetStreamWrapper()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">147</span>
+    </aside>
+        <p class="phpdocumentor-summary">Unset a php stream wrapper.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">unsetStreamWrapper</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$scheme</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$scheme</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The stream scheme</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_registerStream"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">registerStream()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">166</span>
+    </aside>
+        <p class="phpdocumentor-summary">Register a new stream.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">registerStream</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$scheme</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$prefix</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$paths</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string|array|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$shared</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">static</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$scheme</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$prefix</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default '')</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$paths</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string|array|null</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default null). When using null path, the scheme will be used as a path</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$shared</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default false) Shared ressources are not affected by locations</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            
+</article>
+                                    <a id="method_registerSharedStream"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">registerSharedStream()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">194</span>
+    </aside>
+        <p class="phpdocumentor-summary">Register a new shared stream.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">registerSharedStream</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$scheme</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$prefix</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$paths</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string|array|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">static</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Shortcut for registerStream with $shared flag set to true.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$scheme</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$prefix</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default '')</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$paths</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string|array|null</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default null). When using null path, the scheme will be used as a path</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            
+</article>
+                                    <a id="method_addPath"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+            phpdocumentor-element--deprecated                                            "
+>
+    <h4 class="phpdocumentor-method__name">addPath()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">210</span>
+    </aside>
+        <p class="phpdocumentor-summary">AddPath function. Used to preserve compatibility with RocketTheme/Toolbox.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code phpdocumentor-signature--deprecated">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">addPath</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$scheme</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$prefix</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$paths</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string|array</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$override</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool|string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$force</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$scheme</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$prefix</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$paths</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string|array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$override</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool|string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>True to add path as override, string</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$force</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>True to add paths even if them do not exist.</p></section></dd>
+                    </dl>
+    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
+    
+</article>
+                                    <a id="method_removeStream"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">removeStream()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">222</span>
+    </aside>
+        <p class="phpdocumentor-summary">Unregister the specified stream.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">removeStream</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$scheme</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">static</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$scheme</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The stream scheme</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            
+</article>
+                                    <a id="method_getStream"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getStream()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">235</span>
+    </aside>
+        <p class="phpdocumentor-summary">Return information about a specfic stream.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getStream</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$scheme</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Return value is an array of ResourceStreamInterface, for each prefix
+For example :
+$array = array(
+''       =&gt; ResourceStreamInterface,
+'prefix' =&gt; ResourceStreamInterface
+);.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$scheme</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The stream scheme</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
+                                    <a id="method_getStreams"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getStreams()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">247</span>
+    </aside>
+        <p class="phpdocumentor-summary">Return information about a all registered stream.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getStreams</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Return value is an array of array of ResourceStreamInterface, for each prefix
+For example :
+'bar' =&gt; array(
+''       =&gt; ResourceStreamInterface,
+'prefix' =&gt; ResourceStreamInterface
+),
+'foo' =&gt; array(
+''       =&gt; ResourceStreamInterface,
+'blah'   =&gt; ResourceStreamInterface
+);.</p></section>
+    
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
+                                    <a id="method_listStreams"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">listStreams()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">257</span>
+    </aside>
+        <p class="phpdocumentor-summary">Return a list of all the stream scheme registered.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">listStreams</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">string[]</span>
+    </code>
+
+    
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string[]</span>
+                    &mdash; <span class="phpdocumentor-description"><p>An array of registered scheme =&gt; location</p></span>
+            
+</article>
+                                    <a id="method_schemeExists"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">schemeExists()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">269</span>
+    </aside>
+        <p class="phpdocumentor-summary">Returns true if a stream has been defined.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">schemeExists</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$scheme</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$scheme</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The stream scheme</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            
+</article>
+                                    <a id="method_addLocation"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">addLocation()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">281</span>
+    </aside>
+        <p class="phpdocumentor-summary">Add an existing RessourceLocation instance to the location list.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">addLocation</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$location</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocationInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceLocationInterface">ResourceLocationInterface</abbr></a></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">static</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$location</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocationInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceLocationInterface">ResourceLocationInterface</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            
+</article>
+                                    <a id="method_registerLocation"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">registerLocation()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">296</span>
+    </aside>
+        <p class="phpdocumentor-summary">Register a new location.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">registerLocation</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$name</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$path</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">static</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$name</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The location name</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$path</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The location base path (default null)</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            
+</article>
+                                    <a id="method_removeLocation"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">removeLocation()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">311</span>
+    </aside>
+        <p class="phpdocumentor-summary">Unregister the specified location.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">removeLocation</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$name</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">static</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$name</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The location name</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            
+</article>
+                                    <a id="method_getLocation"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getLocation()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">327</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get a location instance based on it&#039;s name.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getLocation</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$name</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocationInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceLocationInterface">ResourceLocationInterface</abbr></a></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$name</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The location name</p></section></dd>
+                    </dl>
+    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-UniformResourceLocator-Exception-LocationNotFoundException.html"><abbr title="\UserFrosting\UniformResourceLocator\Exception\LocationNotFoundException">LocationNotFoundException</abbr></a></span>
+                                                                                <section class="phpdocumentor-description"><p>If location is not registered</p></section>
+                </dd>
+                        </dl>
+
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocationInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceLocationInterface">ResourceLocationInterface</abbr></a></span>
+            
+</article>
+                                    <a id="method_getLocations"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getLocations()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">341</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get a a list of all registered locations.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getLocations</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">\UserFrosting\UniformResourceLocator\ResourceLocationInterface[]</span>
+    </code>
+
+    
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">\UserFrosting\UniformResourceLocator\ResourceLocationInterface[]</span>
+            
+</article>
+                                    <a id="method_listLocations"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">listLocations()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">351</span>
+    </aside>
+        <p class="phpdocumentor-summary">Return a list of all the locations registered by name.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">listLocations</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">string[]</span>
+    </code>
+
+    
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string[]</span>
+                    &mdash; <span class="phpdocumentor-description"><p>An array of registered name =&gt; location</p></span>
+            
+</article>
+                                    <a id="method_locationExist"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">locationExist()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">363</span>
+    </aside>
+        <p class="phpdocumentor-summary">Returns true if a location has been defined.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">locationExist</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$name</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$name</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The location name</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            
+</article>
+                                    <a id="method_getResource"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getResource()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">376</span>
+    </aside>
+        <p class="phpdocumentor-summary">Return a resource instance.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getResource</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$uri</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$first</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceInterface">ResourceInterface</abbr></a>|bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$uri</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Input URI to be searched (can be a file/path)</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$first</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Whether to return first path even if it doesn't exist.</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceInterface">ResourceInterface</abbr></a>|bool</span>
+                    &mdash; <span class="phpdocumentor-description"><p>Returns false if resource is not found</p></span>
+            
+</article>
+                                    <a id="method_getResources"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getResources()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">389</span>
+    </aside>
+        <p class="phpdocumentor-summary">Return a list of resources instances.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getResources</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$uri</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$all</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">\UserFrosting\UniformResourceLocator\ResourceInterface[]</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$uri</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Input URI to be searched (can be a file/path)</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$all</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Whether to return all paths even if they don't exist.</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">\UserFrosting\UniformResourceLocator\ResourceInterface[]</span>
+                    &mdash; <span class="phpdocumentor-description"><p>Array of Resources</p></span>
+            
+</article>
+                                    <a id="method_listResources"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">listResources()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">405</span>
+    </aside>
+        <p class="phpdocumentor-summary">List all ressources found at a given uri.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">listResources</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$uri</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$all</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$sort</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">\UserFrosting\UniformResourceLocator\ResourceInterface[]</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Same as listing all file in a directory, except here all topmost
+ressources will be returned when considering all locations.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$uri</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Input URI to be searched (can be a uri/path ONLY)</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$all</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>If true, all resources will be returned, not only topmost ones</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$sort</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Set to true to sort results alphabetically by absolute path. Set to false to sort by absolute priority, higest location first. Default to true.</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">\UserFrosting\UniformResourceLocator\ResourceInterface[]</span>
+                    &mdash; <span class="phpdocumentor-description"><p>The ressources list</p></span>
+            
+</article>
+                                    <a id="method_reset"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">reset()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">462</span>
+    </aside>
+        <p class="phpdocumentor-summary">Reset locator by removing all the registered streams and locations.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">reset</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">static</span>
+    </code>
+
+    
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            
+</article>
+                                    <a id="method_normalize"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">normalize()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">484</span>
+    </aside>
+        <p class="phpdocumentor-summary">Returns the canonicalized URI on success.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">normalize</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$uri</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$throwException</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$splitStream</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">string|array|bool</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>The resulting path will have no '/./' or '/../' components. Trailing delimiter <code class="prettyprint">/</code> is kept.
+Can also split the <code class="prettyprint">scheme</code> for the <code class="prettyprint">path</code> part of the uri if $splitStream parameter is set to true
+By default (if $throwException parameter is not set to true) returns false on failure.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$uri</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$throwException</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$splitStream</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\BadMethodCallException">BadMethodCallException</abbr></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|array|bool</span>
+            
+</article>
+                                    <a id="method_isStream"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">isStream()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">534</span>
+    </aside>
+        <p class="phpdocumentor-summary">Returns true if uri is resolvable by using locator.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">isStream</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$uri</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$uri</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>URI to test</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash; <span class="phpdocumentor-description"><p>True if is resolvable</p></span>
+            
+</article>
+                                    <a id="method_findResource"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">findResource()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">558</span>
+    </aside>
+        <p class="phpdocumentor-summary">Find highest priority instance from a resource. Return the path for said resource
+For example, if looking for a `test.json` ressource, only the top priority
+instance of `test.json` found will be returned.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">findResource</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$uri</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$absolute</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$first</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">string|bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$uri</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Input URI to be searched (can be a file or directory)</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$absolute</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Whether to return absolute path.</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$first</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Whether to return first path even if it doesn't exist.</p></section></dd>
+                    </dl>
+    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\BadMethodCallException">BadMethodCallException</abbr></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|bool</span>
+                    &mdash; <span class="phpdocumentor-description"><p>The ressource path, or false if not found resource</p></span>
+            
+</article>
+                                    <a id="method_findResources"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">findResources()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">584</span>
+    </aside>
+        <p class="phpdocumentor-summary">Find all instances from a resource. Return an array of paths for said resource
+For example, if looking for a `test.json` ressource, all instance
+of `test.json` found will be listed.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">findResources</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$uri</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$absolute</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$all</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$uri</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Input URI to be searched (can be a file or directory)</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$absolute</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Whether to return absolute path.</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$all</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Whether to return all paths even if they don't exist.</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_findCached"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">findCached()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">609</span>
+    </aside>
+        <p class="phpdocumentor-summary">Find a resource from the cached properties.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">findCached</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$uri</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$array</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$all</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">\UserFrosting\UniformResourceLocator\ResourceInterface[]|<a href="../classes/UserFrosting-UniformResourceLocator-ResourceInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceInterface">ResourceInterface</abbr></a>|bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$uri</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Input URI to be searched (file or directory)</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$array</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Return an array or a single path</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$all</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Whether to return all paths even if they don't exist.</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">\UserFrosting\UniformResourceLocator\ResourceInterface[]|<a href="../classes/UserFrosting-UniformResourceLocator-ResourceInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceInterface">ResourceInterface</abbr></a>|bool</span>
+                    &mdash; <span class="phpdocumentor-description"><p>The ressource path or an array of all the ressources path or false if not resource can be found</p></span>
+            
+</article>
+                                    <a id="method_searchPaths"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">searchPaths()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">636</span>
+    </aside>
+        <p class="phpdocumentor-summary">Build the search path out of the defined strean and locations.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">searchPaths</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$stream</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceStreamInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceStreamInterface">ResourceStreamInterface</abbr></a></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>If the scheme is shared, we don't need to involve locations and can return it's path directly.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$stream</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceStreamInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceStreamInterface">ResourceStreamInterface</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The stream to search for</p></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
+                                    <a id="method_find"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">find()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">664</span>
+    </aside>
+        <p class="phpdocumentor-summary">Returns path of a file (or directory) based on a search uri.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">find</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$scheme</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$file</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$array</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$all</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceInterface">ResourceInterface</abbr></a>|\UserFrosting\UniformResourceLocator\ResourceInterface[]</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$scheme</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The scheme to search in</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$file</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The file to search for</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$array</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Return an array or a single path</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$all</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Whether to return all paths even if they don't exist.</p></section></dd>
+                    </dl>
+    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceInterface">ResourceInterface</abbr></a>|\UserFrosting\UniformResourceLocator\ResourceInterface[]</span>
+            
+</article>
+                                    <a id="method_getStreamBuilder"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getStreamBuilder()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">724</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getStreamBuilder</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\RocketTheme\Toolbox\StreamWrapper\StreamBuilder">StreamBuilder</abbr></span>
+    </code>
+
+    
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\RocketTheme\Toolbox\StreamWrapper\StreamBuilder">StreamBuilder</abbr></span>
+            
+</article>
+                                    <a id="method_getBasePath"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getBasePath()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">732</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getBasePath</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">string</span>
+    </code>
+
+    
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            
+</article>
+                                    <a id="method_setBasePath"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setBasePath()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">742</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">setBasePath</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$basePath</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">static</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$basePath</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            
+</article>
+                                                            </section>
+            </article>
+                <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                    <h2>Search results</h2>
+                    <ul class="phpdocumentor-search-results__entries">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        cssVars({});
+    </script>
+</body>
+</html>

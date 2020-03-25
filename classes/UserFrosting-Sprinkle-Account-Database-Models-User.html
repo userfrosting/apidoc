@@ -3,30 +3,30 @@
 <head>
     <meta charset="utf-8">
     <title>UserFrosting API</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/template.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+        <link rel="stylesheet" href="../css/template.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
-    <script src="../js/search.js"></script>
-    <script defer src="../js/searchIndex.js"></script>
+        <script src="../js/search.js"></script>
+        <script defer src="../js/searchIndex.js"></script>
     </head>
 <body>
-<header class="phpdocumentor-top-header"></header>
-<header class="phpdocumentor-header">
-    <section class="phpdocumentor-section">
-        <h1 class="phpdocumentor-title">UserFrosting API</h1>
-    </section>
-</header>
-<main class="phpdocumentor">
-    <div class="phpdocumentor-section">
-        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <header class="phpdocumentor-top-header"></header>
+    <header class="phpdocumentor-header">
+        <section class="phpdocumentor-section">
+            <h1 class="phpdocumentor-title">UserFrosting API</h1>
+        </section>
+    </header>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
     <section data-search-form class="phpdocumentor-search">
-        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <h2 class="phpdocumentor-sidebar__category-header">Search</h2>
         <label class="phpdocumentor-label">
             <span class="visually-hidden">Search for</span>
             <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
@@ -34,29 +34,41 @@
     </section>
 
     
-    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
-            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
-                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h3>
-            <ul class="phpdocumentor-list">
-                                    <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
-                                    <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
-                            </ul>
-            
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/userfrosting.html"><abbr title="\UserFrosting">UserFrosting</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/userfrosting-sprinkle.html"><abbr title="\UserFrosting\Sprinkle">Sprinkle</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-tests.html"><abbr title="\UserFrosting\Tests">Tests</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-system.html"><abbr title="\UserFrosting\System">System</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-assets.html"><abbr title="\UserFrosting\Assets">Assets</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-cache.html"><abbr title="\UserFrosting\Cache">Cache</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-config.html"><abbr title="\UserFrosting\Config">Config</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-fortress.html"><abbr title="\UserFrosting\Fortress">Fortress</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-i18n.html"><abbr title="\UserFrosting\I18n">I18n</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-session.html"><abbr title="\UserFrosting\Session">Session</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-support.html"><abbr title="\UserFrosting\Support">Support</abbr></a></li>
+                                            <li><a href="../namespaces/userfrosting-uniformresourcelocator.html"><abbr title="\UserFrosting\UniformResourceLocator">UniformResourceLocator</abbr></a></li>
+                                    </ul>
+                        </section>
+
     
-    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
-        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
 </aside>
 
-        <div class="nine phpdocumentor-columns phpdocumentor-content">
-            <ul class="phpdocumentor-breadcrumbs">
+            <div class="nine phpdocumentor-columns phpdocumentor-content">
+                <ul class="phpdocumentor-breadcrumbs">
     <li><a href="../index.html">Home</a></li>
                         <li><a href="../namespaces/userfrosting.html">UserFrosting</a></li>
                     <li><a href="../namespaces/userfrosting-sprinkle.html">Sprinkle</a></li>
@@ -86,6 +98,121 @@
 
         <p class="phpdocumentor-class__summary">User Class.</p>
         <section class="phpdocumentor-class__description"><p>Represents a User object as stored in the database.</p></section>
+                    <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>Alex Weissman (<a href="https://alexanderweissman.com">https://alexanderweissman.com</a>)</p></section>
+                </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">int</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">string</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">string</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">string</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">string</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">string</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">string</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">int</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">bool</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">bool</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">int</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\timestamp">timestamp</abbr></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\timestamp">timestamp</abbr></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">string</span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">property</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\timestamp">timestamp</abbr></span>
+                                                                                <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
 
         <h3>Table of Contents</h3>
         <table class="phpdocumentor-table_of_contents">
@@ -434,7 +561,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$table</span>
          = <span class="phpdocumentor-signature__default-value">&#039;users&#039;</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_fillable"></a>
 <article
         class="
@@ -454,7 +582,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">string[]</span>
         <span class="phpdocumentor-signature__name">$fillable</span>
          = <span class="phpdocumentor-signature__default-value">[&#039;user_name&#039;, &#039;first_name&#039;, &#039;last_name&#039;, &#039;email&#039;, &#039;locale&#039;, &#039;theme&#039;, &#039;group_id&#039;, &#039;flag_verified&#039;, &#039;flag_enabled&#039;, &#039;last_activity_id&#039;, &#039;password&#039;, &#039;deleted_at&#039;]</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_hidden"></a>
 <article
         class="
@@ -474,7 +603,18 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">string[]</span>
         <span class="phpdocumentor-signature__name">$hidden</span>
          = <span class="phpdocumentor-signature__default-value">[&#039;password&#039;]</span>    </code>
-    </article>
+                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">link</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <a class="phpdocumentor-tag-link" href="https://laravel.com/docs/5.8/eloquent-serialization#hiding-attributes-from-json">https://laravel.com/docs/5.8/eloquent-serialization#hiding-attributes-from-json</a>
+                                        <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+</article>
                                     <a id="property_dates"></a>
 <article
         class="
@@ -494,7 +634,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">string[]</span>
         <span class="phpdocumentor-signature__name">$dates</span>
          = <span class="phpdocumentor-signature__default-value">[&#039;deleted_at&#039;]</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_appends"></a>
 <article
         class="
@@ -513,7 +654,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">mixed</span>
         <span class="phpdocumentor-signature__name">$appends</span>
          = <span class="phpdocumentor-signature__default-value">[&#039;full_name&#039;]</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_dispatchesEvents"></a>
 <article
         class="
@@ -533,7 +675,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">array</span>
         <span class="phpdocumentor-signature__name">$dispatchesEvents</span>
          = <span class="phpdocumentor-signature__default-value">[&#039;saved&#039; =&gt; \UserFrosting\Sprinkle\Account\Database\Models\Events\DeleteUserCacheEvent::class, &#039;deleted&#039; =&gt; \UserFrosting\Sprinkle\Account\Database\Models\Events\DeleteUserCacheEvent::class]</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_cachedPermissions"></a>
 <article
         class="
@@ -553,7 +696,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">array</span>
         <span class="phpdocumentor-signature__name">$cachedPermissions</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_timestamps"></a>
 <article
         class="
@@ -573,7 +717,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">bool</span>
         <span class="phpdocumentor-signature__name">$timestamps</span>
          = <span class="phpdocumentor-signature__default-value">true</span>    </code>
-    </article>
+            
+</article>
                                                     <a id="property_id"></a>
 <article
         class="
@@ -592,7 +737,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">int</span>
         <span class="phpdocumentor-signature__name">$id</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_user_name"></a>
 <article
         class="
@@ -611,7 +757,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$user_name</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_first_name"></a>
 <article
         class="
@@ -630,7 +777,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$first_name</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_last_name"></a>
 <article
         class="
@@ -649,7 +797,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$last_name</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_email"></a>
 <article
         class="
@@ -668,7 +817,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$email</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_locale"></a>
 <article
         class="
@@ -687,7 +837,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$locale</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_theme"></a>
 <article
         class="
@@ -706,7 +857,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$theme</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_group_id"></a>
 <article
         class="
@@ -725,7 +877,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">int</span>
         <span class="phpdocumentor-signature__name">$group_id</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_flag_verified"></a>
 <article
         class="
@@ -744,7 +897,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">bool</span>
         <span class="phpdocumentor-signature__name">$flag_verified</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_flag_enabled"></a>
 <article
         class="
@@ -763,7 +917,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">bool</span>
         <span class="phpdocumentor-signature__name">$flag_enabled</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_last_activity_id"></a>
 <article
         class="
@@ -782,7 +937,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">int</span>
         <span class="phpdocumentor-signature__name">$last_activity_id</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_created_at"></a>
 <article
         class="
@@ -801,7 +957,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\timestamp">timestamp</abbr></span>
         <span class="phpdocumentor-signature__name">$created_at</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_updated_at"></a>
 <article
         class="
@@ -820,7 +977,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\timestamp">timestamp</abbr></span>
         <span class="phpdocumentor-signature__name">$updated_at</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_password"></a>
 <article
         class="
@@ -839,7 +997,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$password</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_deleted_at"></a>
 <article
         class="
@@ -858,7 +1017,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\timestamp">timestamp</abbr></span>
         <span class="phpdocumentor-signature__name">$deleted_at</span>
             </code>
-    </article>
+            
+</article>
                                                     <a id="property_ci"></a>
 <article
         class="
@@ -877,7 +1037,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
         <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Container\ContainerInterface">ContainerInterface</abbr></span>
         <span class="phpdocumentor-signature__name">$ci</span>
             </code>
-    </article>
+            
+</article>
                                     <a id="property_timestamps"></a>
 <article
         class="
@@ -896,7 +1057,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                 <span class="phpdocumentor-signature__type">bool</span>
         <span class="phpdocumentor-signature__name">$timestamps</span>
          = <span class="phpdocumentor-signature__default-value">false</span>    </code>
-    </article>
+            
+</article>
                                     <a id="property_manyMethodsExtended"></a>
 <article
         class="
@@ -916,7 +1078,8 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
         <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__type">array</span>
         <span class="phpdocumentor-signature__name">$manyMethodsExtended</span>
          = <span class="phpdocumentor-signature__default-value">[&#039;belongsToMany&#039;, &#039;morphToMany&#039;, &#039;morphedByMany&#039;, &#039;morphToManyUnique&#039;]</span>    </code>
-    </article>
+            
+</article>
                             </section>
         
                     <section>
@@ -960,6 +1123,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
                     &mdash; <span class="phpdocumentor-description"><p>true if the property is defined, false otherwise.</p></span>
@@ -1000,14 +1164,18 @@ Every property in __get must also be implemented here for Twig to recognize it.<
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>the name of the property to retrieve.</p></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>the property does not exist for this object.</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                                <section class="phpdocumentor-description"><p>the property does not exist for this object.</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
                     &mdash; <span class="phpdocumentor-description"><p>the associated property.</p></span>
@@ -1037,6 +1205,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr></span>
             
@@ -1077,6 +1246,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
                     &mdash; <span class="phpdocumentor-description"><p>true if the deletion was successful, false otherwise.</p></span>
@@ -1135,14 +1305,17 @@ Every property in __get must also be implemented here for Twig to recognize it.<
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>set to true to include soft-deleted records</p></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">deprecated</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>since 4.1.7 This method conflicts with and overrides the Builder::exists() method.  Use Model::findUnique instead.</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>since 4.1.7 This method conflicts with and overrides the Builder::exists() method.  Use Model::findUnique instead.</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-User.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\User">User</abbr></a>|null</span>
             
@@ -1171,6 +1344,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Contracts\Cache\Store">Store</abbr></span>
             
@@ -1199,6 +1373,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
             
@@ -1227,6 +1402,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -1255,6 +1431,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Account-Database-Models-User.html"><abbr title="\UserFrosting\Sprinkle\Account\Database\Models\User">User</abbr></a></span>
             
@@ -1295,6 +1472,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
             
@@ -1323,6 +1501,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></span>
             
@@ -1351,6 +1530,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
             
@@ -1379,6 +1559,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Relations\BelongsTo">BelongsTo</abbr></span>
             
@@ -1419,6 +1600,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
             
@@ -1459,6 +1641,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
                     &mdash; <span class="phpdocumentor-description"><p>The last activity time, as a SQL formatted time (YYYY-MM-DD HH:MM:SS), or null if an activity of this type doesn't exist.</p></span>
@@ -1500,14 +1683,17 @@ Every property in __get must also be implemented here for Twig to recognize it.<
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Optional array of parameters used for this event handler.</p></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">todo</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Transition to Laravel Event dispatcher to handle this</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">todo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>Transition to Laravel Event dispatcher to handle this</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1548,14 +1734,17 @@ Every property in __get must also be implemented here for Twig to recognize it.<
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Optional array of parameters used for this event handler.</p></section></dd>
                     </dl>
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">todo</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>Transition to Laravel Event dispatcher to handle this</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">todo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>Transition to Laravel Event dispatcher to handle this</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1584,6 +1773,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Relations\HasMany">HasMany</abbr></span>
             
@@ -1612,6 +1802,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-BelongsToManyThrough.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\BelongsToManyThrough">BelongsToManyThrough</abbr></a></span>
             
@@ -1640,6 +1831,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Relations\BelongsToMany">BelongsToMany</abbr></span>
             
@@ -1689,6 +1881,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
             
@@ -1729,6 +1922,7 @@ Every property in __get must also be implemented here for Twig to recognize it.<
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Database\Eloquent\Builder">Builder</abbr></span>
             
@@ -1758,6 +1952,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -1797,6 +1992,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
@@ -1837,6 +2033,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
             
@@ -1895,6 +2092,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Models-Model.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Models\Model">Model</abbr></a>|null</span>
             
@@ -1935,6 +2133,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
             
@@ -1964,6 +2163,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
                     &mdash; <span class="phpdocumentor-description"><p>the id of this object.</p></span>
@@ -2005,6 +2205,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-EloquentBuilder.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\EloquentBuilder">EloquentBuilder</abbr></a></span>
             
@@ -2033,6 +2234,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Builder.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Builder">Builder</abbr></a></span>
             
@@ -2060,14 +2262,17 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
 
     
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">deprecated</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>since 4.1.8 There is no point in having this alias.</p></section></dd>
-                                    </dl>
-    
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>since 4.1.8 There is no point in having this alias.</p></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
             
@@ -2095,18 +2300,24 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
 
     
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
+            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                <section class="phpdocumentor-description"><p>since 4.1.8 setFetchMode is no longer available as of Laravel 5.4.</p></section>
+                </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">deprecated</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"><p>since 4.1.8 setFetchMode is no longer available as of Laravel 5.4.</p></section></dd>
-                                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">link</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+                    <span class="phpdocumentor-tag__name">link</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <a class="phpdocumentor-tag-link" href="https://github.com/laravel/framework/issues/17728">https://github.com/laravel/framework/issues/17728</a>
+                                        <section class="phpdocumentor-description"></section>
+                </dd>
+                        </dl>
+
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Builder.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Builder">Builder</abbr></a></span>
             
@@ -2165,6 +2376,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-HasManySyncable.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\HasManySyncable">HasManySyncable</abbr></a></span>
             
@@ -2241,6 +2453,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-MorphManySyncable.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\MorphManySyncable">MorphManySyncable</abbr></a></span>
             
@@ -2363,6 +2576,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-BelongsToManyThrough.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\BelongsToManyThrough">BelongsToManyThrough</abbr></a></span>
             
@@ -2458,6 +2672,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-BelongsToManyUnique.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\BelongsToManyUnique">BelongsToManyUnique</abbr></a></span>
             
@@ -2561,6 +2776,7 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
                     </dl>
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-Sprinkle-Core-Database-Relations-MorphToManyUnique.html"><abbr title="\UserFrosting\Sprinkle\Core\Database\Relations\MorphToManyUnique">MorphToManyUnique</abbr></a></span>
             
@@ -2589,22 +2805,25 @@ so we don&#039;t need to keep requerying the DB for every call of checkAccess.</
     
     
         
+
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
             
 </article>
                             </section>
             </article>
-            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
 
-                <h2>Search results</h2>
-                <ul class="phpdocumentor-search-results__entries">
+                    <h2>Search results</h2>
+                    <ul class="phpdocumentor-search-results__entries">
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-
+    </main>
+    <script>
+        cssVars({});
+    </script>
 </body>
 </html>
