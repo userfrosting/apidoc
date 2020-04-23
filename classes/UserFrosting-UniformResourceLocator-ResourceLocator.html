@@ -84,7 +84,7 @@
         <aside class="phpdocumentor-element-found-in">
             <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
             :
-            <span class="phpdocumentor-element-found-in__line">27</span>
+            <span class="phpdocumentor-element-found-in__line">28</span>
         </aside>
 
         <p class="phpdocumentor-class__summary">ResourceLocator Class.</p>
@@ -104,18 +104,25 @@
         <table class="phpdocumentor-table_of_contents">
                                         <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_streams">$streams</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
+                    <td class="phpdocumentor-cell">The list of registered streams ::
+[
+     &#039;stream_name&#039; =&gt; [
+         &#039;prefix&#039; =&gt; [
+             ResourceStreamInterface
+         ]
+     ]
+].</td>
+                    <td class="phpdocumentor-cell">array<string,array<string,\UserFrosting\UniformResourceLocator\ResourceStreamInterface[]>></td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_locations">$locations</a></th>
                     <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
+                    <td class="phpdocumentor-cell">\UserFrosting\UniformResourceLocator\ResourceLocationInterface[]</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_cache">$cache</a></th>
                     <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">array</td>
+                    <td class="phpdocumentor-cell">(\UserFrosting\UniformResourceLocator\ResourceInterface[]|\UserFrosting\UniformResourceLocator\ResourceInterface|bool)[]</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#property_basePath">$basePath</a></th>
@@ -160,12 +167,12 @@
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_setupStreamWrapper">setupStreamWrapper()</a></th>
                     <td class="phpdocumentor-cell">Register the scheme as a php stream wrapper.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
+                    <td class="phpdocumentor-cell">void</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_unsetStreamWrapper">unsetStreamWrapper()</a></th>
                     <td class="phpdocumentor-cell">Unset a php stream wrapper.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
+                    <td class="phpdocumentor-cell">void</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_registerStream">registerStream()</a></th>
@@ -190,12 +197,12 @@
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_getStream">getStream()</a></th>
                     <td class="phpdocumentor-cell">Return information about a specfic stream.</td>
-                    <td class="phpdocumentor-cell">array</td>
+                    <td class="phpdocumentor-cell">array<string,\UserFrosting\UniformResourceLocator\ResourceStreamInterface[]></td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_getStreams">getStreams()</a></th>
                     <td class="phpdocumentor-cell">Return information about a all registered stream.</td>
-                    <td class="phpdocumentor-cell">array</td>
+                    <td class="phpdocumentor-cell">array<string,array<string,\UserFrosting\UniformResourceLocator\ResourceStreamInterface[]>></td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_listStreams">listStreams()</a></th>
@@ -284,7 +291,7 @@ instance of `test.json` found will be returned.</td>
                     <td class="phpdocumentor-cell">Find all instances from a resource. Return an array of paths for said resource
 For example, if looking for a `test.json` ressource, all instance
 of `test.json` found will be listed.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
+                    <td class="phpdocumentor-cell">string[]</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_findCached">findCached()</a></th>
@@ -294,7 +301,7 @@ of `test.json` found will be listed.</td>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_searchPaths">searchPaths()</a></th>
                     <td class="phpdocumentor-cell">Build the search path out of the defined strean and locations.</td>
-                    <td class="phpdocumentor-cell">array</td>
+                    <td class="phpdocumentor-cell">array<string,\UserFrosting\UniformResourceLocator\ResourceLocationInterface|null></td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocator.html#method_find">find()</a></th>
@@ -332,11 +339,19 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">32</span>
+        <span class="phpdocumentor-element-found-in__line">42</span>
     </aside>
+            <p class="phpdocumentor-summary">The list of registered streams ::
+[
+     &#039;stream_name&#039; =&gt; [
+         &#039;prefix&#039; =&gt; [
+             ResourceStreamInterface
+         ]
+     ]
+].</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__type">mixed</span>
+                <span class="phpdocumentor-signature__type">array<string,array<string,\UserFrosting\UniformResourceLocator\ResourceStreamInterface[]>></span>
         <span class="phpdocumentor-signature__name">$streams</span>
          = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
             
@@ -352,11 +367,11 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">37</span>
+        <span class="phpdocumentor-element-found-in__line">47</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__type">mixed</span>
+                <span class="phpdocumentor-signature__type">\UserFrosting\UniformResourceLocator\ResourceLocationInterface[]</span>
         <span class="phpdocumentor-signature__name">$locations</span>
          = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
             
@@ -372,11 +387,11 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">42</span>
+        <span class="phpdocumentor-element-found-in__line">52</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__type">array</span>
+                <span class="phpdocumentor-signature__type">(\UserFrosting\UniformResourceLocator\ResourceInterface[]|\UserFrosting\UniformResourceLocator\ResourceInterface|bool)[]</span>
         <span class="phpdocumentor-signature__name">$cache</span>
          = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
             
@@ -392,7 +407,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">47</span>
+        <span class="phpdocumentor-element-found-in__line">57</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -412,7 +427,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">52</span>
+        <span class="phpdocumentor-element-found-in__line">62</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -432,7 +447,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">57</span>
+        <span class="phpdocumentor-element-found-in__line">67</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -452,7 +467,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">62</span>
+        <span class="phpdocumentor-element-found-in__line">72</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -472,7 +487,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">67</span>
+        <span class="phpdocumentor-element-found-in__line">77</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">protected</span>
@@ -496,7 +511,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">74</span>
+        <span class="phpdocumentor-element-found-in__line">84</span>
     </aside>
         <p class="phpdocumentor-summary">Constructor.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -537,14 +552,14 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">96</span>
+        <span class="phpdocumentor-element-found-in__line">102</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                                 <span class="phpdocumentor-signature__name">__invoke</span>(
                     <span class="phpdocumentor-signature__argument">
                             <span class="phpdocumentor-signature__argument__name">$uri</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </span>
                 )
         : <span class="phpdocumentor-signature__response_type">string|bool</span>
@@ -555,22 +570,12 @@ of `test.json` found will be listed.</td>
         <dl class="phpdocumentor-argument-list">
                             <dt class="phpdocumentor-argument-list__entry">
                     <span class="phpdocumentor-signature__argument__name">$uri</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                                     </dt>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
-            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                            <span class="phpdocumentor-tag-link"><abbr title="\BadMethodCallException">BadMethodCallException</abbr></span>
-                                                                                <section class="phpdocumentor-description"></section>
-                </dd>
-                        </dl>
-
+        
 
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|bool</span>
@@ -587,7 +592,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">108</span>
+        <span class="phpdocumentor-element-found-in__line">110</span>
     </aside>
         <p class="phpdocumentor-summary">Add an exisitng ResourceStream to the stream list.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -628,7 +633,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">128</span>
+        <span class="phpdocumentor-element-found-in__line">130</span>
     </aside>
         <p class="phpdocumentor-summary">Register the scheme as a php stream wrapper.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -639,7 +644,7 @@ of `test.json` found will be listed.</td>
                 <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </span>
                 )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
+        : <span class="phpdocumentor-signature__response_type">void</span>
     </code>
 
     
@@ -654,9 +659,7 @@ of `test.json` found will be listed.</td>
     
         
 
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
+    
 </article>
                                     <a id="method_unsetStreamWrapper"></a>
 <article
@@ -669,7 +672,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">147</span>
+        <span class="phpdocumentor-element-found-in__line">149</span>
     </aside>
         <p class="phpdocumentor-summary">Unset a php stream wrapper.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -680,7 +683,7 @@ of `test.json` found will be listed.</td>
                 <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </span>
                 )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
+        : <span class="phpdocumentor-signature__response_type">void</span>
     </code>
 
     
@@ -695,9 +698,7 @@ of `test.json` found will be listed.</td>
     
         
 
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
+    
 </article>
                                     <a id="method_registerStream"></a>
 <article
@@ -710,7 +711,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">166</span>
+        <span class="phpdocumentor-element-found-in__line">161</span>
     </aside>
         <p class="phpdocumentor-summary">Register a new stream.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -726,7 +727,7 @@ of `test.json` found will be listed.</td>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span> ]            </span>
                     <span class="phpdocumentor-signature__argument">
             [,                 <span class="phpdocumentor-signature__argument__name">$paths</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string|array|null</span>
+                <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
                     <span class="phpdocumentor-signature__argument">
             [,                 <span class="phpdocumentor-signature__argument__name">$shared</span> :
@@ -751,14 +752,14 @@ of `test.json` found will be listed.</td>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default '')</p></section></dd>
                             <dt class="phpdocumentor-argument-list__entry">
                     <span class="phpdocumentor-signature__argument__name">$paths</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string|array|null</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                      = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default null). When using null path, the scheme will be used as a path</p></section></dd>
                             <dt class="phpdocumentor-argument-list__entry">
                     <span class="phpdocumentor-signature__argument__name">$shared</span>
                     : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                      = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default false) Shared ressources are not affected by locations</p></section></dd>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default false) Shared resoureces are not affected by locations</p></section></dd>
                     </dl>
     
         
@@ -778,7 +779,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">194</span>
+        <span class="phpdocumentor-element-found-in__line">189</span>
     </aside>
         <p class="phpdocumentor-summary">Register a new shared stream.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -794,7 +795,7 @@ of `test.json` found will be listed.</td>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span> ]            </span>
                     <span class="phpdocumentor-signature__argument">
             [,                 <span class="phpdocumentor-signature__argument__name">$paths</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string|array|null</span>
+                <span class="phpdocumentor-signature__argument__return-type">string|string[]|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
                 )
         : <span class="phpdocumentor-signature__response_type">static</span>
@@ -816,7 +817,7 @@ of `test.json` found will be listed.</td>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default '')</p></section></dd>
                             <dt class="phpdocumentor-argument-list__entry">
                     <span class="phpdocumentor-signature__argument__name">$paths</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string|array|null</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string|string[]|null</span>
                      = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>(default null). When using null path, the scheme will be used as a path</p></section></dd>
                     </dl>
@@ -838,7 +839,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">210</span>
+        <span class="phpdocumentor-element-found-in__line">205</span>
     </aside>
         <p class="phpdocumentor-summary">AddPath function. Used to preserve compatibility with RocketTheme/Toolbox.</p>
         <code class="phpdocumentor-signature phpdocumentor-code phpdocumentor-signature--deprecated">
@@ -854,7 +855,7 @@ of `test.json` found will be listed.</td>
                             </span>
                     <span class="phpdocumentor-signature__argument">
             ,                 <span class="phpdocumentor-signature__argument__name">$paths</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string|array</span>
+                <span class="phpdocumentor-signature__argument__return-type">string|string[]</span>
                             </span>
                     <span class="phpdocumentor-signature__argument">
             [,                 <span class="phpdocumentor-signature__argument__name">$override</span> :
@@ -883,19 +884,19 @@ of `test.json` found will be listed.</td>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                             <dt class="phpdocumentor-argument-list__entry">
                     <span class="phpdocumentor-signature__argument__name">$paths</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string|array</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string|string[]</span>
                                     </dt>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                             <dt class="phpdocumentor-argument-list__entry">
                     <span class="phpdocumentor-signature__argument__name">$override</span>
                     : <span class="phpdocumentor-signature__argument__return-type">bool|string</span>
                      = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>True to add path as override, string</p></section></dd>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Not used. Kept for backward compatibility.</p></section></dd>
                             <dt class="phpdocumentor-argument-list__entry">
                     <span class="phpdocumentor-signature__argument__name">$force</span>
                     : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                      = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>True to add paths even if them do not exist.</p></section></dd>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>Not used. Kept for backward compatibility.</p></section></dd>
                     </dl>
     
             <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
@@ -922,7 +923,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">222</span>
+        <span class="phpdocumentor-element-found-in__line">213</span>
     </aside>
         <p class="phpdocumentor-summary">Unregister the specified stream.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -963,7 +964,7 @@ of `test.json` found will be listed.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">235</span>
+        <span class="phpdocumentor-element-found-in__line">226</span>
     </aside>
         <p class="phpdocumentor-summary">Return information about a specfic stream.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -974,7 +975,7 @@ of `test.json` found will be listed.</td>
                 <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </span>
                 )
-        : <span class="phpdocumentor-signature__response_type">array</span>
+        : <span class="phpdocumentor-signature__response_type">array<string,\UserFrosting\UniformResourceLocator\ResourceStreamInterface[]></span>
     </code>
 
         <section class="phpdocumentor-description"><p>Return value is an array of ResourceStreamInterface, for each prefix
@@ -996,7 +997,7 @@ $array = array(
         
 
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array</span>
+        <span class="phpdocumentor-signature__response_type">array<string,\UserFrosting\UniformResourceLocator\ResourceStreamInterface[]></span>
             
 </article>
                                     <a id="method_getStreams"></a>
@@ -1010,14 +1011,14 @@ $array = array(
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">247</span>
+        <span class="phpdocumentor-element-found-in__line">238</span>
     </aside>
         <p class="phpdocumentor-summary">Return information about a all registered stream.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                                 <span class="phpdocumentor-signature__name">getStreams</span>(
                 )
-        : <span class="phpdocumentor-signature__response_type">array</span>
+        : <span class="phpdocumentor-signature__response_type">array<string,array<string,\UserFrosting\UniformResourceLocator\ResourceStreamInterface[]>></span>
     </code>
 
         <section class="phpdocumentor-description"><p>Return value is an array of array of ResourceStreamInterface, for each prefix
@@ -1035,7 +1036,7 @@ For example :
         
 
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array</span>
+        <span class="phpdocumentor-signature__response_type">array<string,array<string,\UserFrosting\UniformResourceLocator\ResourceStreamInterface[]>></span>
             
 </article>
                                     <a id="method_listStreams"></a>
@@ -1049,7 +1050,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">257</span>
+        <span class="phpdocumentor-element-found-in__line">246</span>
     </aside>
         <p class="phpdocumentor-summary">Return a list of all the stream scheme registered.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1079,7 +1080,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">269</span>
+        <span class="phpdocumentor-element-found-in__line">254</span>
     </aside>
         <p class="phpdocumentor-summary">Returns true if a stream has been defined.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1120,7 +1121,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">281</span>
+        <span class="phpdocumentor-element-found-in__line">262</span>
     </aside>
         <p class="phpdocumentor-summary">Add an existing RessourceLocation instance to the location list.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1161,7 +1162,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">296</span>
+        <span class="phpdocumentor-element-found-in__line">272</span>
     </aside>
         <p class="phpdocumentor-summary">Register a new location.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1173,7 +1174,7 @@ For example :
                             </span>
                     <span class="phpdocumentor-signature__argument">
             [,                 <span class="phpdocumentor-signature__argument__name">$path</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
                 )
         : <span class="phpdocumentor-signature__response_type">static</span>
@@ -1189,7 +1190,7 @@ For example :
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The location name</p></section></dd>
                             <dt class="phpdocumentor-argument-list__entry">
                     <span class="phpdocumentor-signature__argument__name">$path</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                      = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The location base path (default null)</p></section></dd>
                     </dl>
@@ -1211,7 +1212,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">311</span>
+        <span class="phpdocumentor-element-found-in__line">283</span>
     </aside>
         <p class="phpdocumentor-summary">Unregister the specified location.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1252,7 +1253,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">327</span>
+        <span class="phpdocumentor-element-found-in__line">293</span>
     </aside>
         <p class="phpdocumentor-summary">Get a location instance based on it&#039;s name.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1276,17 +1277,7 @@ For example :
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>The location name</p></section></dd>
                     </dl>
     
-            <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                            <span class="phpdocumentor-tag-link"><a href="../classes/UserFrosting-UniformResourceLocator-Exception-LocationNotFoundException.html"><abbr title="\UserFrosting\UniformResourceLocator\Exception\LocationNotFoundException">LocationNotFoundException</abbr></a></span>
-                                                                                <section class="phpdocumentor-description"><p>If location is not registered</p></section>
-                </dd>
-                        </dl>
-
+        
 
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceLocationInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceLocationInterface">ResourceLocationInterface</abbr></a></span>
@@ -1303,7 +1294,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">341</span>
+        <span class="phpdocumentor-element-found-in__line">305</span>
     </aside>
         <p class="phpdocumentor-summary">Get a a list of all registered locations.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1332,7 +1323,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">351</span>
+        <span class="phpdocumentor-element-found-in__line">313</span>
     </aside>
         <p class="phpdocumentor-summary">Return a list of all the locations registered by name.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1362,7 +1353,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">363</span>
+        <span class="phpdocumentor-element-found-in__line">321</span>
     </aside>
         <p class="phpdocumentor-summary">Returns true if a location has been defined.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1403,7 +1394,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">376</span>
+        <span class="phpdocumentor-element-found-in__line">329</span>
     </aside>
         <p class="phpdocumentor-summary">Return a resource instance.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1454,7 +1445,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">389</span>
+        <span class="phpdocumentor-element-found-in__line">337</span>
     </aside>
         <p class="phpdocumentor-summary">Return a list of resources instances.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1505,7 +1496,7 @@ For example :
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">405</span>
+        <span class="phpdocumentor-element-found-in__line">345</span>
     </aside>
         <p class="phpdocumentor-summary">List all ressources found at a given uri.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1567,7 +1558,7 @@ ressources will be returned when considering all locations.</p></section>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">462</span>
+        <span class="phpdocumentor-element-found-in__line">402</span>
     </aside>
         <p class="phpdocumentor-summary">Reset locator by removing all the registered streams and locations.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1596,7 +1587,7 @@ ressources will be returned when considering all locations.</p></section>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">484</span>
+        <span class="phpdocumentor-element-found-in__line">424</span>
     </aside>
         <p class="phpdocumentor-summary">Returns the canonicalized URI on success.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1668,7 +1659,7 @@ By default (if $throwException parameter is not set to true) returns false on fa
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">534</span>
+        <span class="phpdocumentor-element-found-in__line">474</span>
     </aside>
         <p class="phpdocumentor-summary">Returns true if uri is resolvable by using locator.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1710,7 +1701,7 @@ By default (if $throwException parameter is not set to true) returns false on fa
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">558</span>
+        <span class="phpdocumentor-element-found-in__line">498</span>
     </aside>
         <p class="phpdocumentor-summary">Find highest priority instance from a resource. Return the path for said resource
 For example, if looking for a `test.json` ressource, only the top priority
@@ -1782,7 +1773,7 @@ instance of `test.json` found will be returned.</p>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">584</span>
+        <span class="phpdocumentor-element-found-in__line">524</span>
     </aside>
         <p class="phpdocumentor-summary">Find all instances from a resource. Return an array of paths for said resource
 For example, if looking for a `test.json` ressource, all instance
@@ -1803,7 +1794,7 @@ of `test.json` found will be listed.</p>
                 <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
                 )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
+        : <span class="phpdocumentor-signature__response_type">string[]</span>
     </code>
 
     
@@ -1829,7 +1820,8 @@ of `test.json` found will be listed.</p>
         
 
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
+        <span class="phpdocumentor-signature__response_type">string[]</span>
+                    &mdash; <span class="phpdocumentor-description"><p>An array of all the ressources path</p></span>
             
 </article>
                                     <a id="method_findCached"></a>
@@ -1843,7 +1835,7 @@ of `test.json` found will be listed.</p>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">609</span>
+        <span class="phpdocumentor-element-found-in__line">549</span>
     </aside>
         <p class="phpdocumentor-summary">Find a resource from the cached properties.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1903,7 +1895,7 @@ of `test.json` found will be listed.</p>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">636</span>
+        <span class="phpdocumentor-element-found-in__line">576</span>
     </aside>
         <p class="phpdocumentor-summary">Build the search path out of the defined strean and locations.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1914,7 +1906,7 @@ of `test.json` found will be listed.</p>
                 <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/UserFrosting-UniformResourceLocator-ResourceStreamInterface.html"><abbr title="\UserFrosting\UniformResourceLocator\ResourceStreamInterface">ResourceStreamInterface</abbr></a></span>
                             </span>
                 )
-        : <span class="phpdocumentor-signature__response_type">array</span>
+        : <span class="phpdocumentor-signature__response_type">array<string,\UserFrosting\UniformResourceLocator\ResourceLocationInterface|null></span>
     </code>
 
         <section class="phpdocumentor-description"><p>If the scheme is shared, we don't need to involve locations and can return it's path directly.</p></section>
@@ -1931,7 +1923,8 @@ of `test.json` found will be listed.</p>
         
 
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array</span>
+        <span class="phpdocumentor-signature__response_type">array<string,\UserFrosting\UniformResourceLocator\ResourceLocationInterface|null></span>
+                    &mdash; <span class="phpdocumentor-description"><p>The search paths based on this stream and all available locations</p></span>
             
 </article>
                                     <a id="method_find"></a>
@@ -1945,7 +1938,7 @@ of `test.json` found will be listed.</p>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">664</span>
+        <span class="phpdocumentor-element-found-in__line">612</span>
     </aside>
         <p class="phpdocumentor-summary">Returns path of a file (or directory) based on a search uri.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -2023,7 +2016,7 @@ of `test.json` found will be listed.</p>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">724</span>
+        <span class="phpdocumentor-element-found-in__line">672</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -2051,7 +2044,7 @@ of `test.json` found will be listed.</p>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">732</span>
+        <span class="phpdocumentor-element-found-in__line">680</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -2079,7 +2072,7 @@ of `test.json` found will be listed.</p>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php"><a href="../files/app-vendor-userfrosting-uniformresourcelocator-src-resourcelocator.html"><abbr title="app/vendor/userfrosting/uniformresourcelocator/src/ResourceLocator.php">ResourceLocator.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">742</span>
+        <span class="phpdocumentor-element-found-in__line">690</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
